@@ -1,0 +1,3351 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCLaunchEmptyResult.h",
+      "line": 78,
+      "symbol": "DBASYNCLaunchEmptyResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCLaunchResultBase.h",
+      "line": 66,
+      "symbol": "DBASYNCLaunchResultBase.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCPollArg.h",
+      "line": 44,
+      "symbol": "DBASYNCPollArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCPollEmptyResult.h",
+      "line": 65,
+      "symbol": "DBASYNCPollEmptyResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCPollError.h",
+      "line": 76,
+      "symbol": "DBASYNCPollError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBASYNCPollResultBase.h",
+      "line": 54,
+      "symbol": "DBASYNCPollResultBase.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHAccessError.h",
+      "line": 91,
+      "symbol": "DBAUTHAccessError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHAuthError.h",
+      "line": 101,
+      "symbol": "DBAUTHAuthError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHInvalidAccountTypeError.h",
+      "line": 73,
+      "symbol": "DBAUTHInvalidAccountTypeError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHPaperAccessError.h",
+      "line": 71,
+      "symbol": "DBAUTHPaperAccessError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHRateLimitError.h",
+      "line": 60,
+      "symbol": "DBAUTHRateLimitError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHRateLimitReason.h",
+      "line": 73,
+      "symbol": "DBAUTHRateLimitReason.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHTokenFromOAuth1Arg.h",
+      "line": 46,
+      "symbol": "DBAUTHTokenFromOAuth1Arg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHTokenFromOAuth1Error.h",
+      "line": 73,
+      "symbol": "DBAUTHTokenFromOAuth1Error.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAUTHTokenFromOAuth1Result.h",
+      "line": 41,
+      "symbol": "DBAUTHTokenFromOAuth1Result.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBAppBaseClient.h",
+      "line": 23,
+      "symbol": "DBAppBaseClient._transportClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESAddPropertiesError.h",
+      "line": 136,
+      "symbol": "DBFILESAddPropertiesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESAlphaGetMetadataError.h",
+      "line": 70,
+      "symbol": "DBFILESAlphaGetMetadataError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESCommitInfo.h",
+      "line": 86,
+      "symbol": "DBFILESCommitInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESCreateFolderArg.h",
+      "line": 56,
+      "symbol": "DBFILESCreateFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESCreateFolderError.h",
+      "line": 53,
+      "symbol": "DBFILESCreateFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteArg.h",
+      "line": 40,
+      "symbol": "DBFILESDeleteArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchArg.h",
+      "line": 41,
+      "symbol": "DBFILESDeleteBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchError.h",
+      "line": 60,
+      "symbol": "DBFILESDeleteBatchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchJobStatus.h",
+      "line": 97,
+      "symbol": "DBFILESDeleteBatchJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchLaunch.h",
+      "line": 91,
+      "symbol": "DBFILESDeleteBatchLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchResult.h",
+      "line": 41,
+      "symbol": "DBFILESDeleteBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteBatchResultEntry.h",
+      "line": 70,
+      "symbol": "DBFILESDeleteBatchResultEntry.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteError.h",
+      "line": 80,
+      "symbol": "DBFILESDeleteError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDeleteResult.h",
+      "line": 41,
+      "symbol": "DBFILESDeleteResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDimensions.h",
+      "line": 46,
+      "symbol": "DBFILESDimensions.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDownloadArg.h",
+      "line": 54,
+      "symbol": "DBFILESDownloadArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESDownloadError.h",
+      "line": 63,
+      "symbol": "DBFILESDownloadError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetCopyReferenceArg.h",
+      "line": 41,
+      "symbol": "DBFILESGetCopyReferenceArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetCopyReferenceError.h",
+      "line": 63,
+      "symbol": "DBFILESGetCopyReferenceError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetCopyReferenceResult.h",
+      "line": 54,
+      "symbol": "DBFILESGetCopyReferenceResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetMetadataArg.h",
+      "line": 72,
+      "symbol": "DBFILESGetMetadataArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetMetadataError.h",
+      "line": 53,
+      "symbol": "DBFILESGetMetadataError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetTemporaryLinkArg.h",
+      "line": 40,
+      "symbol": "DBFILESGetTemporaryLinkArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetTemporaryLinkError.h",
+      "line": 63,
+      "symbol": "DBFILESGetTemporaryLinkError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGetTemporaryLinkResult.h",
+      "line": 45,
+      "symbol": "DBFILESGetTemporaryLinkResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESGpsCoordinates.h",
+      "line": 46,
+      "symbol": "DBFILESGpsCoordinates.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESInvalidPropertyGroupError.h",
+      "line": 124,
+      "symbol": "DBFILESInvalidPropertyGroupError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderArg.h",
+      "line": 79,
+      "symbol": "DBFILESListFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderContinueArg.h",
+      "line": 42,
+      "symbol": "DBFILESListFolderContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderContinueError.h",
+      "line": 77,
+      "symbol": "DBFILESListFolderContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderError.h",
+      "line": 63,
+      "symbol": "DBFILESListFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderGetLatestCursorResult.h",
+      "line": 42,
+      "symbol": "DBFILESListFolderGetLatestCursorResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderLongpollArg.h",
+      "line": 66,
+      "symbol": "DBFILESListFolderLongpollArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderLongpollError.h",
+      "line": 60,
+      "symbol": "DBFILESListFolderLongpollError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderLongpollResult.h",
+      "line": 59,
+      "symbol": "DBFILESListFolderLongpollResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListFolderResult.h",
+      "line": 55,
+      "symbol": "DBFILESListFolderResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListRevisionsArg.h",
+      "line": 54,
+      "symbol": "DBFILESListRevisionsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListRevisionsError.h",
+      "line": 63,
+      "symbol": "DBFILESListRevisionsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESListRevisionsResult.h",
+      "line": 47,
+      "symbol": "DBFILESListRevisionsResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESLookUpPropertiesError.h",
+      "line": 49,
+      "symbol": "DBFILESLookUpPropertiesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESLookupError.h",
+      "line": 139,
+      "symbol": "DBFILESLookupError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESMediaInfo.h",
+      "line": 69,
+      "symbol": "DBFILESMediaInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESMediaMetadata.h",
+      "line": 63,
+      "symbol": "DBFILESMediaMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESMetadata.h",
+      "line": 86,
+      "symbol": "DBFILESMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPathRootError.h",
+      "line": 51,
+      "symbol": "DBFILESPathRootError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPreviewArg.h",
+      "line": 54,
+      "symbol": "DBFILESPreviewArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPreviewError.h",
+      "line": 97,
+      "symbol": "DBFILESPreviewError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPropertiesError.h",
+      "line": 97,
+      "symbol": "DBFILESPropertiesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPropertyGroupUpdate.h",
+      "line": 66,
+      "symbol": "DBFILESPropertyGroupUpdate.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESPropertyGroupWithPath.h",
+      "line": 47,
+      "symbol": "DBFILESPropertyGroupWithPath.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationBatchArg.h",
+      "line": 71,
+      "symbol": "DBFILESRelocationBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationBatchError.h",
+      "line": 178,
+      "symbol": "DBFILESRelocationBatchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationBatchJobStatus.h",
+      "line": 91,
+      "symbol": "DBFILESRelocationBatchJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationBatchLaunch.h",
+      "line": 91,
+      "symbol": "DBFILESRelocationBatchLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationBatchResult.h",
+      "line": 41,
+      "symbol": "DBFILESRelocationBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationError.h",
+      "line": 164,
+      "symbol": "DBFILESRelocationError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationPath.h",
+      "line": 44,
+      "symbol": "DBFILESRelocationPath.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRelocationResult.h",
+      "line": 41,
+      "symbol": "DBFILESRelocationResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRemovePropertiesArg.h",
+      "line": 47,
+      "symbol": "DBFILESRemovePropertiesArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRemovePropertiesError.h",
+      "line": 114,
+      "symbol": "DBFILESRemovePropertiesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRestoreArg.h",
+      "line": 44,
+      "symbol": "DBFILESRestoreArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESRestoreError.h",
+      "line": 102,
+      "symbol": "DBFILESRestoreError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveCopyReferenceArg.h",
+      "line": 44,
+      "symbol": "DBFILESSaveCopyReferenceArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveCopyReferenceError.h",
+      "line": 118,
+      "symbol": "DBFILESSaveCopyReferenceError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveCopyReferenceResult.h",
+      "line": 42,
+      "symbol": "DBFILESSaveCopyReferenceResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveUrlArg.h",
+      "line": 44,
+      "symbol": "DBFILESSaveUrlArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveUrlError.h",
+      "line": 101,
+      "symbol": "DBFILESSaveUrlError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveUrlJobStatus.h",
+      "line": 87,
+      "symbol": "DBFILESSaveUrlJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSaveUrlResult.h",
+      "line": 82,
+      "symbol": "DBFILESSaveUrlResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchArg.h",
+      "line": 83,
+      "symbol": "DBFILESSearchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchError.h",
+      "line": 63,
+      "symbol": "DBFILESSearchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchMatch.h",
+      "line": 47,
+      "symbol": "DBFILESSearchMatch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchMatchType.h",
+      "line": 77,
+      "symbol": "DBFILESSearchMatchType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchMode.h",
+      "line": 74,
+      "symbol": "DBFILESSearchMode.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSearchResult.h",
+      "line": 55,
+      "symbol": "DBFILESSearchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESSharingInfo.h",
+      "line": 43,
+      "symbol": "DBFILESSharingInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESThumbnailArg.h",
+      "line": 66,
+      "symbol": "DBFILESThumbnailArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESThumbnailError.h",
+      "line": 96,
+      "symbol": "DBFILESThumbnailError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESThumbnailFormat.h",
+      "line": 56,
+      "symbol": "DBFILESThumbnailFormat.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESThumbnailSize.h",
+      "line": 96,
+      "symbol": "DBFILESThumbnailSize.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUpdatePropertiesError.h",
+      "line": 140,
+      "symbol": "DBFILESUpdatePropertiesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUpdatePropertyGroupArg.h",
+      "line": 47,
+      "symbol": "DBFILESUpdatePropertyGroupArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadError.h",
+      "line": 67,
+      "symbol": "DBFILESUploadError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadErrorWithProperties.h",
+      "line": 85,
+      "symbol": "DBFILESUploadErrorWithProperties.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionAppendArg.h",
+      "line": 58,
+      "symbol": "DBFILESUploadSessionAppendArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionCursor.h",
+      "line": 47,
+      "symbol": "DBFILESUploadSessionCursor.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishArg.h",
+      "line": 47,
+      "symbol": "DBFILESUploadSessionFinishArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishBatchArg.h",
+      "line": 41,
+      "symbol": "DBFILESUploadSessionFinishBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishBatchJobStatus.h",
+      "line": 71,
+      "symbol": "DBFILESUploadSessionFinishBatchJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishBatchLaunch.h",
+      "line": 92,
+      "symbol": "DBFILESUploadSessionFinishBatchLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishBatchResult.h",
+      "line": 41,
+      "symbol": "DBFILESUploadSessionFinishBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishBatchResultEntry.h",
+      "line": 71,
+      "symbol": "DBFILESUploadSessionFinishBatchResultEntry.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionFinishError.h",
+      "line": 105,
+      "symbol": "DBFILESUploadSessionFinishError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionLookupError.h",
+      "line": 117,
+      "symbol": "DBFILESUploadSessionLookupError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionOffsetError.h",
+      "line": 40,
+      "symbol": "DBFILESUploadSessionOffsetError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionStartArg.h",
+      "line": 52,
+      "symbol": "DBFILESUploadSessionStartArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadSessionStartResult.h",
+      "line": 42,
+      "symbol": "DBFILESUploadSessionStartResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESUploadWriteFailed.h",
+      "line": 47,
+      "symbol": "DBFILESUploadWriteFailed.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESWriteConflictError.h",
+      "line": 84,
+      "symbol": "DBFILESWriteConflictError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESWriteError.h",
+      "line": 124,
+      "symbol": "DBFILESWriteError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBFILESWriteMode.h",
+      "line": 108,
+      "symbol": "DBFILESWriteMode.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBGlobalErrorResponseHandler.h",
+      "line": 36,
+      "symbol": "DBRouteErrorResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBGlobalErrorResponseHandler.h",
+      "line": 40,
+      "symbol": "DBNetworkErrorResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthManager.h",
+      "line": 49,
+      "symbol": "DBOAuthManager._appKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthManager.h",
+      "line": 50,
+      "symbol": "DBOAuthManager._redirectURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthManager.h",
+      "line": 51,
+      "symbol": "DBOAuthManager._cancelURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthManager.h",
+      "line": 52,
+      "symbol": "DBOAuthManager._host",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthManager.h",
+      "line": 53,
+      "symbol": "DBOAuthManager._urls",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthMobile-iOS.h",
+      "line": 33,
+      "symbol": "DBMobileSharedApplication.+mobileSharedApplication",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthMobile-iOS.h",
+      "line": 35,
+      "symbol": "DBMobileSharedApplication.+setMobileSharedApplication:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthMobile-iOS.h",
+      "line": 37,
+      "symbol": "DBMobileSharedApplication.-dismissAuthController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBOAuthMobile-iOS.h",
+      "line": 48,
+      "symbol": "DBMobileSafariViewController.-initWithUrl:cancelHandler:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERAddMember.h",
+      "line": 60,
+      "symbol": "DBPAPERAddMember.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERAddPaperDocUserMemberResult.h",
+      "line": 49,
+      "symbol": "DBPAPERAddPaperDocUserMemberResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERAddPaperDocUserResult.h",
+      "line": 139,
+      "symbol": "DBPAPERAddPaperDocUserResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERCursor.h",
+      "line": 76,
+      "symbol": "DBPAPERCursor.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERDocLookupError.h",
+      "line": 72,
+      "symbol": "DBPAPERDocLookupError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERDocSubscriptionLevel.h",
+      "line": 91,
+      "symbol": "DBPAPERDocSubscriptionLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERExportFormat.h",
+      "line": 72,
+      "symbol": "DBPAPERExportFormat.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERFolder.h",
+      "line": 46,
+      "symbol": "DBPAPERFolder.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERFolderSharingPolicyType.h",
+      "line": 66,
+      "symbol": "DBPAPERFolderSharingPolicyType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERFolderSubscriptionLevel.h",
+      "line": 88,
+      "symbol": "DBPAPERFolderSubscriptionLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERFoldersContainingPaperDoc.h",
+      "line": 61,
+      "symbol": "DBPAPERFoldersContainingPaperDoc.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERInviteeInfoWithPermissionLevel.h",
+      "line": 47,
+      "symbol": "DBPAPERInviteeInfoWithPermissionLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListDocsCursorError.h",
+      "line": 63,
+      "symbol": "DBPAPERListDocsCursorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsArgs.h",
+      "line": 71,
+      "symbol": "DBPAPERListPaperDocsArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsContinueArgs.h",
+      "line": 42,
+      "symbol": "DBPAPERListPaperDocsContinueArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsFilterBy.h",
+      "line": 72,
+      "symbol": "DBPAPERListPaperDocsFilterBy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsResponse.h",
+      "line": 64,
+      "symbol": "DBPAPERListPaperDocsResponse.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsSortBy.h",
+      "line": 85,
+      "symbol": "DBPAPERListPaperDocsSortBy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListPaperDocsSortOrder.h",
+      "line": 72,
+      "symbol": "DBPAPERListPaperDocsSortOrder.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListUsersCursorError.h",
+      "line": 89,
+      "symbol": "DBPAPERListUsersCursorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListUsersOnFolderResponse.h",
+      "line": 69,
+      "symbol": "DBPAPERListUsersOnFolderResponse.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERListUsersOnPaperDocResponse.h",
+      "line": 79,
+      "symbol": "DBPAPERListUsersOnPaperDocResponse.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERPaperApiBaseError.h",
+      "line": 59,
+      "symbol": "DBPAPERPaperApiBaseError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERPaperApiCursorError.h",
+      "line": 100,
+      "symbol": "DBPAPERPaperApiCursorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERPaperDocExportResult.h",
+      "line": 57,
+      "symbol": "DBPAPERPaperDocExportResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERPaperDocPermissionLevel.h",
+      "line": 71,
+      "symbol": "DBPAPERPaperDocPermissionLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERRefPaperDoc.h",
+      "line": 40,
+      "symbol": "DBPAPERRefPaperDoc.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERSharingPolicy.h",
+      "line": 60,
+      "symbol": "DBPAPERSharingPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERSharingPublicPolicyType.h",
+      "line": 89,
+      "symbol": "DBPAPERSharingPublicPolicyType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERSharingTeamPolicyType.h",
+      "line": 78,
+      "symbol": "DBPAPERSharingTeamPolicyType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERUserInfoWithPermissionLevel.h",
+      "line": 47,
+      "symbol": "DBPAPERUserInfoWithPermissionLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPAPERUserOnPaperDocFilter.h",
+      "line": 74,
+      "symbol": "DBPAPERUserOnPaperDocFilter.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESGetPropertyTemplateArg.h",
+      "line": 41,
+      "symbol": "DBPROPERTIESGetPropertyTemplateArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESListPropertyTemplateIds.h",
+      "line": 41,
+      "symbol": "DBPROPERTIESListPropertyTemplateIds.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESModifyPropertyTemplateError.h",
+      "line": 135,
+      "symbol": "DBPROPERTIESModifyPropertyTemplateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyField.h",
+      "line": 48,
+      "symbol": "DBPROPERTIESPropertyField.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyFieldTemplate.h",
+      "line": 60,
+      "symbol": "DBPROPERTIESPropertyFieldTemplate.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyGroup.h",
+      "line": 50,
+      "symbol": "DBPROPERTIESPropertyGroup.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyGroupTemplate.h",
+      "line": 59,
+      "symbol": "DBPROPERTIESPropertyGroupTemplate.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyTemplateError.h",
+      "line": 81,
+      "symbol": "DBPROPERTIESPropertyTemplateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBPROPERTIESPropertyType.h",
+      "line": 62,
+      "symbol": "DBPROPERTIESPropertyType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSDKConstants.h",
+      "line": 9,
+      "symbol": "kV2SDKVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSDKConstants.h",
+      "line": 10,
+      "symbol": "kV2SDKDefaultUserAgentPrefix",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSDKConstants.h",
+      "line": 11,
+      "symbol": "kForegroundSessionId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSDKConstants.h",
+      "line": 12,
+      "symbol": "kBackgroundSessionId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSDKConstants.h",
+      "line": 13,
+      "symbol": "kSDKDebug",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAccessLevel.h",
+      "line": 104,
+      "symbol": "DBSHARINGAccessLevel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAclUpdatePolicy.h",
+      "line": 75,
+      "symbol": "DBSHARINGAclUpdatePolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddFileMemberArgs.h",
+      "line": 92,
+      "symbol": "DBSHARINGAddFileMemberArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddFileMemberError.h",
+      "line": 108,
+      "symbol": "DBSHARINGAddFileMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddFolderMemberArg.h",
+      "line": 74,
+      "symbol": "DBSHARINGAddFolderMemberArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddFolderMemberError.h",
+      "line": 225,
+      "symbol": "DBSHARINGAddFolderMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddMember.h",
+      "line": 62,
+      "symbol": "DBSHARINGAddMember.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGAddMemberSelectorError.h",
+      "line": 152,
+      "symbol": "DBSHARINGAddMemberSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGChangeFileMemberAccessArgs.h",
+      "line": 54,
+      "symbol": "DBSHARINGChangeFileMemberAccessArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGCreateSharedLinkArg.h",
+      "line": 67,
+      "symbol": "DBSHARINGCreateSharedLinkArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGCreateSharedLinkError.h",
+      "line": 63,
+      "symbol": "DBSHARINGCreateSharedLinkError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGCreateSharedLinkWithSettingsArg.h",
+      "line": 55,
+      "symbol": "DBSHARINGCreateSharedLinkWithSettingsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGCreateSharedLinkWithSettingsError.h",
+      "line": 114,
+      "symbol": "DBSHARINGCreateSharedLinkWithSettingsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileAction.h",
+      "line": 164,
+      "symbol": "DBSHARINGFileAction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileErrorResult.h",
+      "line": 108,
+      "symbol": "DBSHARINGFileErrorResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileMemberActionError.h",
+      "line": 122,
+      "symbol": "DBSHARINGFileMemberActionError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileMemberActionIndividualResult.h",
+      "line": 84,
+      "symbol": "DBSHARINGFileMemberActionIndividualResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileMemberActionResult.h",
+      "line": 49,
+      "symbol": "DBSHARINGFileMemberActionResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFileMemberRemoveActionResult.h",
+      "line": 89,
+      "symbol": "DBSHARINGFileMemberRemoveActionResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFilePermission.h",
+      "line": 67,
+      "symbol": "DBSHARINGFilePermission.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFolderAction.h",
+      "line": 217,
+      "symbol": "DBSHARINGFolderAction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFolderPermission.h",
+      "line": 67,
+      "symbol": "DBSHARINGFolderPermission.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGFolderPolicy.h",
+      "line": 93,
+      "symbol": "DBSHARINGFolderPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetFileMetadataArg.h",
+      "line": 58,
+      "symbol": "DBSHARINGGetFileMetadataArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetFileMetadataBatchArg.h",
+      "line": 58,
+      "symbol": "DBSHARINGGetFileMetadataBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetFileMetadataBatchResult.h",
+      "line": 50,
+      "symbol": "DBSHARINGGetFileMetadataBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetFileMetadataError.h",
+      "line": 82,
+      "symbol": "DBSHARINGGetFileMetadataError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetFileMetadataIndividualResult.h",
+      "line": 89,
+      "symbol": "DBSHARINGGetFileMetadataIndividualResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetMetadataArgs.h",
+      "line": 61,
+      "symbol": "DBSHARINGGetMetadataArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetSharedLinkFileError.h",
+      "line": 98,
+      "symbol": "DBSHARINGGetSharedLinkFileError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetSharedLinkMetadataArg.h",
+      "line": 65,
+      "symbol": "DBSHARINGGetSharedLinkMetadataArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetSharedLinksArg.h",
+      "line": 49,
+      "symbol": "DBSHARINGGetSharedLinksArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetSharedLinksError.h",
+      "line": 62,
+      "symbol": "DBSHARINGGetSharedLinksError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGGetSharedLinksResult.h",
+      "line": 41,
+      "symbol": "DBSHARINGGetSharedLinksResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGInsufficientQuotaAmounts.h",
+      "line": 52,
+      "symbol": "DBSHARINGInsufficientQuotaAmounts.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGInviteeInfo.h",
+      "line": 66,
+      "symbol": "DBSHARINGInviteeInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGJobError.h",
+      "line": 118,
+      "symbol": "DBSHARINGJobError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGJobStatus.h",
+      "line": 81,
+      "symbol": "DBSHARINGJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkAction.h",
+      "line": 113,
+      "symbol": "DBSHARINGLinkAction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkAudience.h",
+      "line": 84,
+      "symbol": "DBSHARINGLinkAudience.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkExpiry.h",
+      "line": 79,
+      "symbol": "DBSHARINGLinkExpiry.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkMetadata.h",
+      "line": 65,
+      "symbol": "DBSHARINGLinkMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkPassword.h",
+      "line": 79,
+      "symbol": "DBSHARINGLinkPassword.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkPermission.h",
+      "line": 65,
+      "symbol": "DBSHARINGLinkPermission.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkPermissions.h",
+      "line": 84,
+      "symbol": "DBSHARINGLinkPermissions.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGLinkSettings.h",
+      "line": 64,
+      "symbol": "DBSHARINGLinkSettings.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersArg.h",
+      "line": 71,
+      "symbol": "DBSHARINGListFileMembersArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersBatchArg.h",
+      "line": 58,
+      "symbol": "DBSHARINGListFileMembersBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersBatchResult.h",
+      "line": 48,
+      "symbol": "DBSHARINGListFileMembersBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersContinueArg.h",
+      "line": 44,
+      "symbol": "DBSHARINGListFileMembersContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersContinueError.h",
+      "line": 96,
+      "symbol": "DBSHARINGListFileMembersContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersCountResult.h",
+      "line": 47,
+      "symbol": "DBSHARINGListFileMembersCountResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersError.h",
+      "line": 82,
+      "symbol": "DBSHARINGListFileMembersError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFileMembersIndividualResult.h",
+      "line": 89,
+      "symbol": "DBSHARINGListFileMembersIndividualResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFilesArg.h",
+      "line": 59,
+      "symbol": "DBSHARINGListFilesArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFilesContinueArg.h",
+      "line": 42,
+      "symbol": "DBSHARINGListFilesContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFilesContinueError.h",
+      "line": 80,
+      "symbol": "DBSHARINGListFilesContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFilesResult.h",
+      "line": 58,
+      "symbol": "DBSHARINGListFilesResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFolderMembersContinueArg.h",
+      "line": 42,
+      "symbol": "DBSHARINGListFolderMembersContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFolderMembersContinueError.h",
+      "line": 77,
+      "symbol": "DBSHARINGListFolderMembersContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFolderMembersCursorArg.h",
+      "line": 62,
+      "symbol": "DBSHARINGListFolderMembersCursorArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFoldersArgs.h",
+      "line": 61,
+      "symbol": "DBSHARINGListFoldersArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFoldersContinueArg.h",
+      "line": 42,
+      "symbol": "DBSHARINGListFoldersContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFoldersContinueError.h",
+      "line": 60,
+      "symbol": "DBSHARINGListFoldersContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListFoldersResult.h",
+      "line": 68,
+      "symbol": "DBSHARINGListFoldersResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListSharedLinksArg.h",
+      "line": 59,
+      "symbol": "DBSHARINGListSharedLinksArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListSharedLinksError.h",
+      "line": 77,
+      "symbol": "DBSHARINGListSharedLinksError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGListSharedLinksResult.h",
+      "line": 68,
+      "symbol": "DBSHARINGListSharedLinksResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMemberAccessLevelResult.h",
+      "line": 71,
+      "symbol": "DBSHARINGMemberAccessLevelResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMemberAction.h",
+      "line": 125,
+      "symbol": "DBSHARINGMemberAction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMemberPermission.h",
+      "line": 67,
+      "symbol": "DBSHARINGMemberPermission.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMemberPolicy.h",
+      "line": 73,
+      "symbol": "DBSHARINGMemberPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMemberSelector.h",
+      "line": 86,
+      "symbol": "DBSHARINGMemberSelector.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMembershipInfo.h",
+      "line": 71,
+      "symbol": "DBSHARINGMembershipInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGModifySharedLinkSettingsArgs.h",
+      "line": 63,
+      "symbol": "DBSHARINGModifySharedLinkSettingsArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGModifySharedLinkSettingsError.h",
+      "line": 120,
+      "symbol": "DBSHARINGModifySharedLinkSettingsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMountFolderArg.h",
+      "line": 40,
+      "symbol": "DBSHARINGMountFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGMountFolderError.h",
+      "line": 141,
+      "symbol": "DBSHARINGMountFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGParentFolderAccessInfo.h",
+      "line": 53,
+      "symbol": "DBSHARINGParentFolderAccessInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGPendingUploadMode.h",
+      "line": 63,
+      "symbol": "DBSHARINGPendingUploadMode.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGPermissionDeniedReason.h",
+      "line": 217,
+      "symbol": "DBSHARINGPermissionDeniedReason.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRelinquishFileMembershipArg.h",
+      "line": 40,
+      "symbol": "DBSHARINGRelinquishFileMembershipArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRelinquishFileMembershipError.h",
+      "line": 92,
+      "symbol": "DBSHARINGRelinquishFileMembershipError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRelinquishFolderMembershipArg.h",
+      "line": 56,
+      "symbol": "DBSHARINGRelinquishFolderMembershipArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRelinquishFolderMembershipError.h",
+      "line": 150,
+      "symbol": "DBSHARINGRelinquishFolderMembershipError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRemoveFileMemberArg.h",
+      "line": 51,
+      "symbol": "DBSHARINGRemoveFileMemberArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRemoveFileMemberError.h",
+      "line": 109,
+      "symbol": "DBSHARINGRemoveFileMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRemoveFolderMemberArg.h",
+      "line": 56,
+      "symbol": "DBSHARINGRemoveFolderMemberArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRemoveFolderMemberError.h",
+      "line": 135,
+      "symbol": "DBSHARINGRemoveFolderMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRemoveMemberJobStatus.h",
+      "line": 91,
+      "symbol": "DBSHARINGRemoveMemberJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRequestedVisibility.h",
+      "line": 82,
+      "symbol": "DBSHARINGRequestedVisibility.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGResolvedVisibility.h",
+      "line": 121,
+      "symbol": "DBSHARINGResolvedVisibility.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRevokeSharedLinkArg.h",
+      "line": 40,
+      "symbol": "DBSHARINGRevokeSharedLinkArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGRevokeSharedLinkError.h",
+      "line": 98,
+      "symbol": "DBSHARINGRevokeSharedLinkError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGShareFolderArg.h",
+      "line": 107,
+      "symbol": "DBSHARINGShareFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGShareFolderError.h",
+      "line": 123,
+      "symbol": "DBSHARINGShareFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGShareFolderErrorBase.h",
+      "line": 110,
+      "symbol": "DBSHARINGShareFolderErrorBase.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGShareFolderJobStatus.h",
+      "line": 88,
+      "symbol": "DBSHARINGShareFolderJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGShareFolderLaunch.h",
+      "line": 78,
+      "symbol": "DBSHARINGShareFolderLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharePathError.h",
+      "line": 245,
+      "symbol": "DBSHARINGSharePathError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedContentLinkMetadataBase.h",
+      "line": 94,
+      "symbol": "DBSHARINGSharedContentLinkMetadataBase.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFileMembers.h",
+      "line": 83,
+      "symbol": "DBSHARINGSharedFileMembers.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFileMetadata.h",
+      "line": 134,
+      "symbol": "DBSHARINGSharedFileMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFolderAccessError.h",
+      "line": 99,
+      "symbol": "DBSHARINGSharedFolderAccessError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFolderMemberError.h",
+      "line": 95,
+      "symbol": "DBSHARINGSharedFolderMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFolderMembers.h",
+      "line": 78,
+      "symbol": "DBSHARINGSharedFolderMembers.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedFolderMetadataBase.h",
+      "line": 91,
+      "symbol": "DBSHARINGSharedFolderMetadataBase.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkAccessFailureReason.h",
+      "line": 111,
+      "symbol": "DBSHARINGSharedLinkAccessFailureReason.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkError.h",
+      "line": 85,
+      "symbol": "DBSHARINGSharedLinkError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkMetadata.h",
+      "line": 106,
+      "symbol": "DBSHARINGSharedLinkMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkPolicy.h",
+      "line": 86,
+      "symbol": "DBSHARINGSharedLinkPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkSettings.h",
+      "line": 64,
+      "symbol": "DBSHARINGSharedLinkSettings.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharedLinkSettingsError.h",
+      "line": 76,
+      "symbol": "DBSHARINGSharedLinkSettingsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharingFileAccessError.h",
+      "line": 115,
+      "symbol": "DBSHARINGSharingFileAccessError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGSharingUserError.h",
+      "line": 62,
+      "symbol": "DBSHARINGSharingUserError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGTeamMemberInfo.h",
+      "line": 66,
+      "symbol": "DBSHARINGTeamMemberInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGTransferFolderArg.h",
+      "line": 45,
+      "symbol": "DBSHARINGTransferFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGTransferFolderError.h",
+      "line": 141,
+      "symbol": "DBSHARINGTransferFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnmountFolderArg.h",
+      "line": 40,
+      "symbol": "DBSHARINGUnmountFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnmountFolderError.h",
+      "line": 93,
+      "symbol": "DBSHARINGUnmountFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnshareFileArg.h",
+      "line": 42,
+      "symbol": "DBSHARINGUnshareFileArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnshareFileError.h",
+      "line": 82,
+      "symbol": "DBSHARINGUnshareFileError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnshareFolderArg.h",
+      "line": 59,
+      "symbol": "DBSHARINGUnshareFolderArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUnshareFolderError.h",
+      "line": 102,
+      "symbol": "DBSHARINGUnshareFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUpdateFolderMemberArg.h",
+      "line": 56,
+      "symbol": "DBSHARINGUpdateFolderMemberArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUpdateFolderMemberError.h",
+      "line": 136,
+      "symbol": "DBSHARINGUpdateFolderMemberError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUpdateFolderPolicyArg.h",
+      "line": 89,
+      "symbol": "DBSHARINGUpdateFolderPolicyArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUpdateFolderPolicyError.h",
+      "line": 121,
+      "symbol": "DBSHARINGUpdateFolderPolicyError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGUserInfo.h",
+      "line": 66,
+      "symbol": "DBSHARINGUserInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGViewerInfoPolicy.h",
+      "line": 72,
+      "symbol": "DBSHARINGViewerInfoPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSHARINGVisibility.h",
+      "line": 119,
+      "symbol": "DBSHARINGVisibility.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBSharedApplicationProtocol.h",
+      "line": 15,
+      "symbol": "DBOAuthCancelBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBStoneSerializers.h",
+      "line": 16,
+      "symbol": "NSArray(DBSerializable).+serialize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBStoneSerializers.h",
+      "line": 18,
+      "symbol": "NSArray(DBSerializable).+deserialize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBStoneSerializers.h",
+      "line": 29,
+      "symbol": "NSString(DBSerializable).+serialize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBStoneSerializers.h",
+      "line": 31,
+      "symbol": "NSString(DBSerializable).+deserialize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMAddPropertyTemplateResult.h",
+      "line": 41,
+      "symbol": "DBTEAMAddPropertyTemplateResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMAdminTier.h",
+      "line": 90,
+      "symbol": "DBTEAMAdminTier.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMApiApp.h",
+      "line": 81,
+      "symbol": "DBTEAMApiApp.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMBaseDfbReport.h",
+      "line": 42,
+      "symbol": "DBTEAMBaseDfbReport.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMBaseTeamFolderError.h",
+      "line": 82,
+      "symbol": "DBTEAMBaseTeamFolderError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMCOMMONGroupManagementType.h",
+      "line": 87,
+      "symbol": "DBTEAMCOMMONGroupManagementType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMCOMMONGroupSummary.h",
+      "line": 79,
+      "symbol": "DBTEAMCOMMONGroupSummary.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMCOMMONGroupType.h",
+      "line": 76,
+      "symbol": "DBTEAMCOMMONGroupType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMCOMMONTimeRange.h",
+      "line": 55,
+      "symbol": "DBTEAMCOMMONTimeRange.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDateRange.h",
+      "line": 55,
+      "symbol": "DBTEAMDateRange.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDateRangeError.h",
+      "line": 48,
+      "symbol": "DBTEAMDateRangeError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDesktopPlatform.h",
+      "line": 83,
+      "symbol": "DBTEAMDesktopPlatform.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDeviceSession.h",
+      "line": 71,
+      "symbol": "DBTEAMDeviceSession.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDeviceSessionArg.h",
+      "line": 44,
+      "symbol": "DBTEAMDeviceSessionArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMDevicesActive.h",
+      "line": 78,
+      "symbol": "DBTEAMDevicesActive.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupAccessType.h",
+      "line": 64,
+      "symbol": "DBTEAMGroupAccessType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupCreateArg.h",
+      "line": 63,
+      "symbol": "DBTEAMGroupCreateArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupCreateError.h",
+      "line": 98,
+      "symbol": "DBTEAMGroupCreateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupDeleteError.h",
+      "line": 85,
+      "symbol": "DBTEAMGroupDeleteError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMemberInfo.h",
+      "line": 49,
+      "symbol": "DBTEAMGroupMemberInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMemberSelector.h",
+      "line": 48,
+      "symbol": "DBTEAMGroupMemberSelector.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMemberSelectorError.h",
+      "line": 88,
+      "symbol": "DBTEAMGroupMemberSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMemberSetAccessTypeError.h",
+      "line": 100,
+      "symbol": "DBTEAMGroupMemberSetAccessTypeError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMembersAddError.h",
+      "line": 189,
+      "symbol": "DBTEAMGroupMembersAddError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMembersChangeResult.h",
+      "line": 51,
+      "symbol": "DBTEAMGroupMembersChangeResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMembersRemoveError.h",
+      "line": 139,
+      "symbol": "DBTEAMGroupMembersRemoveError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMembersSelector.h",
+      "line": 49,
+      "symbol": "DBTEAMGroupMembersSelector.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupMembersSelectorError.h",
+      "line": 88,
+      "symbol": "DBTEAMGroupMembersSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupSelector.h",
+      "line": 75,
+      "symbol": "DBTEAMGroupSelector.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupSelectorError.h",
+      "line": 61,
+      "symbol": "DBTEAMGroupSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupSelectorWithTeamGroupError.h",
+      "line": 76,
+      "symbol": "DBTEAMGroupSelectorWithTeamGroupError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupUpdateError.h",
+      "line": 111,
+      "symbol": "DBTEAMGroupUpdateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsGetInfoError.h",
+      "line": 59,
+      "symbol": "DBTEAMGroupsGetInfoError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsGetInfoItem.h",
+      "line": 83,
+      "symbol": "DBTEAMGroupsGetInfoItem.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsListArg.h",
+      "line": 49,
+      "symbol": "DBTEAMGroupsListArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsListContinueArg.h",
+      "line": 40,
+      "symbol": "DBTEAMGroupsListContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsListContinueError.h",
+      "line": 58,
+      "symbol": "DBTEAMGroupsListContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsListResult.h",
+      "line": 54,
+      "symbol": "DBTEAMGroupsListResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsMembersListArg.h",
+      "line": 55,
+      "symbol": "DBTEAMGroupsMembersListArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsMembersListContinueArg.h",
+      "line": 40,
+      "symbol": "DBTEAMGroupsMembersListContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsMembersListContinueError.h",
+      "line": 59,
+      "symbol": "DBTEAMGroupsMembersListContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsMembersListResult.h",
+      "line": 56,
+      "symbol": "DBTEAMGroupsMembersListResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsPollError.h",
+      "line": 87,
+      "symbol": "DBTEAMGroupsPollError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMGroupsSelector.h",
+      "line": 76,
+      "symbol": "DBTEAMGroupsSelector.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMIncludeMembersArg.h",
+      "line": 53,
+      "symbol": "DBTEAMIncludeMembersArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberAppsArg.h",
+      "line": 40,
+      "symbol": "DBTEAMListMemberAppsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberAppsError.h",
+      "line": 60,
+      "symbol": "DBTEAMListMemberAppsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberAppsResult.h",
+      "line": 42,
+      "symbol": "DBTEAMListMemberAppsResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberDevicesArg.h",
+      "line": 67,
+      "symbol": "DBTEAMListMemberDevicesArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberDevicesError.h",
+      "line": 58,
+      "symbol": "DBTEAMListMemberDevicesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMemberDevicesResult.h",
+      "line": 64,
+      "symbol": "DBTEAMListMemberDevicesResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersAppsArg.h",
+      "line": 57,
+      "symbol": "DBTEAMListMembersAppsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersAppsError.h",
+      "line": 64,
+      "symbol": "DBTEAMListMembersAppsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersAppsResult.h",
+      "line": 70,
+      "symbol": "DBTEAMListMembersAppsResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersDevicesArg.h",
+      "line": 72,
+      "symbol": "DBTEAMListMembersDevicesArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersDevicesError.h",
+      "line": 62,
+      "symbol": "DBTEAMListMembersDevicesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListMembersDevicesResult.h",
+      "line": 68,
+      "symbol": "DBTEAMListMembersDevicesResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamAppsArg.h",
+      "line": 57,
+      "symbol": "DBTEAMListTeamAppsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamAppsError.h",
+      "line": 64,
+      "symbol": "DBTEAMListTeamAppsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamAppsResult.h",
+      "line": 70,
+      "symbol": "DBTEAMListTeamAppsResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamDevicesArg.h",
+      "line": 72,
+      "symbol": "DBTEAMListTeamDevicesArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamDevicesError.h",
+      "line": 62,
+      "symbol": "DBTEAMListTeamDevicesError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMListTeamDevicesResult.h",
+      "line": 68,
+      "symbol": "DBTEAMListTeamDevicesResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberAccess.h",
+      "line": 49,
+      "symbol": "DBTEAMMemberAccess.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberAddArg.h",
+      "line": 93,
+      "symbol": "DBTEAMMemberAddArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberAddResult.h",
+      "line": 284,
+      "symbol": "DBTEAMMemberAddResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberDevices.h",
+      "line": 70,
+      "symbol": "DBTEAMMemberDevices.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberLinkedApps.h",
+      "line": 49,
+      "symbol": "DBTEAMMemberLinkedApps.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberProfile.h",
+      "line": 122,
+      "symbol": "DBTEAMMemberProfile.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMemberSelectorError.h",
+      "line": 63,
+      "symbol": "DBTEAMMemberSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersAddArg.h",
+      "line": 56,
+      "symbol": "DBTEAMMembersAddArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersAddJobStatus.h",
+      "line": 98,
+      "symbol": "DBTEAMMembersAddJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersAddLaunch.h",
+      "line": 78,
+      "symbol": "DBTEAMMembersAddLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersDeactivateArg.h",
+      "line": 60,
+      "symbol": "DBTEAMMembersDeactivateArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersDeactivateError.h",
+      "line": 73,
+      "symbol": "DBTEAMMembersDeactivateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersGetInfoArgs.h",
+      "line": 41,
+      "symbol": "DBTEAMMembersGetInfoArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersGetInfoError.h",
+      "line": 46,
+      "symbol": "DBTEAMMembersGetInfoError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersGetInfoItem.h",
+      "line": 87,
+      "symbol": "DBTEAMMembersGetInfoItem.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersListArg.h",
+      "line": 53,
+      "symbol": "DBTEAMMembersListArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersListContinueArg.h",
+      "line": 40,
+      "symbol": "DBTEAMMembersListContinueArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersListContinueError.h",
+      "line": 58,
+      "symbol": "DBTEAMMembersListContinueError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersListError.h",
+      "line": 46,
+      "symbol": "DBTEAMMembersListError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersListResult.h",
+      "line": 55,
+      "symbol": "DBTEAMMembersListResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersRecoverArg.h",
+      "line": 44,
+      "symbol": "DBTEAMMembersRecoverArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersRecoverError.h",
+      "line": 99,
+      "symbol": "DBTEAMMembersRecoverError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersRemoveError.h",
+      "line": 238,
+      "symbol": "DBTEAMMembersRemoveError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSendWelcomeError.h",
+      "line": 73,
+      "symbol": "DBTEAMMembersSendWelcomeError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSetPermissionsArg.h",
+      "line": 49,
+      "symbol": "DBTEAMMembersSetPermissionsArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSetPermissionsError.h",
+      "line": 113,
+      "symbol": "DBTEAMMembersSetPermissionsError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSetPermissionsResult.h",
+      "line": 46,
+      "symbol": "DBTEAMMembersSetPermissionsResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSetProfileArg.h",
+      "line": 82,
+      "symbol": "DBTEAMMembersSetProfileArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSetProfileError.h",
+      "line": 182,
+      "symbol": "DBTEAMMembersSetProfileError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersSuspendError.h",
+      "line": 112,
+      "symbol": "DBTEAMMembersSuspendError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersUnsuspendArg.h",
+      "line": 44,
+      "symbol": "DBTEAMMembersUnsuspendArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMembersUnsuspendError.h",
+      "line": 99,
+      "symbol": "DBTEAMMembersUnsuspendError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMMobileClientPlatform.h",
+      "line": 108,
+      "symbol": "DBTEAMMobileClientPlatform.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESEmmState.h",
+      "line": 82,
+      "symbol": "DBTEAMPOLICIESEmmState.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESSharedFolderJoinPolicy.h",
+      "line": 76,
+      "symbol": "DBTEAMPOLICIESSharedFolderJoinPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESSharedFolderMemberPolicy.h",
+      "line": 75,
+      "symbol": "DBTEAMPOLICIESSharedFolderMemberPolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESSharedLinkCreatePolicy.h",
+      "line": 95,
+      "symbol": "DBTEAMPOLICIESSharedLinkCreatePolicy.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESTeamMemberPolicies.h",
+      "line": 58,
+      "symbol": "DBTEAMPOLICIESTeamMemberPolicies.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMPOLICIESTeamSharingPolicies.h",
+      "line": 57,
+      "symbol": "DBTEAMPOLICIESTeamSharingPolicies.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRemovedStatus.h",
+      "line": 40,
+      "symbol": "DBTEAMRemovedStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionArg.h",
+      "line": 93,
+      "symbol": "DBTEAMRevokeDeviceSessionArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionBatchArg.h",
+      "line": 41,
+      "symbol": "DBTEAMRevokeDeviceSessionBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionBatchError.h",
+      "line": 47,
+      "symbol": "DBTEAMRevokeDeviceSessionBatchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionBatchResult.h",
+      "line": 42,
+      "symbol": "DBTEAMRevokeDeviceSessionBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionError.h",
+      "line": 71,
+      "symbol": "DBTEAMRevokeDeviceSessionError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeDeviceSessionStatus.h",
+      "line": 56,
+      "symbol": "DBTEAMRevokeDeviceSessionStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedApiAppArg.h",
+      "line": 63,
+      "symbol": "DBTEAMRevokeLinkedApiAppArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedApiAppBatchArg.h",
+      "line": 41,
+      "symbol": "DBTEAMRevokeLinkedApiAppBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedAppBatchError.h",
+      "line": 48,
+      "symbol": "DBTEAMRevokeLinkedAppBatchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedAppBatchResult.h",
+      "line": 42,
+      "symbol": "DBTEAMRevokeLinkedAppBatchResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedAppError.h",
+      "line": 72,
+      "symbol": "DBTEAMRevokeLinkedAppError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMRevokeLinkedAppStatus.h",
+      "line": 56,
+      "symbol": "DBTEAMRevokeLinkedAppStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMStorageBucket.h",
+      "line": 49,
+      "symbol": "DBTEAMStorageBucket.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderAccessError.h",
+      "line": 73,
+      "symbol": "DBTEAMTeamFolderAccessError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderActivateError.h",
+      "line": 80,
+      "symbol": "DBTEAMTeamFolderActivateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderArchiveError.h",
+      "line": 80,
+      "symbol": "DBTEAMTeamFolderArchiveError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderArchiveJobStatus.h",
+      "line": 96,
+      "symbol": "DBTEAMTeamFolderArchiveJobStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderArchiveLaunch.h",
+      "line": 78,
+      "symbol": "DBTEAMTeamFolderArchiveLaunch.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderCreateArg.h",
+      "line": 40,
+      "symbol": "DBTEAMTeamFolderCreateArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderCreateError.h",
+      "line": 85,
+      "symbol": "DBTEAMTeamFolderCreateError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderGetInfoItem.h",
+      "line": 79,
+      "symbol": "DBTEAMTeamFolderGetInfoItem.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderIdArg.h",
+      "line": 40,
+      "symbol": "DBTEAMTeamFolderIdArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderIdListArg.h",
+      "line": 40,
+      "symbol": "DBTEAMTeamFolderIdListArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderInvalidStatusError.h",
+      "line": 86,
+      "symbol": "DBTEAMTeamFolderInvalidStatusError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderListArg.h",
+      "line": 49,
+      "symbol": "DBTEAMTeamFolderListArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderListError.h",
+      "line": 41,
+      "symbol": "DBTEAMTeamFolderListError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderListResult.h",
+      "line": 43,
+      "symbol": "DBTEAMTeamFolderListResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderMetadata.h",
+      "line": 53,
+      "symbol": "DBTEAMTeamFolderMetadata.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderPermanentlyDeleteError.h",
+      "line": 81,
+      "symbol": "DBTEAMTeamFolderPermanentlyDeleteError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderRenameError.h",
+      "line": 119,
+      "symbol": "DBTEAMTeamFolderRenameError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamFolderStatus.h",
+      "line": 85,
+      "symbol": "DBTEAMTeamFolderStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamGetInfoResult.h",
+      "line": 63,
+      "symbol": "DBTEAMTeamGetInfoResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamMemberInfo.h",
+      "line": 48,
+      "symbol": "DBTEAMTeamMemberInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamMemberStatus.h",
+      "line": 103,
+      "symbol": "DBTEAMTeamMemberStatus.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMTeamMembershipType.h",
+      "line": 64,
+      "symbol": "DBTEAMTeamMembershipType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMUpdatePropertyTemplateArg.h",
+      "line": 74,
+      "symbol": "DBTEAMUpdatePropertyTemplateArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMUpdatePropertyTemplateResult.h",
+      "line": 41,
+      "symbol": "DBTEAMUpdatePropertyTemplateResult.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMUserSelectorArg.h",
+      "line": 87,
+      "symbol": "DBTEAMUserSelectorArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMUserSelectorError.h",
+      "line": 53,
+      "symbol": "DBTEAMUserSelectorError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTEAMUsersSelectorArg.h",
+      "line": 93,
+      "symbol": "DBTEAMUsersSelectorArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 36,
+      "symbol": "DBTask._queue",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 39,
+      "symbol": "DBTask.retryCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 41,
+      "symbol": "DBTask.-initWithRoute:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 85,
+      "symbol": "DBRpcResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 169,
+      "symbol": "DBUploadResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 254,
+      "symbol": "DBDownloadUrlTask._destination",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 255,
+      "symbol": "DBDownloadUrlTask._overwrite",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 258,
+      "symbol": "DBDownloadUrlResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTasks.h",
+      "line": 347,
+      "symbol": "DBDownloadDataResponseBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTeamBaseClient.h",
+      "line": 23,
+      "symbol": "DBTeamBaseClient._transportClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTransportBaseClient.h",
+      "line": 9,
+      "symbol": "DBTransportBaseClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBTransportClientProtocol.h",
+      "line": 17,
+      "symbol": "DBTransportClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSAccount.h",
+      "line": 94,
+      "symbol": "DBUSERSAccount.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSAccountType.h",
+      "line": 74,
+      "symbol": "DBUSERSAccountType.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSGetAccountArg.h",
+      "line": 40,
+      "symbol": "DBUSERSGetAccountArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSGetAccountBatchArg.h",
+      "line": 42,
+      "symbol": "DBUSERSGetAccountBatchArg.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSGetAccountBatchError.h",
+      "line": 70,
+      "symbol": "DBUSERSGetAccountBatchError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSGetAccountError.h",
+      "line": 59,
+      "symbol": "DBUSERSGetAccountError.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSIndividualSpaceAllocation.h",
+      "line": 40,
+      "symbol": "DBUSERSIndividualSpaceAllocation.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSName.h",
+      "line": 69,
+      "symbol": "DBUSERSName.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSSpaceAllocation.h",
+      "line": 91,
+      "symbol": "DBUSERSSpaceAllocation.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSSpaceUsage.h",
+      "line": 47,
+      "symbol": "DBUSERSSpaceUsage.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSTeam.h",
+      "line": 46,
+      "symbol": "DBUSERSTeam.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUSERSTeamSpaceAllocation.h",
+      "line": 44,
+      "symbol": "DBUSERSTeamSpaceAllocation.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scobbe/src/sdk/docs_obj_c/api-docs/all_sdk_files/DBUserBaseClient.h",
+      "line": 27,
+      "symbol": "DBUserBaseClient._transportClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/scobbe/src/xplat/dbx/core/api/dropbox-sdk-obj-c/dropbox-sdk-obj-c/Format"
+}

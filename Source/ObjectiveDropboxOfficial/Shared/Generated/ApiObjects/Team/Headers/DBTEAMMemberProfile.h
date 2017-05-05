@@ -67,6 +67,109 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param teamMemberId ID of user as a member of a team.
+/// @param email Email address of user.
+/// @param emailVerified Is true if the user's email is verified to be owned by
+/// the user.
+/// @param status The user's status as a member of a specific team.
+/// @param name Representations for a person's name.
+/// @param membershipType The user's membership type: full (normal team member)
+/// vs limited (does not use a license; no access to the team's shared quota).
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId ID of user as a member of a team.
+/// @param email Email address of user.
+/// @param emailVerified Is true if the user's email is verified to be owned by
+/// the user.
+/// @param status The user's status as a member of a specific team.
+/// @param name Representations for a person's name.
+/// @param membershipType The user's membership type: full (normal team member)
+/// vs limited (does not use a license; no access to the team's shared quota).
+/// @param externalId External ID that a team can attach to the user. An
+/// application using the API may find it easier to use their own IDs instead of
+/// Dropbox IDs like account_id or team_member_id.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(nullable NSString *)externalId;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId ID of user as a member of a team.
+/// @param email Email address of user.
+/// @param emailVerified Is true if the user's email is verified to be owned by
+/// the user.
+/// @param status The user's status as a member of a specific team.
+/// @param name Representations for a person's name.
+/// @param membershipType The user's membership type: full (normal team member)
+/// vs limited (does not use a license; no access to the team's shared quota).
+/// @param externalId External ID that a team can attach to the user. An
+/// application using the API may find it easier to use their own IDs instead of
+/// Dropbox IDs like account_id or team_member_id.
+/// @param accountId A user's account identifier.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(nullable NSString *)externalId
+                           accountId:(nullable NSString *)accountId;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId ID of user as a member of a team.
+/// @param email Email address of user.
+/// @param emailVerified Is true if the user's email is verified to be owned by
+/// the user.
+/// @param status The user's status as a member of a specific team.
+/// @param name Representations for a person's name.
+/// @param membershipType The user's membership type: full (normal team member)
+/// vs limited (does not use a license; no access to the team's shared quota).
+/// @param externalId External ID that a team can attach to the user. An
+/// application using the API may find it easier to use their own IDs instead of
+/// Dropbox IDs like account_id or team_member_id.
+/// @param accountId A user's account identifier.
+/// @param joinedOn The date and time the user joined as a member of a specific
+/// team.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(nullable NSString *)externalId
+                           accountId:(nullable NSString *)accountId
+                            joinedOn:(nullable NSDate *)joinedOn;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param teamMemberId ID of user as a member of a team.
@@ -98,28 +201,6 @@ NS_ASSUME_NONNULL_BEGIN
                            accountId:(nullable NSString *)accountId
                             joinedOn:(nullable NSDate *)joinedOn
                         persistentId:(nullable NSString *)persistentId;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param teamMemberId ID of user as a member of a team.
-/// @param email Email address of user.
-/// @param emailVerified Is true if the user's email is verified to be owned by
-/// the user.
-/// @param status The user's status as a member of a specific team.
-/// @param name Representations for a person's name.
-/// @param membershipType The user's membership type: full (normal team member)
-/// vs limited (does not use a license; no access to the team's shared quota).
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
-                               email:(NSString *)email
-                       emailVerified:(NSNumber *)emailVerified
-                              status:(DBTEAMTeamMemberStatus *)status
-                                name:(DBUSERSName *)name
-                      membershipType:(DBTEAMTeamMembershipType *)membershipType;
 
 - (instancetype)init NS_UNAVAILABLE;
 

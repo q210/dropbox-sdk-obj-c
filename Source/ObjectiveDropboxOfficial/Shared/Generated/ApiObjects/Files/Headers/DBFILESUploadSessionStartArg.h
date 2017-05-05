@@ -32,6 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param close If true, the current session will be closed, at which point you
@@ -41,15 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithClose:(nullable NSNumber *)close;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

@@ -43,6 +43,55 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param ipAddress The IP address of the last activity from this session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId ipAddress:(nullable NSString *)ipAddress;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param sessionId The session id
@@ -59,16 +108,6 @@ NS_ASSUME_NONNULL_BEGIN
                           country:(nullable NSString *)country
                           created:(nullable NSDate *)created
                           updated:(nullable NSDate *)updated;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param sessionId The session id
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithSessionId:(NSString *)sessionId;
 
 - (instancetype)init NS_UNAVAILABLE;
 

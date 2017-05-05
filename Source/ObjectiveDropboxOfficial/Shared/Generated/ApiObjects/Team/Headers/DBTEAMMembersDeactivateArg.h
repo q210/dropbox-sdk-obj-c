@@ -39,6 +39,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param user Identity of user to remove/suspend.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param user Identity of user to remove/suspend.
@@ -48,16 +57,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user wipeData:(nullable NSNumber *)wipeData;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param user Identity of user to remove/suspend.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user;
 
 - (instancetype)init NS_UNAVAILABLE;
 

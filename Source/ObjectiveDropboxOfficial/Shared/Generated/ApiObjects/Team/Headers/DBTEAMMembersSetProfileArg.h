@@ -52,6 +52,70 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param user Identity of user whose profile will be set.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user;
+
+///
+/// Convenience constructor.
+///
+/// @param user Identity of user whose profile will be set.
+/// @param dNewEmail New email for member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user dNewEmail:(nullable NSString *)dNewEmail;
+
+///
+/// Convenience constructor.
+///
+/// @param user Identity of user whose profile will be set.
+/// @param dNewEmail New email for member.
+/// @param dNewExternalId New external ID for member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(nullable NSString *)dNewEmail
+              dNewExternalId:(nullable NSString *)dNewExternalId;
+
+///
+/// Convenience constructor.
+///
+/// @param user Identity of user whose profile will be set.
+/// @param dNewEmail New email for member.
+/// @param dNewExternalId New external ID for member.
+/// @param dNewGivenName New given name for member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(nullable NSString *)dNewEmail
+              dNewExternalId:(nullable NSString *)dNewExternalId
+               dNewGivenName:(nullable NSString *)dNewGivenName;
+
+///
+/// Convenience constructor.
+///
+/// @param user Identity of user whose profile will be set.
+/// @param dNewEmail New email for member.
+/// @param dNewExternalId New external ID for member.
+/// @param dNewGivenName New given name for member.
+/// @param dNewSurname New surname for member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(nullable NSString *)dNewEmail
+              dNewExternalId:(nullable NSString *)dNewExternalId
+               dNewGivenName:(nullable NSString *)dNewGivenName
+                 dNewSurname:(nullable NSString *)dNewSurname;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param user Identity of user whose profile will be set.
@@ -70,16 +134,6 @@ NS_ASSUME_NONNULL_BEGIN
                dNewGivenName:(nullable NSString *)dNewGivenName
                  dNewSurname:(nullable NSString *)dNewSurname
             dNewPersistentId:(nullable NSString *)dNewPersistentId;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param user Identity of user whose profile will be set.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user;
 
 - (instancetype)init NS_UNAVAILABLE;
 

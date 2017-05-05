@@ -34,6 +34,22 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
+/// Convenience constructor.
+///
+/// @param limit Number of results to return per call.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLimit:(nullable NSNumber *)limit;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param limit Number of results to return per call.
@@ -42,15 +58,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithLimit:(nullable NSNumber *)limit includeRemoved:(nullable NSNumber *)includeRemoved;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

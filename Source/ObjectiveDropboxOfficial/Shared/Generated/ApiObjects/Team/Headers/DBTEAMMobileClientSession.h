@@ -47,6 +47,144 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+/// @param updated The time of the last activity from this session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created
+                          updated:(nullable NSDate *)updated;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+/// @param updated The time of the last activity from this session
+/// @param clientVersion The dropbox client version
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created
+                          updated:(nullable NSDate *)updated
+                    clientVersion:(nullable NSString *)clientVersion;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param deviceName The device name
+/// @param clientType The mobile application type
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+/// @param updated The time of the last activity from this session
+/// @param clientVersion The dropbox client version
+/// @param osVersion The hosting OS version
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created
+                          updated:(nullable NSDate *)updated
+                    clientVersion:(nullable NSString *)clientVersion
+                        osVersion:(nullable NSString *)osVersion;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param sessionId The session id
@@ -73,20 +211,6 @@ NS_ASSUME_NONNULL_BEGIN
                     clientVersion:(nullable NSString *)clientVersion
                         osVersion:(nullable NSString *)osVersion
                       lastCarrier:(nullable NSString *)lastCarrier;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param sessionId The session id
-/// @param deviceName The device name
-/// @param clientType The mobile application type
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithSessionId:(NSString *)sessionId
-                       deviceName:(NSString *)deviceName
-                       clientType:(DBTEAMMobileClientPlatform *)clientType;
 
 @end
 

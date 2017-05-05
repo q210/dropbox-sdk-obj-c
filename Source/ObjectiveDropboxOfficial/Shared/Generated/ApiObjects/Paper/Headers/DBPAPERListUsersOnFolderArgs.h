@@ -33,6 +33,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param docId (no description).
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDocId:(NSString *)docId;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param docId (no description).
@@ -43,16 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithDocId:(NSString *)docId limit:(nullable NSNumber *)limit;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param docId (no description).
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithDocId:(NSString *)docId;
 
 @end
 

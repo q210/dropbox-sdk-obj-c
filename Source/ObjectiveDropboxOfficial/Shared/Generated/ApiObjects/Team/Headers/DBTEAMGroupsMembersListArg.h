@@ -35,6 +35,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param group The group whose members are to be listed.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param group The group whose members are to be listed.
@@ -43,16 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group limit:(nullable NSNumber *)limit;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param group The group whose members are to be listed.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group;
 
 - (instancetype)init NS_UNAVAILABLE;
 

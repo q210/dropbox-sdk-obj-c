@@ -47,6 +47,100 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param hostName Name of the hosting desktop
+/// @param clientType The Dropbox desktop client type
+/// @param clientVersion The Dropbox client version
+/// @param platform Information on the hosting platform
+/// @param isDeleteOnUnlinkSupported Whether it's possible to delete all of the
+/// account files upon unlinking
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param hostName Name of the hosting desktop
+/// @param clientType The Dropbox desktop client type
+/// @param clientVersion The Dropbox client version
+/// @param platform Information on the hosting platform
+/// @param isDeleteOnUnlinkSupported Whether it's possible to delete all of the
+/// account files upon unlinking
+/// @param ipAddress The IP address of the last activity from this session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(nullable NSString *)ipAddress;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param hostName Name of the hosting desktop
+/// @param clientType The Dropbox desktop client type
+/// @param clientVersion The Dropbox client version
+/// @param platform Information on the hosting platform
+/// @param isDeleteOnUnlinkSupported Whether it's possible to delete all of the
+/// account files upon unlinking
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country;
+
+///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param hostName Name of the hosting desktop
+/// @param clientType The Dropbox desktop client type
+/// @param clientVersion The Dropbox client version
+/// @param platform Information on the hosting platform
+/// @param isDeleteOnUnlinkSupported Whether it's possible to delete all of the
+/// account files upon unlinking
+/// @param ipAddress The IP address of the last activity from this session
+/// @param country The country from which the last activity from this session
+/// was made
+/// @param created The time this session was created
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(nullable NSString *)ipAddress
+                          country:(nullable NSString *)country
+                          created:(nullable NSDate *)created;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param sessionId The session id
@@ -74,27 +168,6 @@ NS_ASSUME_NONNULL_BEGIN
                           country:(nullable NSString *)country
                           created:(nullable NSDate *)created
                           updated:(nullable NSDate *)updated;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param sessionId The session id
-/// @param hostName Name of the hosting desktop
-/// @param clientType The Dropbox desktop client type
-/// @param clientVersion The Dropbox client version
-/// @param platform Information on the hosting platform
-/// @param isDeleteOnUnlinkSupported Whether it's possible to delete all of the
-/// account files upon unlinking
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithSessionId:(NSString *)sessionId
-                         hostName:(NSString *)hostName
-                       clientType:(DBTEAMDesktopPlatform *)clientType
-                    clientVersion:(NSString *)clientVersion
-                         platform:(NSString *)platform
-        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported;
 
 @end
 

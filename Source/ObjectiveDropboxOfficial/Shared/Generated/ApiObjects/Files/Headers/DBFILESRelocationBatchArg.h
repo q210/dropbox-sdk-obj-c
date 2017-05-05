@@ -42,6 +42,31 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param entries List of entries to be moved or copied. Each entry is
+/// RelocationPath.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEntries:(NSArray<DBFILESRelocationPath *> *)entries;
+
+///
+/// Convenience constructor.
+///
+/// @param entries List of entries to be moved or copied. Each entry is
+/// RelocationPath.
+/// @param allowSharedFolder If true, `dCopyBatch` will copy contents in shared
+/// folder, otherwise `cantCopySharedFolder` in `DBFILESRelocationError` will be
+/// returned if `fromPath` in `DBFILESRelocationPath` contains shared folder.
+/// This field is always true for `moveBatch`.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEntries:(NSArray<DBFILESRelocationPath *> *)entries
+              allowSharedFolder:(nullable NSNumber *)allowSharedFolder;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param entries List of entries to be moved or copied. Each entry is
@@ -58,17 +83,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithEntries:(NSArray<DBFILESRelocationPath *> *)entries
               allowSharedFolder:(nullable NSNumber *)allowSharedFolder
                      autorename:(nullable NSNumber *)autorename;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param entries List of entries to be moved or copied. Each entry is
-/// RelocationPath.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithEntries:(NSArray<DBFILESRelocationPath *> *)entries;
 
 - (instancetype)init NS_UNAVAILABLE;
 

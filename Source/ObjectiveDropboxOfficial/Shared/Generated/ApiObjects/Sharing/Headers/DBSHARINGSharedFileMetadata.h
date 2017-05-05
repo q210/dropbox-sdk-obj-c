@@ -77,6 +77,180 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+/// @param permissions The sharing permissions that requesting user has on this
+/// file. This corresponds to the entries given in `actions` in
+/// `DBSHARINGGetFileMetadataBatchArg` or `actions` in
+/// `DBSHARINGGetFileMetadataArg`.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(nullable NSArray<DBSHARINGFilePermission *> *)permissions;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+/// @param permissions The sharing permissions that requesting user has on this
+/// file. This corresponds to the entries given in `actions` in
+/// `DBSHARINGGetFileMetadataBatchArg` or `actions` in
+/// `DBSHARINGGetFileMetadataArg`.
+/// @param ownerTeam The team that owns the file. This field is not present if
+/// the file is not owned by a team.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(nullable NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(nullable DBUSERSTeam *)ownerTeam;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+/// @param permissions The sharing permissions that requesting user has on this
+/// file. This corresponds to the entries given in `actions` in
+/// `DBSHARINGGetFileMetadataBatchArg` or `actions` in
+/// `DBSHARINGGetFileMetadataArg`.
+/// @param ownerTeam The team that owns the file. This field is not present if
+/// the file is not owned by a team.
+/// @param parentSharedFolderId The ID of the parent shared folder. This field
+/// is present only if the file is contained within a shared folder.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(nullable NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(nullable DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(nullable NSString *)parentSharedFolderId;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+/// @param permissions The sharing permissions that requesting user has on this
+/// file. This corresponds to the entries given in `actions` in
+/// `DBSHARINGGetFileMetadataBatchArg` or `actions` in
+/// `DBSHARINGGetFileMetadataArg`.
+/// @param ownerTeam The team that owns the file. This field is not present if
+/// the file is not owned by a team.
+/// @param parentSharedFolderId The ID of the parent shared folder. This field
+/// is present only if the file is contained within a shared folder.
+/// @param pathLower The lower-case full path of this file. Absent for unmounted
+/// files.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(nullable NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(nullable DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(nullable NSString *)parentSharedFolderId
+                     pathLower:(nullable NSString *)pathLower;
+
+///
+/// Convenience constructor.
+///
+/// @param policy Policies governing this shared file.
+/// @param previewUrl URL for displaying a web preview of the shared file.
+/// @param name The name of this file.
+/// @param id_ The ID of the file.
+/// @param linkMetadata The metadata of the link associated for the file.
+/// @param permissions The sharing permissions that requesting user has on this
+/// file. This corresponds to the entries given in `actions` in
+/// `DBSHARINGGetFileMetadataBatchArg` or `actions` in
+/// `DBSHARINGGetFileMetadataArg`.
+/// @param ownerTeam The team that owns the file. This field is not present if
+/// the file is not owned by a team.
+/// @param parentSharedFolderId The ID of the parent shared folder. This field
+/// is present only if the file is contained within a shared folder.
+/// @param pathLower The lower-case full path of this file. Absent for unmounted
+/// files.
+/// @param pathDisplay The cased path to be used for display purposes only. In
+/// rare instances the casing will not correctly match the user's filesystem,
+/// but this behavior will match the path provided in the Core API v1. Absent
+/// for unmounted files.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(nullable DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(nullable NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(nullable DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(nullable NSString *)parentSharedFolderId
+                     pathLower:(nullable NSString *)pathLower
+                   pathDisplay:(nullable NSString *)pathDisplay;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param policy Policies governing this shared file.
@@ -116,22 +290,6 @@ NS_ASSUME_NONNULL_BEGIN
                      pathLower:(nullable NSString *)pathLower
                    pathDisplay:(nullable NSString *)pathDisplay
                    timeInvited:(nullable NSDate *)timeInvited;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param policy Policies governing this shared file.
-/// @param previewUrl URL for displaying a web preview of the shared file.
-/// @param name The name of this file.
-/// @param id_ The ID of the file.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
-                    previewUrl:(NSString *)previewUrl
-                          name:(NSString *)name
-                           id_:(NSString *)id_;
 
 - (instancetype)init NS_UNAVAILABLE;
 

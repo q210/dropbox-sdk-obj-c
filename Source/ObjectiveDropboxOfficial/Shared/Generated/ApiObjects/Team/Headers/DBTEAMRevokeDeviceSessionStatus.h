@@ -35,6 +35,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param success Result of the revoking request
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSuccess:(NSNumber *)success;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param success Result of the revoking request
@@ -43,16 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithSuccess:(NSNumber *)success errorType:(nullable DBTEAMRevokeDeviceSessionError *)errorType;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param success Result of the revoking request
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithSuccess:(NSNumber *)success;
 
 - (instancetype)init NS_UNAVAILABLE;
 

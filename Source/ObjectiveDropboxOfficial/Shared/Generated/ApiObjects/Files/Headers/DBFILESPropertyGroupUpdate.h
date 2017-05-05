@@ -40,6 +40,28 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param templateId A unique identifier for a property template.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTemplateId:(NSString *)templateId;
+
+///
+/// Convenience constructor.
+///
+/// @param templateId A unique identifier for a property template.
+/// @param addOrUpdateFields List of property fields to update if the field
+/// already exists. If the field doesn't exist, add the field to the property
+/// group.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTemplateId:(NSString *)templateId
+                 addOrUpdateFields:(nullable NSArray<DBPROPERTIESPropertyField *> *)addOrUpdateFields;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param templateId A unique identifier for a property template.
@@ -54,16 +76,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTemplateId:(NSString *)templateId
                  addOrUpdateFields:(nullable NSArray<DBPROPERTIESPropertyField *> *)addOrUpdateFields
                       removeFields:(nullable NSArray<NSString *> *)removeFields;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param templateId A unique identifier for a property template.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithTemplateId:(NSString *)templateId;
 
 - (instancetype)init NS_UNAVAILABLE;
 

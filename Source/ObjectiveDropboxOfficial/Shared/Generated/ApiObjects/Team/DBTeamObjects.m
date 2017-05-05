@@ -16,6 +16,25 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSessionId:(NSString *)sessionId {
+  return [self initWithSessionId:sessionId ipAddress:nil country:nil created:nil updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId ipAddress:(NSString *)ipAddress {
+  return [self initWithSessionId:sessionId ipAddress:ipAddress country:nil created:nil updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId ipAddress:(NSString *)ipAddress country:(NSString *)country {
+  return [self initWithSessionId:sessionId ipAddress:ipAddress country:country created:nil updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created {
+  return [self initWithSessionId:sessionId ipAddress:ipAddress country:country created:created updated:nil];
+}
+
 - (instancetype)initWithSessionId:(NSString *)sessionId
                         ipAddress:(NSString *)ipAddress
                           country:(NSString *)country
@@ -31,10 +50,6 @@
     _updated = updated;
   }
   return self;
-}
-
-- (instancetype)initWithSessionId:(NSString *)sessionId {
-  return [self initWithSessionId:sessionId ipAddress:nil country:nil created:nil updated:nil];
 }
 
 #pragma mark - Serialization methods
@@ -186,6 +201,68 @@
 - (instancetype)initWithSessionId:(NSString *)sessionId
                         userAgent:(NSString *)userAgent
                                os:(NSString *)os
+                          browser:(NSString *)browser {
+  return [self initWithSessionId:sessionId
+                       userAgent:userAgent
+                              os:os
+                         browser:browser
+                       ipAddress:nil
+                         country:nil
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        userAgent:(NSString *)userAgent
+                               os:(NSString *)os
+                          browser:(NSString *)browser
+                        ipAddress:(NSString *)ipAddress {
+  return [self initWithSessionId:sessionId
+                       userAgent:userAgent
+                              os:os
+                         browser:browser
+                       ipAddress:ipAddress
+                         country:nil
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        userAgent:(NSString *)userAgent
+                               os:(NSString *)os
+                          browser:(NSString *)browser
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country {
+  return [self initWithSessionId:sessionId
+                       userAgent:userAgent
+                              os:os
+                         browser:browser
+                       ipAddress:ipAddress
+                         country:country
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        userAgent:(NSString *)userAgent
+                               os:(NSString *)os
+                          browser:(NSString *)browser
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created {
+  return [self initWithSessionId:sessionId
+                       userAgent:userAgent
+                              os:os
+                         browser:browser
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                        userAgent:(NSString *)userAgent
+                               os:(NSString *)os
                           browser:(NSString *)browser
                         ipAddress:(NSString *)ipAddress
                           country:(NSString *)country
@@ -199,20 +276,6 @@
     _browser = browser;
   }
   return self;
-}
-
-- (instancetype)initWithSessionId:(NSString *)sessionId
-                        userAgent:(NSString *)userAgent
-                               os:(NSString *)os
-                          browser:(NSString *)browser {
-  return [self initWithSessionId:sessionId
-                       userAgent:userAgent
-                              os:os
-                         browser:browser
-                       ipAddress:nil
-                         country:nil
-                         created:nil
-                         updated:nil];
 }
 
 #pragma mark - Serialization methods
@@ -801,6 +864,35 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAppId:(NSString *)appId appName:(NSString *)appName isAppFolder:(NSNumber *)isAppFolder {
+  return [self initWithAppId:appId appName:appName isAppFolder:isAppFolder publisher:nil publisherUrl:nil linked:nil];
+}
+
+- (instancetype)initWithAppId:(NSString *)appId
+                      appName:(NSString *)appName
+                  isAppFolder:(NSNumber *)isAppFolder
+                    publisher:(NSString *)publisher {
+  return [self initWithAppId:appId
+                     appName:appName
+                 isAppFolder:isAppFolder
+                   publisher:publisher
+                publisherUrl:nil
+                      linked:nil];
+}
+
+- (instancetype)initWithAppId:(NSString *)appId
+                      appName:(NSString *)appName
+                  isAppFolder:(NSNumber *)isAppFolder
+                    publisher:(NSString *)publisher
+                 publisherUrl:(NSString *)publisherUrl {
+  return [self initWithAppId:appId
+                     appName:appName
+                 isAppFolder:isAppFolder
+                   publisher:publisher
+                publisherUrl:publisherUrl
+                      linked:nil];
+}
+
 - (instancetype)initWithAppId:(NSString *)appId
                       appName:(NSString *)appName
                   isAppFolder:(NSNumber *)isAppFolder
@@ -818,10 +910,6 @@
     _isAppFolder = isAppFolder;
   }
   return self;
-}
-
-- (instancetype)initWithAppId:(NSString *)appId appName:(NSString *)appName isAppFolder:(NSNumber *)isAppFolder {
-  return [self initWithAppId:appId appName:appName isAppFolder:isAppFolder publisher:nil publisherUrl:nil linked:nil];
 }
 
 #pragma mark - Serialization methods
@@ -1269,6 +1357,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithStartDate:nil endDate:nil];
+}
+
+- (instancetype)initWithStartDate:(NSDate *)startDate {
+  return [self initWithStartDate:startDate endDate:nil];
+}
+
 - (instancetype)initWithStartDate:(NSDate *)startDate endDate:(NSDate *)endDate {
 
   self = [super init];
@@ -1277,10 +1373,6 @@
     _endDate = endDate;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithStartDate:nil endDate:nil];
 }
 
 #pragma mark - Serialization methods
@@ -1528,6 +1620,84 @@
                        clientType:(DBTEAMDesktopPlatform *)clientType
                     clientVersion:(NSString *)clientVersion
                          platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported {
+  return [self initWithSessionId:sessionId
+                        hostName:hostName
+                      clientType:clientType
+                   clientVersion:clientVersion
+                        platform:platform
+       isDeleteOnUnlinkSupported:isDeleteOnUnlinkSupported
+                       ipAddress:nil
+                         country:nil
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(NSString *)ipAddress {
+  return [self initWithSessionId:sessionId
+                        hostName:hostName
+                      clientType:clientType
+                   clientVersion:clientVersion
+                        platform:platform
+       isDeleteOnUnlinkSupported:isDeleteOnUnlinkSupported
+                       ipAddress:ipAddress
+                         country:nil
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country {
+  return [self initWithSessionId:sessionId
+                        hostName:hostName
+                      clientType:clientType
+                   clientVersion:clientVersion
+                        platform:platform
+       isDeleteOnUnlinkSupported:isDeleteOnUnlinkSupported
+                       ipAddress:ipAddress
+                         country:country
+                         created:nil
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
+        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created {
+  return [self initWithSessionId:sessionId
+                        hostName:hostName
+                      clientType:clientType
+                   clientVersion:clientVersion
+                        platform:platform
+       isDeleteOnUnlinkSupported:isDeleteOnUnlinkSupported
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                         hostName:(NSString *)hostName
+                       clientType:(DBTEAMDesktopPlatform *)clientType
+                    clientVersion:(NSString *)clientVersion
+                         platform:(NSString *)platform
         isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported
                         ipAddress:(NSString *)ipAddress
                           country:(NSString *)country
@@ -1543,24 +1713,6 @@
     _isDeleteOnUnlinkSupported = isDeleteOnUnlinkSupported;
   }
   return self;
-}
-
-- (instancetype)initWithSessionId:(NSString *)sessionId
-                         hostName:(NSString *)hostName
-                       clientType:(DBTEAMDesktopPlatform *)clientType
-                    clientVersion:(NSString *)clientVersion
-                         platform:(NSString *)platform
-        isDeleteOnUnlinkSupported:(NSNumber *)isDeleteOnUnlinkSupported {
-  return [self initWithSessionId:sessionId
-                        hostName:hostName
-                      clientType:clientType
-                   clientVersion:clientVersion
-                        platform:platform
-       isDeleteOnUnlinkSupported:isDeleteOnUnlinkSupported
-                       ipAddress:nil
-                         country:nil
-                         created:nil
-                         updated:nil];
 }
 
 #pragma mark - Serialization methods
@@ -3224,6 +3376,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithGroupName:(NSString *)groupName {
+  return [self initWithGroupName:groupName groupExternalId:nil groupManagementType:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName groupExternalId:(NSString *)groupExternalId {
+  return [self initWithGroupName:groupName groupExternalId:groupExternalId groupManagementType:nil];
+}
+
 - (instancetype)initWithGroupName:(NSString *)groupName
                   groupExternalId:(NSString *)groupExternalId
               groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType {
@@ -3235,10 +3395,6 @@
     _groupManagementType = groupManagementType;
   }
   return self;
-}
-
-- (instancetype)initWithGroupName:(NSString *)groupName {
-  return [self initWithGroupName:groupName groupExternalId:nil groupManagementType:nil];
 }
 
 #pragma mark - Serialization methods
@@ -4105,6 +4261,48 @@
 - (instancetype)initWithGroupName:(NSString *)groupName
                           groupId:(NSString *)groupId
               groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                          created:(NSNumber *)created {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                         created:created
+                 groupExternalId:nil
+                     memberCount:nil
+                         members:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                          created:(NSNumber *)created
+                  groupExternalId:(NSString *)groupExternalId {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                         created:created
+                 groupExternalId:groupExternalId
+                     memberCount:nil
+                         members:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                          created:(NSNumber *)created
+                  groupExternalId:(NSString *)groupExternalId
+                      memberCount:(NSNumber *)memberCount {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                         created:created
+                 groupExternalId:groupExternalId
+                     memberCount:memberCount
+                         members:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
                           created:(NSNumber *)created
                   groupExternalId:(NSString *)groupExternalId
                       memberCount:(NSNumber *)memberCount
@@ -4121,19 +4319,6 @@
     _created = created;
   }
   return self;
-}
-
-- (instancetype)initWithGroupName:(NSString *)groupName
-                          groupId:(NSString *)groupId
-              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
-                          created:(NSNumber *)created {
-  return [self initWithGroupName:groupName
-                         groupId:groupId
-             groupManagementType:groupManagementType
-                         created:created
-                 groupExternalId:nil
-                     memberCount:nil
-                         members:nil];
 }
 
 #pragma mark - Serialization methods
@@ -4923,6 +5108,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithReturnMembers:nil];
+}
+
 - (instancetype)initWithReturnMembers:(NSNumber *)returnMembers {
 
   self = [super init];
@@ -4930,10 +5119,6 @@
     _returnMembers = returnMembers ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithReturnMembers:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5028,6 +5213,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group members:(NSArray<DBTEAMMemberAccess *> *)members {
+  return [self initWithGroup:group members:members returnMembers:nil];
+}
+
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
                       members:(NSArray<DBTEAMMemberAccess *> *)members
                 returnMembers:(NSNumber *)returnMembers {
@@ -5039,10 +5228,6 @@
     _members = members;
   }
   return self;
-}
-
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group members:(NSArray<DBTEAMMemberAccess *> *)members {
-  return [self initWithGroup:group members:members returnMembers:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5632,6 +5817,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group users:(NSArray<DBTEAMUserSelectorArg *> *)users {
+  return [self initWithGroup:group users:users returnMembers:nil];
+}
+
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
                         users:(NSArray<DBTEAMUserSelectorArg *> *)users
                 returnMembers:(NSNumber *)returnMembers {
@@ -5643,10 +5832,6 @@
     _users = users;
   }
   return self;
-}
-
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group users:(NSArray<DBTEAMUserSelectorArg *> *)users {
-  return [self initWithGroup:group users:users returnMembers:nil];
 }
 
 #pragma mark - Serialization methods
@@ -6367,6 +6552,12 @@
 
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
                          user:(DBTEAMUserSelectorArg *)user
+                   accessType:(DBTEAMGroupAccessType *)accessType {
+  return [self initWithGroup:group user:user accessType:accessType returnMembers:nil];
+}
+
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
+                         user:(DBTEAMUserSelectorArg *)user
                    accessType:(DBTEAMGroupAccessType *)accessType
                 returnMembers:(NSNumber *)returnMembers {
 
@@ -6376,12 +6567,6 @@
     _returnMembers = returnMembers ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
-                         user:(DBTEAMUserSelectorArg *)user
-                   accessType:(DBTEAMGroupAccessType *)accessType {
-  return [self initWithGroup:group user:user accessType:accessType returnMembers:nil];
 }
 
 #pragma mark - Serialization methods
@@ -6678,6 +6863,43 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group {
+  return [self initWithGroup:group
+                returnMembers:nil
+                dNewGroupName:nil
+          dNewGroupExternalId:nil
+      dNewGroupManagementType:nil];
+}
+
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group returnMembers:(NSNumber *)returnMembers {
+  return [self initWithGroup:group
+                returnMembers:returnMembers
+                dNewGroupName:nil
+          dNewGroupExternalId:nil
+      dNewGroupManagementType:nil];
+}
+
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
+                returnMembers:(NSNumber *)returnMembers
+                dNewGroupName:(NSString *)dNewGroupName {
+  return [self initWithGroup:group
+                returnMembers:returnMembers
+                dNewGroupName:dNewGroupName
+          dNewGroupExternalId:nil
+      dNewGroupManagementType:nil];
+}
+
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
+                returnMembers:(NSNumber *)returnMembers
+                dNewGroupName:(NSString *)dNewGroupName
+          dNewGroupExternalId:(NSString *)dNewGroupExternalId {
+  return [self initWithGroup:group
+                returnMembers:returnMembers
+                dNewGroupName:dNewGroupName
+          dNewGroupExternalId:dNewGroupExternalId
+      dNewGroupManagementType:nil];
+}
+
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group
                 returnMembers:(NSNumber *)returnMembers
                 dNewGroupName:(NSString *)dNewGroupName
@@ -6692,14 +6914,6 @@
     _dNewGroupManagementType = dNewGroupManagementType;
   }
   return self;
-}
-
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group {
-  return [self initWithGroup:group
-                returnMembers:nil
-                dNewGroupName:nil
-          dNewGroupExternalId:nil
-      dNewGroupManagementType:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7414,6 +7628,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithLimit:nil];
+}
+
 - (instancetype)initWithLimit:(NSNumber *)limit {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
 
@@ -7422,10 +7640,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithLimit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7890,6 +8104,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group {
+  return [self initWithGroup:group limit:nil];
+}
+
 - (instancetype)initWithGroup:(DBTEAMGroupSelector *)group limit:(NSNumber *)limit {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
 
@@ -7899,10 +8117,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initWithGroup:(DBTEAMGroupSelector *)group {
-  return [self initWithGroup:group limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9117,6 +9331,29 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId {
+  return [self initWithTeamMemberId:teamMemberId
+                 includeWebSessions:nil
+              includeDesktopClients:nil
+               includeMobileClients:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId includeWebSessions:(NSNumber *)includeWebSessions {
+  return [self initWithTeamMemberId:teamMemberId
+                 includeWebSessions:includeWebSessions
+              includeDesktopClients:nil
+               includeMobileClients:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                  includeWebSessions:(NSNumber *)includeWebSessions
+               includeDesktopClients:(NSNumber *)includeDesktopClients {
+  return [self initWithTeamMemberId:teamMemberId
+                 includeWebSessions:includeWebSessions
+              includeDesktopClients:includeDesktopClients
+               includeMobileClients:nil];
+}
+
 - (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
                   includeWebSessions:(NSNumber *)includeWebSessions
                includeDesktopClients:(NSNumber *)includeDesktopClients
@@ -9130,13 +9367,6 @@
     _includeMobileClients = includeMobileClients ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId {
-  return [self initWithTeamMemberId:teamMemberId
-                 includeWebSessions:nil
-              includeDesktopClients:nil
-               includeMobileClients:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9403,6 +9633,21 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithActiveWebSessions:nil desktopClientSessions:nil mobileClientSessions:nil];
+}
+
+- (instancetype)initWithActiveWebSessions:(NSArray<DBTEAMActiveWebSession *> *)activeWebSessions {
+  return [self initWithActiveWebSessions:activeWebSessions desktopClientSessions:nil mobileClientSessions:nil];
+}
+
+- (instancetype)initWithActiveWebSessions:(NSArray<DBTEAMActiveWebSession *> *)activeWebSessions
+                    desktopClientSessions:(NSArray<DBTEAMDesktopClientSession *> *)desktopClientSessions {
+  return [self initWithActiveWebSessions:activeWebSessions
+                   desktopClientSessions:desktopClientSessions
+                    mobileClientSessions:nil];
+}
+
 - (instancetype)initWithActiveWebSessions:(NSArray<DBTEAMActiveWebSession *> *)activeWebSessions
                     desktopClientSessions:(NSArray<DBTEAMDesktopClientSession *> *)desktopClientSessions
                      mobileClientSessions:(NSArray<DBTEAMMobileClientSession *> *)mobileClientSessions {
@@ -9420,10 +9665,6 @@
     _mobileClientSessions = mobileClientSessions;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithActiveWebSessions:nil desktopClientSessions:nil mobileClientSessions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9576,6 +9817,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithCursor:nil];
+}
+
 - (instancetype)initWithCursor:(NSString *)cursor {
 
   self = [super init];
@@ -9583,10 +9828,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithCursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9836,6 +10077,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore {
+  return [self initWithApps:apps hasMore:hasMore cursor:nil];
+}
+
 - (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps
                      hasMore:(NSNumber *)hasMore
                       cursor:(NSString *)cursor {
@@ -9848,10 +10093,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore {
-  return [self initWithApps:apps hasMore:hasMore cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9968,6 +10209,30 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithCursor:nil includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor {
+  return [self initWithCursor:cursor includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor includeWebSessions:(NSNumber *)includeWebSessions {
+  return [self initWithCursor:cursor
+           includeWebSessions:includeWebSessions
+        includeDesktopClients:nil
+         includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor
+            includeWebSessions:(NSNumber *)includeWebSessions
+         includeDesktopClients:(NSNumber *)includeDesktopClients {
+  return [self initWithCursor:cursor
+           includeWebSessions:includeWebSessions
+        includeDesktopClients:includeDesktopClients
+         includeMobileClients:nil];
+}
+
 - (instancetype)initWithCursor:(NSString *)cursor
             includeWebSessions:(NSNumber *)includeWebSessions
          includeDesktopClients:(NSNumber *)includeDesktopClients
@@ -9981,10 +10246,6 @@
     _includeMobileClients = includeMobileClients ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithCursor:nil includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10255,6 +10516,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices hasMore:(NSNumber *)hasMore {
+  return [self initWithDevices:devices hasMore:hasMore cursor:nil];
+}
+
 - (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices
                         hasMore:(NSNumber *)hasMore
                          cursor:(NSString *)cursor {
@@ -10267,10 +10532,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices hasMore:(NSNumber *)hasMore {
-  return [self initWithDevices:devices hasMore:hasMore cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10387,6 +10648,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithCursor:nil];
+}
+
 - (instancetype)initWithCursor:(NSString *)cursor {
 
   self = [super init];
@@ -10394,10 +10659,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithCursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10647,6 +10908,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore {
+  return [self initWithApps:apps hasMore:hasMore cursor:nil];
+}
+
 - (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps
                      hasMore:(NSNumber *)hasMore
                       cursor:(NSString *)cursor {
@@ -10659,10 +10924,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore {
-  return [self initWithApps:apps hasMore:hasMore cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10779,6 +11040,30 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithCursor:nil includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor {
+  return [self initWithCursor:cursor includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor includeWebSessions:(NSNumber *)includeWebSessions {
+  return [self initWithCursor:cursor
+           includeWebSessions:includeWebSessions
+        includeDesktopClients:nil
+         includeMobileClients:nil];
+}
+
+- (instancetype)initWithCursor:(NSString *)cursor
+            includeWebSessions:(NSNumber *)includeWebSessions
+         includeDesktopClients:(NSNumber *)includeDesktopClients {
+  return [self initWithCursor:cursor
+           includeWebSessions:includeWebSessions
+        includeDesktopClients:includeDesktopClients
+         includeMobileClients:nil];
+}
+
 - (instancetype)initWithCursor:(NSString *)cursor
             includeWebSessions:(NSNumber *)includeWebSessions
          includeDesktopClients:(NSNumber *)includeDesktopClients
@@ -10792,10 +11077,6 @@
     _includeMobileClients = includeMobileClients ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithCursor:nil includeWebSessions:nil includeDesktopClients:nil includeMobileClients:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11066,6 +11347,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices hasMore:(NSNumber *)hasMore {
+  return [self initWithDevices:devices hasMore:hasMore cursor:nil];
+}
+
 - (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices
                         hasMore:(NSNumber *)hasMore
                          cursor:(NSString *)cursor {
@@ -11078,10 +11363,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithDevices:(NSArray<DBTEAMMemberDevices *> *)devices hasMore:(NSNumber *)hasMore {
-  return [self initWithDevices:devices hasMore:hasMore cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11308,6 +11589,60 @@
 
 - (instancetype)initWithMemberEmail:(NSString *)memberEmail
                     memberGivenName:(NSString *)memberGivenName
+                      memberSurname:(NSString *)memberSurname {
+  return [self initWithMemberEmail:memberEmail
+                   memberGivenName:memberGivenName
+                     memberSurname:memberSurname
+                  memberExternalId:nil
+                memberPersistentId:nil
+                  sendWelcomeEmail:nil
+                              role:nil];
+}
+
+- (instancetype)initWithMemberEmail:(NSString *)memberEmail
+                    memberGivenName:(NSString *)memberGivenName
+                      memberSurname:(NSString *)memberSurname
+                   memberExternalId:(NSString *)memberExternalId {
+  return [self initWithMemberEmail:memberEmail
+                   memberGivenName:memberGivenName
+                     memberSurname:memberSurname
+                  memberExternalId:memberExternalId
+                memberPersistentId:nil
+                  sendWelcomeEmail:nil
+                              role:nil];
+}
+
+- (instancetype)initWithMemberEmail:(NSString *)memberEmail
+                    memberGivenName:(NSString *)memberGivenName
+                      memberSurname:(NSString *)memberSurname
+                   memberExternalId:(NSString *)memberExternalId
+                 memberPersistentId:(NSString *)memberPersistentId {
+  return [self initWithMemberEmail:memberEmail
+                   memberGivenName:memberGivenName
+                     memberSurname:memberSurname
+                  memberExternalId:memberExternalId
+                memberPersistentId:memberPersistentId
+                  sendWelcomeEmail:nil
+                              role:nil];
+}
+
+- (instancetype)initWithMemberEmail:(NSString *)memberEmail
+                    memberGivenName:(NSString *)memberGivenName
+                      memberSurname:(NSString *)memberSurname
+                   memberExternalId:(NSString *)memberExternalId
+                 memberPersistentId:(NSString *)memberPersistentId
+                   sendWelcomeEmail:(NSNumber *)sendWelcomeEmail {
+  return [self initWithMemberEmail:memberEmail
+                   memberGivenName:memberGivenName
+                     memberSurname:memberSurname
+                  memberExternalId:memberExternalId
+                memberPersistentId:memberPersistentId
+                  sendWelcomeEmail:sendWelcomeEmail
+                              role:nil];
+}
+
+- (instancetype)initWithMemberEmail:(NSString *)memberEmail
+                    memberGivenName:(NSString *)memberGivenName
                       memberSurname:(NSString *)memberSurname
                    memberExternalId:(NSString *)memberExternalId
                  memberPersistentId:(NSString *)memberPersistentId
@@ -11331,18 +11666,6 @@
     _role = role ?: [[DBTEAMAdminTier alloc] initWithMemberOnly];
   }
   return self;
-}
-
-- (instancetype)initWithMemberEmail:(NSString *)memberEmail
-                    memberGivenName:(NSString *)memberGivenName
-                      memberSurname:(NSString *)memberSurname {
-  return [self initWithMemberEmail:memberEmail
-                   memberGivenName:memberGivenName
-                     memberSurname:memberSurname
-                  memberExternalId:nil
-                memberPersistentId:nil
-                  sendWelcomeEmail:nil
-                              role:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11983,6 +12306,22 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId {
+  return [self initWithTeamMemberId:teamMemberId webSessions:nil desktopClients:nil mobileClients:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                         webSessions:(NSArray<DBTEAMActiveWebSession *> *)webSessions {
+  return [self initWithTeamMemberId:teamMemberId webSessions:webSessions desktopClients:nil mobileClients:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                         webSessions:(NSArray<DBTEAMActiveWebSession *> *)webSessions
+                      desktopClients:(NSArray<DBTEAMDesktopClientSession *> *)desktopClients {
+  return
+      [self initWithTeamMemberId:teamMemberId webSessions:webSessions desktopClients:desktopClients mobileClients:nil];
+}
+
 - (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
                          webSessions:(NSArray<DBTEAMActiveWebSession *> *)webSessions
                       desktopClients:(NSArray<DBTEAMDesktopClientSession *> *)desktopClients
@@ -12002,10 +12341,6 @@
     _mobileClients = mobileClients;
   }
   return self;
-}
-
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId {
-  return [self initWithTeamMemberId:teamMemberId webSessions:nil desktopClients:nil mobileClients:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12283,6 +12618,84 @@
                        emailVerified:(NSNumber *)emailVerified
                               status:(DBTEAMTeamMemberStatus *)status
                                 name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                         externalId:nil
+                          accountId:nil
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(NSString *)externalId {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                         externalId:externalId
+                          accountId:nil
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(NSString *)externalId
+                           accountId:(NSString *)accountId {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                         externalId:externalId
+                          accountId:accountId
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                          externalId:(NSString *)externalId
+                           accountId:(NSString *)accountId
+                            joinedOn:(NSDate *)joinedOn {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                         externalId:externalId
+                          accountId:accountId
+                           joinedOn:joinedOn
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
                       membershipType:(DBTEAMTeamMembershipType *)membershipType
                           externalId:(NSString *)externalId
                            accountId:(NSString *)accountId
@@ -12305,24 +12718,6 @@
     _persistentId = persistentId;
   }
   return self;
-}
-
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
-                               email:(NSString *)email
-                       emailVerified:(NSNumber *)emailVerified
-                              status:(DBTEAMTeamMemberStatus *)status
-                                name:(DBUSERSName *)name
-                      membershipType:(DBTEAMTeamMembershipType *)membershipType {
-  return [self initWithTeamMemberId:teamMemberId
-                              email:email
-                      emailVerified:emailVerified
-                             status:status
-                               name:name
-                     membershipType:membershipType
-                         externalId:nil
-                          accountId:nil
-                           joinedOn:nil
-                       persistentId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12796,6 +13191,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDNewMembers:(NSArray<DBTEAMMemberAddArg *> *)dNewMembers {
+  return [self initWithDNewMembers:dNewMembers forceAsync:nil];
+}
+
 - (instancetype)initWithDNewMembers:(NSArray<DBTEAMMemberAddArg *> *)dNewMembers forceAsync:(NSNumber *)forceAsync {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](dNewMembers);
 
@@ -12805,10 +13204,6 @@
     _forceAsync = forceAsync ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithDNewMembers:(NSArray<DBTEAMMemberAddArg *> *)dNewMembers {
-  return [self initWithDNewMembers:dNewMembers forceAsync:nil];
 }
 
 #pragma mark - Serialization methods
@@ -13316,6 +13711,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
+  return [self initWithUser:user wipeData:nil];
+}
+
 - (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user wipeData:(NSNumber *)wipeData {
 
   self = [super init];
@@ -13324,10 +13723,6 @@
     _wipeData = wipeData ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
-  return [self initWithUser:user wipeData:nil];
 }
 
 #pragma mark - Serialization methods
@@ -14017,6 +14412,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithLimit:nil includeRemoved:nil];
+}
+
+- (instancetype)initWithLimit:(NSNumber *)limit {
+  return [self initWithLimit:limit includeRemoved:nil];
+}
+
 - (instancetype)initWithLimit:(NSNumber *)limit includeRemoved:(NSNumber *)includeRemoved {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
 
@@ -14026,10 +14429,6 @@
     _includeRemoved = includeRemoved ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithLimit:nil includeRemoved:nil];
 }
 
 #pragma mark - Serialization methods
@@ -14947,6 +15346,31 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
+  return [self initWithUser:user wipeData:nil transferDestId:nil transferAdminId:nil keepAccount:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user wipeData:(NSNumber *)wipeData {
+  return [self initWithUser:user wipeData:wipeData transferDestId:nil transferAdminId:nil keepAccount:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                    wipeData:(NSNumber *)wipeData
+              transferDestId:(DBTEAMUserSelectorArg *)transferDestId {
+  return [self initWithUser:user wipeData:wipeData transferDestId:transferDestId transferAdminId:nil keepAccount:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                    wipeData:(NSNumber *)wipeData
+              transferDestId:(DBTEAMUserSelectorArg *)transferDestId
+             transferAdminId:(DBTEAMUserSelectorArg *)transferAdminId {
+  return [self initWithUser:user
+                   wipeData:wipeData
+             transferDestId:transferDestId
+            transferAdminId:transferAdminId
+                keepAccount:nil];
+}
+
 - (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
                     wipeData:(NSNumber *)wipeData
               transferDestId:(DBTEAMUserSelectorArg *)transferDestId
@@ -14960,10 +15384,6 @@
     _keepAccount = keepAccount ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
-  return [self initWithUser:user wipeData:nil transferDestId:nil transferAdminId:nil keepAccount:nil];
 }
 
 #pragma mark - Serialization methods
@@ -16165,6 +16585,56 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
+  return
+      [self initWithUser:user dNewEmail:nil dNewExternalId:nil dNewGivenName:nil dNewSurname:nil dNewPersistentId:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user dNewEmail:(NSString *)dNewEmail {
+  return [self initWithUser:user
+                  dNewEmail:dNewEmail
+             dNewExternalId:nil
+              dNewGivenName:nil
+                dNewSurname:nil
+           dNewPersistentId:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(NSString *)dNewEmail
+              dNewExternalId:(NSString *)dNewExternalId {
+  return [self initWithUser:user
+                  dNewEmail:dNewEmail
+             dNewExternalId:dNewExternalId
+              dNewGivenName:nil
+                dNewSurname:nil
+           dNewPersistentId:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(NSString *)dNewEmail
+              dNewExternalId:(NSString *)dNewExternalId
+               dNewGivenName:(NSString *)dNewGivenName {
+  return [self initWithUser:user
+                  dNewEmail:dNewEmail
+             dNewExternalId:dNewExternalId
+              dNewGivenName:dNewGivenName
+                dNewSurname:nil
+           dNewPersistentId:nil];
+}
+
+- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
+                   dNewEmail:(NSString *)dNewEmail
+              dNewExternalId:(NSString *)dNewExternalId
+               dNewGivenName:(NSString *)dNewGivenName
+                 dNewSurname:(NSString *)dNewSurname {
+  return [self initWithUser:user
+                  dNewEmail:dNewEmail
+             dNewExternalId:dNewExternalId
+              dNewGivenName:dNewGivenName
+                dNewSurname:dNewSurname
+           dNewPersistentId:nil];
+}
+
 - (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user
                    dNewEmail:(NSString *)dNewEmail
               dNewExternalId:(NSString *)dNewExternalId
@@ -16192,11 +16662,6 @@
     _dNewPersistentId = dNewPersistentId;
   }
   return self;
-}
-
-- (instancetype)initWithUser:(DBTEAMUserSelectorArg *)user {
-  return
-      [self initWithUser:user dNewEmail:nil dNewExternalId:nil dNewGivenName:nil dNewSurname:nil dNewPersistentId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -17503,6 +17968,132 @@
 
 - (instancetype)initWithSessionId:(NSString *)sessionId
                        deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:nil
+                         country:nil
+                         created:nil
+                         updated:nil
+                   clientVersion:nil
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:nil
+                         created:nil
+                         updated:nil
+                   clientVersion:nil
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:country
+                         created:nil
+                         updated:nil
+                   clientVersion:nil
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:nil
+                   clientVersion:nil
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created
+                          updated:(NSDate *)updated {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:updated
+                   clientVersion:nil
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created
+                          updated:(NSDate *)updated
+                    clientVersion:(NSString *)clientVersion {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:updated
+                   clientVersion:clientVersion
+                       osVersion:nil
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
+                       clientType:(DBTEAMMobileClientPlatform *)clientType
+                        ipAddress:(NSString *)ipAddress
+                          country:(NSString *)country
+                          created:(NSDate *)created
+                          updated:(NSDate *)updated
+                    clientVersion:(NSString *)clientVersion
+                        osVersion:(NSString *)osVersion {
+  return [self initWithSessionId:sessionId
+                      deviceName:deviceName
+                      clientType:clientType
+                       ipAddress:ipAddress
+                         country:country
+                         created:created
+                         updated:updated
+                   clientVersion:clientVersion
+                       osVersion:osVersion
+                     lastCarrier:nil];
+}
+
+- (instancetype)initWithSessionId:(NSString *)sessionId
+                       deviceName:(NSString *)deviceName
                        clientType:(DBTEAMMobileClientPlatform *)clientType
                         ipAddress:(NSString *)ipAddress
                           country:(NSString *)country
@@ -17521,21 +18112,6 @@
     _lastCarrier = lastCarrier;
   }
   return self;
-}
-
-- (instancetype)initWithSessionId:(NSString *)sessionId
-                       deviceName:(NSString *)deviceName
-                       clientType:(DBTEAMMobileClientPlatform *)clientType {
-  return [self initWithSessionId:sessionId
-                      deviceName:deviceName
-                      clientType:clientType
-                       ipAddress:nil
-                         country:nil
-                         created:nil
-                         updated:nil
-                   clientVersion:nil
-                       osVersion:nil
-                     lastCarrier:nil];
 }
 
 #pragma mark - Serialization methods
@@ -17835,6 +18411,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSessionId:(NSString *)sessionId teamMemberId:(NSString *)teamMemberId {
+  return [self initWithSessionId:sessionId teamMemberId:teamMemberId deleteOnUnlink:nil];
+}
+
 - (instancetype)initWithSessionId:(NSString *)sessionId
                      teamMemberId:(NSString *)teamMemberId
                    deleteOnUnlink:(NSNumber *)deleteOnUnlink {
@@ -17844,10 +18424,6 @@
     _deleteOnUnlink = deleteOnUnlink ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithSessionId:(NSString *)sessionId teamMemberId:(NSString *)teamMemberId {
-  return [self initWithSessionId:sessionId teamMemberId:teamMemberId deleteOnUnlink:nil];
 }
 
 #pragma mark - Serialization methods
@@ -18690,6 +19266,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSuccess:(NSNumber *)success {
+  return [self initWithSuccess:success errorType:nil];
+}
+
 - (instancetype)initWithSuccess:(NSNumber *)success errorType:(DBTEAMRevokeDeviceSessionError *)errorType {
 
   self = [super init];
@@ -18698,10 +19278,6 @@
     _errorType = errorType;
   }
   return self;
-}
-
-- (instancetype)initWithSuccess:(NSNumber *)success {
-  return [self initWithSuccess:success errorType:nil];
 }
 
 #pragma mark - Serialization methods
@@ -18806,6 +19382,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAppId:(NSString *)appId teamMemberId:(NSString *)teamMemberId {
+  return [self initWithAppId:appId teamMemberId:teamMemberId keepAppFolder:nil];
+}
+
 - (instancetype)initWithAppId:(NSString *)appId
                  teamMemberId:(NSString *)teamMemberId
                 keepAppFolder:(NSNumber *)keepAppFolder {
@@ -18817,10 +19397,6 @@
     _keepAppFolder = keepAppFolder ?: @YES;
   }
   return self;
-}
-
-- (instancetype)initWithAppId:(NSString *)appId teamMemberId:(NSString *)teamMemberId {
-  return [self initWithAppId:appId teamMemberId:teamMemberId keepAppFolder:nil];
 }
 
 #pragma mark - Serialization methods
@@ -19443,6 +20019,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSuccess:(NSNumber *)success {
+  return [self initWithSuccess:success errorType:nil];
+}
+
 - (instancetype)initWithSuccess:(NSNumber *)success errorType:(DBTEAMRevokeLinkedAppError *)errorType {
 
   self = [super init];
@@ -19451,10 +20031,6 @@
     _errorType = errorType;
   }
   return self;
-}
-
-- (instancetype)initWithSuccess:(NSNumber *)success {
-  return [self initWithSuccess:success errorType:nil];
 }
 
 #pragma mark - Serialization methods
@@ -20141,6 +20717,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithTeamFolderId:(NSString *)teamFolderId {
+  return [self initWithTeamFolderId:teamFolderId forceAsyncOff:nil];
+}
+
 - (instancetype)initWithTeamFolderId:(NSString *)teamFolderId forceAsyncOff:(NSNumber *)forceAsyncOff {
   [DBStoneValidators stringValidator:nil maxLength:nil pattern:@"[-_0-9a-zA-Z:]+"](teamFolderId);
 
@@ -20149,10 +20729,6 @@
     _forceAsyncOff = forceAsyncOff ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithTeamFolderId:(NSString *)teamFolderId {
-  return [self initWithTeamFolderId:teamFolderId forceAsyncOff:nil];
 }
 
 #pragma mark - Serialization methods
@@ -21622,6 +22198,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithLimit:nil];
+}
+
 - (instancetype)initWithLimit:(NSNumber *)limit {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
 
@@ -21630,10 +22210,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithLimit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -23079,6 +23655,92 @@
                               status:(DBTEAMTeamMemberStatus *)status
                                 name:(DBUSERSName *)name
                       membershipType:(DBTEAMTeamMembershipType *)membershipType
+                              groups:(NSArray<NSString *> *)groups {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                             groups:groups
+                         externalId:nil
+                          accountId:nil
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                              groups:(NSArray<NSString *> *)groups
+                          externalId:(NSString *)externalId {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                             groups:groups
+                         externalId:externalId
+                          accountId:nil
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                              groups:(NSArray<NSString *> *)groups
+                          externalId:(NSString *)externalId
+                           accountId:(NSString *)accountId {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                             groups:groups
+                         externalId:externalId
+                          accountId:accountId
+                           joinedOn:nil
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
+                              groups:(NSArray<NSString *> *)groups
+                          externalId:(NSString *)externalId
+                           accountId:(NSString *)accountId
+                            joinedOn:(NSDate *)joinedOn {
+  return [self initWithTeamMemberId:teamMemberId
+                              email:email
+                      emailVerified:emailVerified
+                             status:status
+                               name:name
+                     membershipType:membershipType
+                             groups:groups
+                         externalId:externalId
+                          accountId:accountId
+                           joinedOn:joinedOn
+                       persistentId:nil];
+}
+
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                               email:(NSString *)email
+                       emailVerified:(NSNumber *)emailVerified
+                              status:(DBTEAMTeamMemberStatus *)status
+                                name:(DBUSERSName *)name
+                      membershipType:(DBTEAMTeamMembershipType *)membershipType
                               groups:(NSArray<NSString *> *)groups
                           externalId:(NSString *)externalId
                            accountId:(NSString *)accountId
@@ -23102,26 +23764,6 @@
     _groups = groups;
   }
   return self;
-}
-
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
-                               email:(NSString *)email
-                       emailVerified:(NSNumber *)emailVerified
-                              status:(DBTEAMTeamMemberStatus *)status
-                                name:(DBUSERSName *)name
-                      membershipType:(DBTEAMTeamMembershipType *)membershipType
-                              groups:(NSArray<NSString *> *)groups {
-  return [self initWithTeamMemberId:teamMemberId
-                              email:email
-                      emailVerified:emailVerified
-                             status:status
-                               name:name
-                     membershipType:membershipType
-                             groups:groups
-                         externalId:nil
-                          accountId:nil
-                           joinedOn:nil
-                       persistentId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -23687,6 +24329,18 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithTemplateId:(NSString *)templateId {
+  return [self initWithTemplateId:templateId name:nil description_:nil addFields:nil];
+}
+
+- (instancetype)initWithTemplateId:(NSString *)templateId name:(NSString *)name {
+  return [self initWithTemplateId:templateId name:name description_:nil addFields:nil];
+}
+
+- (instancetype)initWithTemplateId:(NSString *)templateId name:(NSString *)name description_:(NSString *)description_ {
+  return [self initWithTemplateId:templateId name:name description_:description_ addFields:nil];
+}
+
 - (instancetype)initWithTemplateId:(NSString *)templateId
                               name:(NSString *)name
                       description_:(NSString *)description_
@@ -23703,10 +24357,6 @@
     _addFields = addFields;
   }
   return self;
-}
-
-- (instancetype)initWithTemplateId:(NSString *)templateId {
-  return [self initWithTemplateId:templateId name:nil description_:nil addFields:nil];
 }
 
 #pragma mark - Serialization methods

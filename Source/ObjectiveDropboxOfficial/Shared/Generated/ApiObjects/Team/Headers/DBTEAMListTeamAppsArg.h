@@ -36,6 +36,13 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param cursor At the first call to the `linkedAppsListTeamLinkedApps` the
@@ -46,15 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithCursor:(nullable NSString *)cursor;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

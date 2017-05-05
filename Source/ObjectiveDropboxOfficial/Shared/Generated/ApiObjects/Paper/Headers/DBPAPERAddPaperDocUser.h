@@ -40,6 +40,32 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param docId (no description).
+/// @param members User which should be added to the Paper doc. Specify only
+/// email or Dropbox account id.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDocId:(NSString *)docId members:(NSArray<DBPAPERAddMember *> *)members;
+
+///
+/// Convenience constructor.
+///
+/// @param docId (no description).
+/// @param members User which should be added to the Paper doc. Specify only
+/// email or Dropbox account id.
+/// @param customMessage A personal message that will be emailed to each
+/// successfully added member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDocId:(NSString *)docId
+                      members:(NSArray<DBPAPERAddMember *> *)members
+                customMessage:(nullable NSString *)customMessage;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param docId (no description).
@@ -56,18 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
                       members:(NSArray<DBPAPERAddMember *> *)members
                 customMessage:(nullable NSString *)customMessage
                         quiet:(nullable NSNumber *)quiet;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param docId (no description).
-/// @param members User which should be added to the Paper doc. Specify only
-/// email or Dropbox account id.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithDocId:(NSString *)docId members:(NSArray<DBPAPERAddMember *> *)members;
 
 @end
 

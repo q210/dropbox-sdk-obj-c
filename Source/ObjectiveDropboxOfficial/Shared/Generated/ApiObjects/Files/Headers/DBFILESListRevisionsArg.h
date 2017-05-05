@@ -34,6 +34,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path The path to the file you want to see the revisions of.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path The path to the file you want to see the revisions of.
@@ -42,16 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPath:(NSString *)path limit:(nullable NSNumber *)limit;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path The path to the file you want to see the revisions of.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 - (instancetype)init NS_UNAVAILABLE;
 

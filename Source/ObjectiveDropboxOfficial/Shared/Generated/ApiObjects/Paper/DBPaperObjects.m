@@ -18,6 +18,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member {
+  return [self initWithMember:member permissionLevel:nil];
+}
+
 - (instancetype)initWithMember:(DBSHARINGMemberSelector *)member
                permissionLevel:(DBPAPERPaperDocPermissionLevel *)permissionLevel {
 
@@ -27,10 +31,6 @@
     _member = member;
   }
   return self;
-}
-
-- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member {
-  return [self initWithMember:member permissionLevel:nil];
 }
 
 #pragma mark - Serialization methods
@@ -231,6 +231,16 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDocId:(NSString *)docId members:(NSArray<DBPAPERAddMember *> *)members {
+  return [self initWithDocId:docId members:members customMessage:nil quiet:nil];
+}
+
+- (instancetype)initWithDocId:(NSString *)docId
+                      members:(NSArray<DBPAPERAddMember *> *)members
+                customMessage:(NSString *)customMessage {
+  return [self initWithDocId:docId members:members customMessage:customMessage quiet:nil];
+}
+
 - (instancetype)initWithDocId:(NSString *)docId
                       members:(NSArray<DBPAPERAddMember *> *)members
                 customMessage:(NSString *)customMessage
@@ -244,10 +254,6 @@
     _quiet = quiet ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithDocId:(NSString *)docId members:(NSArray<DBPAPERAddMember *> *)members {
-  return [self initWithDocId:docId members:members customMessage:nil quiet:nil];
 }
 
 #pragma mark - Serialization methods
@@ -759,6 +765,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithValue:(NSString *)value {
+  return [self initWithValue:value expiration:nil];
+}
+
 - (instancetype)initWithValue:(NSString *)value expiration:(NSDate *)expiration {
 
   self = [super init];
@@ -767,10 +777,6 @@
     _expiration = expiration;
   }
   return self;
-}
-
-- (instancetype)initWithValue:(NSString *)value {
-  return [self initWithValue:value expiration:nil];
 }
 
 #pragma mark - Serialization methods
@@ -2037,6 +2043,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithFolderSharingPolicyType:nil folders:nil];
+}
+
+- (instancetype)initWithFolderSharingPolicyType:(DBPAPERFolderSharingPolicyType *)folderSharingPolicyType {
+  return [self initWithFolderSharingPolicyType:folderSharingPolicyType folders:nil];
+}
+
 - (instancetype)initWithFolderSharingPolicyType:(DBPAPERFolderSharingPolicyType *)folderSharingPolicyType
                                         folders:(NSArray<DBPAPERFolder *> *)folders {
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](folders);
@@ -2047,10 +2061,6 @@
     _folders = folders;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithFolderSharingPolicyType:nil folders:nil];
 }
 
 #pragma mark - Serialization methods
@@ -2452,6 +2462,24 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithFilterBy:nil sortBy:nil sortOrder:nil limit:nil];
+}
+
+- (instancetype)initWithFilterBy:(DBPAPERListPaperDocsFilterBy *)filterBy {
+  return [self initWithFilterBy:filterBy sortBy:nil sortOrder:nil limit:nil];
+}
+
+- (instancetype)initWithFilterBy:(DBPAPERListPaperDocsFilterBy *)filterBy sortBy:(DBPAPERListPaperDocsSortBy *)sortBy {
+  return [self initWithFilterBy:filterBy sortBy:sortBy sortOrder:nil limit:nil];
+}
+
+- (instancetype)initWithFilterBy:(DBPAPERListPaperDocsFilterBy *)filterBy
+                          sortBy:(DBPAPERListPaperDocsSortBy *)sortBy
+                       sortOrder:(DBPAPERListPaperDocsSortOrder *)sortOrder {
+  return [self initWithFilterBy:filterBy sortBy:sortBy sortOrder:sortOrder limit:nil];
+}
+
 - (instancetype)initWithFilterBy:(DBPAPERListPaperDocsFilterBy *)filterBy
                           sortBy:(DBPAPERListPaperDocsSortBy *)sortBy
                        sortOrder:(DBPAPERListPaperDocsSortOrder *)sortOrder
@@ -2466,10 +2494,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithFilterBy:nil sortBy:nil sortOrder:nil limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -3558,6 +3582,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDocId:(NSString *)docId {
+  return [self initWithDocId:docId limit:nil];
+}
+
 - (instancetype)initWithDocId:(NSString *)docId limit:(NSNumber *)limit {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
 
@@ -3566,10 +3594,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initWithDocId:(NSString *)docId {
-  return [self initWithDocId:docId limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -3914,6 +3938,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithDocId:(NSString *)docId {
+  return [self initWithDocId:docId limit:nil filterBy:nil];
+}
+
+- (instancetype)initWithDocId:(NSString *)docId limit:(NSNumber *)limit {
+  return [self initWithDocId:docId limit:limit filterBy:nil];
+}
+
 - (instancetype)initWithDocId:(NSString *)docId
                         limit:(NSNumber *)limit
                      filterBy:(DBPAPERUserOnPaperDocFilter *)filterBy {
@@ -3925,10 +3957,6 @@
     _filterBy = filterBy ?: [[DBPAPERUserOnPaperDocFilter alloc] initWithShared];
   }
   return self;
-}
-
-- (instancetype)initWithDocId:(NSString *)docId {
-  return [self initWithDocId:docId limit:nil filterBy:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5126,6 +5154,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithPublicSharingPolicy:nil teamSharingPolicy:nil];
+}
+
+- (instancetype)initWithPublicSharingPolicy:(DBPAPERSharingPublicPolicyType *)publicSharingPolicy {
+  return [self initWithPublicSharingPolicy:publicSharingPolicy teamSharingPolicy:nil];
+}
+
 - (instancetype)initWithPublicSharingPolicy:(DBPAPERSharingPublicPolicyType *)publicSharingPolicy
                           teamSharingPolicy:(DBPAPERSharingTeamPolicyType *)teamSharingPolicy {
 
@@ -5135,10 +5171,6 @@
     _teamSharingPolicy = teamSharingPolicy;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithPublicSharingPolicy:nil teamSharingPolicy:nil];
 }
 
 #pragma mark - Serialization methods

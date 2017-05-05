@@ -45,6 +45,39 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param teamMemberId The member unique Id
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId The member unique Id
+/// @param webSessions List of web sessions made by this team member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                         webSessions:(nullable NSArray<DBTEAMActiveWebSession *> *)webSessions;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId The member unique Id
+/// @param webSessions List of web sessions made by this team member
+/// @param desktopClients List of desktop clients by this team member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                         webSessions:(nullable NSArray<DBTEAMActiveWebSession *> *)webSessions
+                      desktopClients:(nullable NSArray<DBTEAMDesktopClientSession *> *)desktopClients;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param teamMemberId The member unique Id
@@ -58,16 +91,6 @@ NS_ASSUME_NONNULL_BEGIN
                          webSessions:(nullable NSArray<DBTEAMActiveWebSession *> *)webSessions
                       desktopClients:(nullable NSArray<DBTEAMDesktopClientSession *> *)desktopClients
                        mobileClients:(nullable NSArray<DBTEAMMobileClientSession *> *)mobileClients;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param teamMemberId The member unique Id
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId;
 
 - (instancetype)init NS_UNAVAILABLE;
 

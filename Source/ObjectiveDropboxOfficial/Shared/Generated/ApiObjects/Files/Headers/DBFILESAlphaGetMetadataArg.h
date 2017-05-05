@@ -33,6 +33,62 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path The path of a file or folder on Dropbox.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path of a file or folder on Dropbox.
+/// @param includeMediaInfo If true, `mediaInfo` in `DBFILESFileMetadata` is set
+/// for photo and video.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path includeMediaInfo:(nullable NSNumber *)includeMediaInfo;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path of a file or folder on Dropbox.
+/// @param includeMediaInfo If true, `mediaInfo` in `DBFILESFileMetadata` is set
+/// for photo and video.
+/// @param includeDeleted If true, DeletedMetadata will be returned for deleted
+/// file or folder, otherwise `notFound` in `DBFILESLookupError` will be
+/// returned.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+            includeMediaInfo:(nullable NSNumber *)includeMediaInfo
+              includeDeleted:(nullable NSNumber *)includeDeleted;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path of a file or folder on Dropbox.
+/// @param includeMediaInfo If true, `mediaInfo` in `DBFILESFileMetadata` is set
+/// for photo and video.
+/// @param includeDeleted If true, DeletedMetadata will be returned for deleted
+/// file or folder, otherwise `notFound` in `DBFILESLookupError` will be
+/// returned.
+/// @param includeHasExplicitSharedMembers If true, the results will include a
+/// flag for each file indicating whether or not  that file has any explicit
+/// members.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                   includeMediaInfo:(nullable NSNumber *)includeMediaInfo
+                     includeDeleted:(nullable NSNumber *)includeDeleted
+    includeHasExplicitSharedMembers:(nullable NSNumber *)includeHasExplicitSharedMembers;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path The path of a file or folder on Dropbox.
@@ -55,16 +111,6 @@ NS_ASSUME_NONNULL_BEGIN
                      includeDeleted:(nullable NSNumber *)includeDeleted
     includeHasExplicitSharedMembers:(nullable NSNumber *)includeHasExplicitSharedMembers
            includePropertyTemplates:(nullable NSArray<NSString *> *)includePropertyTemplates;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path The path of a file or folder on Dropbox.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 @end
 

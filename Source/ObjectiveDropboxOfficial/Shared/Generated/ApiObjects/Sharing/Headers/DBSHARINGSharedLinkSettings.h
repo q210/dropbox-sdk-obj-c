@@ -39,6 +39,35 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
+/// Convenience constructor.
+///
+/// @param requestedVisibility The requested access for this shared link.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRequestedVisibility:(nullable DBSHARINGRequestedVisibility *)requestedVisibility;
+
+///
+/// Convenience constructor.
+///
+/// @param requestedVisibility The requested access for this shared link.
+/// @param linkPassword If requestedVisibility is `password` in
+/// `DBSHARINGRequestedVisibility` this is needed to specify the password to
+/// access the link.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRequestedVisibility:(nullable DBSHARINGRequestedVisibility *)requestedVisibility
+                               linkPassword:(nullable NSString *)linkPassword;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param requestedVisibility The requested access for this shared link.
@@ -53,15 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithRequestedVisibility:(nullable DBSHARINGRequestedVisibility *)requestedVisibility
                                linkPassword:(nullable NSString *)linkPassword
                                     expires:(nullable NSDate *)expires;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

@@ -37,6 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param file The file to query.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFile:(NSString *)file;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param file The file to query.
@@ -45,16 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFile:(NSString *)file actions:(nullable NSArray<DBSHARINGFileAction *> *)actions;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param file The file to query.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithFile:(NSString *)file;
 
 - (instancetype)init NS_UNAVAILABLE;
 

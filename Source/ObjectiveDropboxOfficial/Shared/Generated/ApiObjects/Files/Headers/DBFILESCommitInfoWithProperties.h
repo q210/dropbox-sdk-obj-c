@@ -34,6 +34,84 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path Path in the user's Dropbox to save the file.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
+/// Convenience constructor.
+///
+/// @param path Path in the user's Dropbox to save the file.
+/// @param mode Selects what to do if the file already exists.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path mode:(nullable DBFILESWriteMode *)mode;
+
+///
+/// Convenience constructor.
+///
+/// @param path Path in the user's Dropbox to save the file.
+/// @param mode Selects what to do if the file already exists.
+/// @param autorename If there's a conflict, as determined by mode, have the
+/// Dropbox server try to autorename the file to avoid conflict.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                        mode:(nullable DBFILESWriteMode *)mode
+                  autorename:(nullable NSNumber *)autorename;
+
+///
+/// Convenience constructor.
+///
+/// @param path Path in the user's Dropbox to save the file.
+/// @param mode Selects what to do if the file already exists.
+/// @param autorename If there's a conflict, as determined by mode, have the
+/// Dropbox server try to autorename the file to avoid conflict.
+/// @param clientModified The value to store as the clientModified timestamp.
+/// Dropbox automatically records the time at which the file was written to the
+/// Dropbox servers. It can also record an additional timestamp, provided by
+/// Dropbox desktop clients, mobile clients, and API apps of when the file was
+/// actually created or modified.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                        mode:(nullable DBFILESWriteMode *)mode
+                  autorename:(nullable NSNumber *)autorename
+              clientModified:(nullable NSDate *)clientModified;
+
+///
+/// Convenience constructor.
+///
+/// @param path Path in the user's Dropbox to save the file.
+/// @param mode Selects what to do if the file already exists.
+/// @param autorename If there's a conflict, as determined by mode, have the
+/// Dropbox server try to autorename the file to avoid conflict.
+/// @param clientModified The value to store as the clientModified timestamp.
+/// Dropbox automatically records the time at which the file was written to the
+/// Dropbox servers. It can also record an additional timestamp, provided by
+/// Dropbox desktop clients, mobile clients, and API apps of when the file was
+/// actually created or modified.
+/// @param mute Normally, users are made aware of any file modifications in
+/// their Dropbox account via notifications in the client software. If true,
+/// this tells the clients that this modification shouldn't result in a user
+/// notification.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                        mode:(nullable DBFILESWriteMode *)mode
+                  autorename:(nullable NSNumber *)autorename
+              clientModified:(nullable NSDate *)clientModified
+                        mute:(nullable NSNumber *)mute;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path Path in the user's Dropbox to save the file.
@@ -59,16 +137,6 @@ NS_ASSUME_NONNULL_BEGIN
               clientModified:(nullable NSDate *)clientModified
                         mute:(nullable NSNumber *)mute
               propertyGroups:(nullable NSArray<DBPROPERTIESPropertyGroup *> *)propertyGroups;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path Path in the user's Dropbox to save the file.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 @end
 

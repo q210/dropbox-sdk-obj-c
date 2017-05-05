@@ -21,6 +21,19 @@
                              name:(DBUSERSName *)name
                             email:(NSString *)email
                     emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                 profilePhotoUrl:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
                          disabled:(NSNumber *)disabled
                   profilePhotoUrl:(NSString *)profilePhotoUrl {
   [DBStoneValidators stringValidator:@(40) maxLength:@(40) pattern:nil](accountId);
@@ -35,19 +48,6 @@
     _disabled = disabled;
   }
   return self;
-}
-
-- (instancetype)initWithAccountId:(NSString *)accountId
-                             name:(DBUSERSName *)name
-                            email:(NSString *)email
-                    emailVerified:(NSNumber *)emailVerified
-                         disabled:(NSNumber *)disabled {
-  return [self initWithAccountId:accountId
-                            name:name
-                           email:email
-                   emailVerified:emailVerified
-                        disabled:disabled
-                 profilePhotoUrl:nil];
 }
 
 #pragma mark - Serialization methods
@@ -365,6 +365,39 @@
                             email:(NSString *)email
                     emailVerified:(NSNumber *)emailVerified
                          disabled:(NSNumber *)disabled
+                       isTeammate:(NSNumber *)isTeammate {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                      isTeammate:isTeammate
+                 profilePhotoUrl:nil
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                       isTeammate:(NSNumber *)isTeammate
+                  profilePhotoUrl:(NSString *)profilePhotoUrl {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                      isTeammate:isTeammate
+                 profilePhotoUrl:profilePhotoUrl
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
                        isTeammate:(NSNumber *)isTeammate
                   profilePhotoUrl:(NSString *)profilePhotoUrl
                      teamMemberId:(NSString *)teamMemberId {
@@ -381,22 +414,6 @@
     _teamMemberId = teamMemberId;
   }
   return self;
-}
-
-- (instancetype)initWithAccountId:(NSString *)accountId
-                             name:(DBUSERSName *)name
-                            email:(NSString *)email
-                    emailVerified:(NSNumber *)emailVerified
-                         disabled:(NSNumber *)disabled
-                       isTeammate:(NSNumber *)isTeammate {
-  return [self initWithAccountId:accountId
-                            name:name
-                           email:email
-                   emailVerified:emailVerified
-                        disabled:disabled
-                      isTeammate:isTeammate
-                 profilePhotoUrl:nil
-                    teamMemberId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -561,6 +578,108 @@
                            locale:(NSString *)locale
                      referralLink:(NSString *)referralLink
                          isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                          locale:locale
+                    referralLink:referralLink
+                        isPaired:isPaired
+                     accountType:accountType
+                 profilePhotoUrl:nil
+                         country:nil
+                            team:nil
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(NSString *)profilePhotoUrl {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                          locale:locale
+                    referralLink:referralLink
+                        isPaired:isPaired
+                     accountType:accountType
+                 profilePhotoUrl:profilePhotoUrl
+                         country:nil
+                            team:nil
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(NSString *)profilePhotoUrl
+                          country:(NSString *)country {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                          locale:locale
+                    referralLink:referralLink
+                        isPaired:isPaired
+                     accountType:accountType
+                 profilePhotoUrl:profilePhotoUrl
+                         country:country
+                            team:nil
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(NSString *)profilePhotoUrl
+                          country:(NSString *)country
+                             team:(DBUSERSFullTeam *)team {
+  return [self initWithAccountId:accountId
+                            name:name
+                           email:email
+                   emailVerified:emailVerified
+                        disabled:disabled
+                          locale:locale
+                    referralLink:referralLink
+                        isPaired:isPaired
+                     accountType:accountType
+                 profilePhotoUrl:profilePhotoUrl
+                         country:country
+                            team:team
+                    teamMemberId:nil];
+}
+
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
                       accountType:(DBUSERSAccountType *)accountType
                   profilePhotoUrl:(NSString *)profilePhotoUrl
                           country:(NSString *)country
@@ -586,30 +705,6 @@
     _accountType = accountType;
   }
   return self;
-}
-
-- (instancetype)initWithAccountId:(NSString *)accountId
-                             name:(DBUSERSName *)name
-                            email:(NSString *)email
-                    emailVerified:(NSNumber *)emailVerified
-                         disabled:(NSNumber *)disabled
-                           locale:(NSString *)locale
-                     referralLink:(NSString *)referralLink
-                         isPaired:(NSNumber *)isPaired
-                      accountType:(DBUSERSAccountType *)accountType {
-  return [self initWithAccountId:accountId
-                            name:name
-                           email:email
-                   emailVerified:emailVerified
-                        disabled:disabled
-                          locale:locale
-                    referralLink:referralLink
-                        isPaired:isPaired
-                     accountType:accountType
-                 profilePhotoUrl:nil
-                         country:nil
-                            team:nil
-                    teamMemberId:nil];
 }
 
 #pragma mark - Serialization methods

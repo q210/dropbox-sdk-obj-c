@@ -40,6 +40,40 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param teamMemberId The team's member id
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId The team's member id
+/// @param includeWebSessions Whether to list web sessions of the team's member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                  includeWebSessions:(nullable NSNumber *)includeWebSessions;
+
+///
+/// Convenience constructor.
+///
+/// @param teamMemberId The team's member id
+/// @param includeWebSessions Whether to list web sessions of the team's member
+/// @param includeDesktopClients Whether to list linked desktop devices of the
+/// team's member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId
+                  includeWebSessions:(nullable NSNumber *)includeWebSessions
+               includeDesktopClients:(nullable NSNumber *)includeDesktopClients;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param teamMemberId The team's member id
@@ -55,16 +89,6 @@ NS_ASSUME_NONNULL_BEGIN
                   includeWebSessions:(nullable NSNumber *)includeWebSessions
                includeDesktopClients:(nullable NSNumber *)includeDesktopClients
                 includeMobileClients:(nullable NSNumber *)includeMobileClients;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param teamMemberId The team's member id
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithTeamMemberId:(NSString *)teamMemberId;
 
 - (instancetype)init NS_UNAVAILABLE;
 

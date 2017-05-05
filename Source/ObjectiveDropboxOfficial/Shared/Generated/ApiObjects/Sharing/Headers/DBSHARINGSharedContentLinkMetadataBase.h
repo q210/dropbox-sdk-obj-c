@@ -49,6 +49,26 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param audienceOptions The audience options that are available for the
+/// content. Some audience options may be unavailable. For example, team_only
+/// may be unavailable if the content is not owned by a user on a team. The
+/// 'default' audience option is always available if the user can modify link
+/// settings.
+/// @param currentAudience The current audience of the link.
+/// @param linkPermissions A list of permissions for actions you can perform on
+/// the link.
+/// @param passwordProtected Whether the link is protected by a password.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
+                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
+                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
+                      passwordProtected:(NSNumber *)passwordProtected;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param audienceOptions The audience options that are available for the
@@ -71,27 +91,6 @@ NS_ASSUME_NONNULL_BEGIN
                         linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
                       passwordProtected:(NSNumber *)passwordProtected
                                  expiry:(nullable NSDate *)expiry;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param audienceOptions The audience options that are available for the
-/// content. Some audience options may be unavailable. For example, team_only
-/// may be unavailable if the content is not owned by a user on a team. The
-/// 'default' audience option is always available if the user can modify link
-/// settings.
-/// @param currentAudience The current audience of the link.
-/// @param linkPermissions A list of permissions for actions you can perform on
-/// the link.
-/// @param passwordProtected Whether the link is protected by a password.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
-                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
-                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
-                      passwordProtected:(NSNumber *)passwordProtected;
 
 - (instancetype)init NS_UNAVAILABLE;
 

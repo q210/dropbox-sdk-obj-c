@@ -35,6 +35,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path The path to be shared by the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path The path to be shared by the shared link
@@ -43,16 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPath:(NSString *)path settings:(nullable DBSHARINGSharedLinkSettings *)settings;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path The path to be shared by the shared link
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 - (instancetype)init NS_UNAVAILABLE;
 

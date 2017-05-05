@@ -43,6 +43,55 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
+/// Convenience constructor.
+///
+/// @param cursor At the first call to the `devicesListMembersDevices` the
+/// cursor shouldn't be passed. Then, if the result of the call includes a
+/// cursor, the following requests should include the received cursors in order
+/// to receive the next sub list of team devices
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCursor:(nullable NSString *)cursor;
+
+///
+/// Convenience constructor.
+///
+/// @param cursor At the first call to the `devicesListMembersDevices` the
+/// cursor shouldn't be passed. Then, if the result of the call includes a
+/// cursor, the following requests should include the received cursors in order
+/// to receive the next sub list of team devices
+/// @param includeWebSessions Whether to list web sessions of the team members
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCursor:(nullable NSString *)cursor includeWebSessions:(nullable NSNumber *)includeWebSessions;
+
+///
+/// Convenience constructor.
+///
+/// @param cursor At the first call to the `devicesListMembersDevices` the
+/// cursor shouldn't be passed. Then, if the result of the call includes a
+/// cursor, the following requests should include the received cursors in order
+/// to receive the next sub list of team devices
+/// @param includeWebSessions Whether to list web sessions of the team members
+/// @param includeDesktopClients Whether to list desktop clients of the team
+/// members
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCursor:(nullable NSString *)cursor
+            includeWebSessions:(nullable NSNumber *)includeWebSessions
+         includeDesktopClients:(nullable NSNumber *)includeDesktopClients;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param cursor At the first call to the `devicesListMembersDevices` the
@@ -61,15 +110,6 @@ NS_ASSUME_NONNULL_BEGIN
             includeWebSessions:(nullable NSNumber *)includeWebSessions
          includeDesktopClients:(nullable NSNumber *)includeDesktopClients
           includeMobileClients:(nullable NSNumber *)includeMobileClients;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

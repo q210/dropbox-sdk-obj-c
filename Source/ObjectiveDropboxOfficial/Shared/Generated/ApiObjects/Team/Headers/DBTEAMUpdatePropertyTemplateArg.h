@@ -44,6 +44,44 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param templateId An identifier for property template added by
+/// `propertiesTemplateAdd`.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTemplateId:(NSString *)templateId;
+
+///
+/// Convenience constructor.
+///
+/// @param templateId An identifier for property template added by
+/// `propertiesTemplateAdd`.
+/// @param name A display name for the property template. Property template
+/// names can be up to 256 bytes.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTemplateId:(NSString *)templateId name:(nullable NSString *)name;
+
+///
+/// Convenience constructor.
+///
+/// @param templateId An identifier for property template added by
+/// `propertiesTemplateAdd`.
+/// @param name A display name for the property template. Property template
+/// names can be up to 256 bytes.
+/// @param description_ Description for new property template. Property template
+/// descriptions can be up to 1024 bytes.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTemplateId:(NSString *)templateId
+                              name:(nullable NSString *)name
+                      description_:(nullable NSString *)description_;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param templateId An identifier for property template added by
@@ -61,17 +99,6 @@ NS_ASSUME_NONNULL_BEGIN
                               name:(nullable NSString *)name
                       description_:(nullable NSString *)description_
                          addFields:(nullable NSArray<DBPROPERTIESPropertyFieldTemplate *> *)addFields;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param templateId An identifier for property template added by
-/// `propertiesTemplateAdd`.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithTemplateId:(NSString *)templateId;
 
 - (instancetype)init NS_UNAVAILABLE;
 

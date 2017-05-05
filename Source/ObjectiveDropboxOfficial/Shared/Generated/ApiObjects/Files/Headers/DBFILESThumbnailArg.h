@@ -41,6 +41,27 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path The path to the image file you want to thumbnail.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the image file you want to thumbnail.
+/// @param format The format for the thumbnail image, jpeg (default) or png. For
+/// images that are photos, jpeg should be preferred, while png is  better for
+/// screenshots and digital arts.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path format:(nullable DBFILESThumbnailFormat *)format;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path The path to the image file you want to thumbnail.
@@ -54,16 +75,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPath:(NSString *)path
                       format:(nullable DBFILESThumbnailFormat *)format
                         size:(nullable DBFILESThumbnailSize *)size;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path The path to the image file you want to thumbnail.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 - (instancetype)init NS_UNAVAILABLE;
 

@@ -36,6 +36,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param cursor Contains the upload session ID and the offset.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCursor:(DBFILESUploadSessionCursor *)cursor;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param cursor Contains the upload session ID and the offset.
@@ -46,16 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithCursor:(DBFILESUploadSessionCursor *)cursor close:(nullable NSNumber *)close;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param cursor Contains the upload session ID and the offset.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithCursor:(DBFILESUploadSessionCursor *)cursor;
 
 - (instancetype)init NS_UNAVAILABLE;
 

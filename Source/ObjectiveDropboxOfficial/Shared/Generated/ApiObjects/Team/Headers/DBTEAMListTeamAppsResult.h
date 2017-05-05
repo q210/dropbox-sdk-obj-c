@@ -42,6 +42,17 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param apps The linked applications of each member of the team
+/// @param hasMore If true, then there are more apps available. Pass the cursor
+/// to `linkedAppsListTeamLinkedApps` to retrieve the rest.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param apps The linked applications of each member of the team
@@ -55,18 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps
                      hasMore:(NSNumber *)hasMore
                       cursor:(nullable NSString *)cursor;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param apps The linked applications of each member of the team
-/// @param hasMore If true, then there are more apps available. Pass the cursor
-/// to `linkedAppsListTeamLinkedApps` to retrieve the rest.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithApps:(NSArray<DBTEAMMemberLinkedApps *> *)apps hasMore:(NSNumber *)hasMore;
 
 - (instancetype)init NS_UNAVAILABLE;
 

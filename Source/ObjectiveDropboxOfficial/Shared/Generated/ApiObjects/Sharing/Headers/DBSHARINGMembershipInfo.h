@@ -45,6 +45,41 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param accessType The access type for this member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType;
+
+///
+/// Convenience constructor.
+///
+/// @param accessType The access type for this member.
+/// @param permissions The permissions that requesting user has on this member.
+/// The set of permissions corresponds to the MemberActions in the request.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                       permissions:(nullable NSArray<DBSHARINGMemberPermission *> *)permissions;
+
+///
+/// Convenience constructor.
+///
+/// @param accessType The access type for this member.
+/// @param permissions The permissions that requesting user has on this member.
+/// The set of permissions corresponds to the MemberActions in the request.
+/// @param initials Suggested name initials for a member.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                       permissions:(nullable NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(nullable NSString *)initials;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param accessType The access type for this member.
@@ -59,16 +94,6 @@ NS_ASSUME_NONNULL_BEGIN
                        permissions:(nullable NSArray<DBSHARINGMemberPermission *> *)permissions
                           initials:(nullable NSString *)initials
                        isInherited:(nullable NSNumber *)isInherited;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param accessType The access type for this member.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType;
 
 - (instancetype)init NS_UNAVAILABLE;
 

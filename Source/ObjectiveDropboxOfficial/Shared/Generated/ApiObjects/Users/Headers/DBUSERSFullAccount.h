@@ -60,6 +60,148 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param accountId The user's unique Dropbox ID.
+/// @param name Details of a user's name.
+/// @param email The user's e-mail address. Do not rely on this without checking
+/// the emailVerified field. Even then, it's possible that the user has since
+/// lost access to their e-mail.
+/// @param emailVerified Whether the user has verified their e-mail address.
+/// @param disabled Whether the user has been disabled.
+/// @param locale The language that the user specified. Locale tags will be IETF
+/// language tags http://en.wikipedia.org/wiki/IETF_language_tag.
+/// @param referralLink The user's referral link
+/// https://www.dropbox.com/referrals.
+/// @param isPaired Whether the user has a personal and work account. If the
+/// current account is personal, then team will always be null, but isPaired
+/// will indicate if a work account is linked.
+/// @param accountType What type of account this user has.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType;
+
+///
+/// Convenience constructor.
+///
+/// @param accountId The user's unique Dropbox ID.
+/// @param name Details of a user's name.
+/// @param email The user's e-mail address. Do not rely on this without checking
+/// the emailVerified field. Even then, it's possible that the user has since
+/// lost access to their e-mail.
+/// @param emailVerified Whether the user has verified their e-mail address.
+/// @param disabled Whether the user has been disabled.
+/// @param locale The language that the user specified. Locale tags will be IETF
+/// language tags http://en.wikipedia.org/wiki/IETF_language_tag.
+/// @param referralLink The user's referral link
+/// https://www.dropbox.com/referrals.
+/// @param isPaired Whether the user has a personal and work account. If the
+/// current account is personal, then team will always be null, but isPaired
+/// will indicate if a work account is linked.
+/// @param accountType What type of account this user has.
+/// @param profilePhotoUrl URL for the photo representing the user, if one is
+/// set.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(nullable NSString *)profilePhotoUrl;
+
+///
+/// Convenience constructor.
+///
+/// @param accountId The user's unique Dropbox ID.
+/// @param name Details of a user's name.
+/// @param email The user's e-mail address. Do not rely on this without checking
+/// the emailVerified field. Even then, it's possible that the user has since
+/// lost access to their e-mail.
+/// @param emailVerified Whether the user has verified their e-mail address.
+/// @param disabled Whether the user has been disabled.
+/// @param locale The language that the user specified. Locale tags will be IETF
+/// language tags http://en.wikipedia.org/wiki/IETF_language_tag.
+/// @param referralLink The user's referral link
+/// https://www.dropbox.com/referrals.
+/// @param isPaired Whether the user has a personal and work account. If the
+/// current account is personal, then team will always be null, but isPaired
+/// will indicate if a work account is linked.
+/// @param accountType What type of account this user has.
+/// @param profilePhotoUrl URL for the photo representing the user, if one is
+/// set.
+/// @param country The user's two-letter country code, if available. Country
+/// codes are based on ISO 3166-1 http://en.wikipedia.org/wiki/ISO_3166-1.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(nullable NSString *)profilePhotoUrl
+                          country:(nullable NSString *)country;
+
+///
+/// Convenience constructor.
+///
+/// @param accountId The user's unique Dropbox ID.
+/// @param name Details of a user's name.
+/// @param email The user's e-mail address. Do not rely on this without checking
+/// the emailVerified field. Even then, it's possible that the user has since
+/// lost access to their e-mail.
+/// @param emailVerified Whether the user has verified their e-mail address.
+/// @param disabled Whether the user has been disabled.
+/// @param locale The language that the user specified. Locale tags will be IETF
+/// language tags http://en.wikipedia.org/wiki/IETF_language_tag.
+/// @param referralLink The user's referral link
+/// https://www.dropbox.com/referrals.
+/// @param isPaired Whether the user has a personal and work account. If the
+/// current account is personal, then team will always be null, but isPaired
+/// will indicate if a work account is linked.
+/// @param accountType What type of account this user has.
+/// @param profilePhotoUrl URL for the photo representing the user, if one is
+/// set.
+/// @param country The user's two-letter country code, if available. Country
+/// codes are based on ISO 3166-1 http://en.wikipedia.org/wiki/ISO_3166-1.
+/// @param team If this account is a member of a team, information about that
+/// team.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountId:(NSString *)accountId
+                             name:(DBUSERSName *)name
+                            email:(NSString *)email
+                    emailVerified:(NSNumber *)emailVerified
+                         disabled:(NSNumber *)disabled
+                           locale:(NSString *)locale
+                     referralLink:(NSString *)referralLink
+                         isPaired:(NSNumber *)isPaired
+                      accountType:(DBUSERSAccountType *)accountType
+                  profilePhotoUrl:(nullable NSString *)profilePhotoUrl
+                          country:(nullable NSString *)country
+                             team:(nullable DBUSERSFullTeam *)team;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param accountId The user's unique Dropbox ID.
@@ -101,38 +243,6 @@ NS_ASSUME_NONNULL_BEGIN
                           country:(nullable NSString *)country
                              team:(nullable DBUSERSFullTeam *)team
                      teamMemberId:(nullable NSString *)teamMemberId;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param accountId The user's unique Dropbox ID.
-/// @param name Details of a user's name.
-/// @param email The user's e-mail address. Do not rely on this without checking
-/// the emailVerified field. Even then, it's possible that the user has since
-/// lost access to their e-mail.
-/// @param emailVerified Whether the user has verified their e-mail address.
-/// @param disabled Whether the user has been disabled.
-/// @param locale The language that the user specified. Locale tags will be IETF
-/// language tags http://en.wikipedia.org/wiki/IETF_language_tag.
-/// @param referralLink The user's referral link
-/// https://www.dropbox.com/referrals.
-/// @param isPaired Whether the user has a personal and work account. If the
-/// current account is personal, then team will always be null, but isPaired
-/// will indicate if a work account is linked.
-/// @param accountType What type of account this user has.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithAccountId:(NSString *)accountId
-                             name:(DBUSERSName *)name
-                            email:(NSString *)email
-                    emailVerified:(NSNumber *)emailVerified
-                         disabled:(NSNumber *)disabled
-                           locale:(NSString *)locale
-                     referralLink:(NSString *)referralLink
-                         isPaired:(NSNumber *)isPaired
-                      accountType:(DBUSERSAccountType *)accountType;
 
 @end
 

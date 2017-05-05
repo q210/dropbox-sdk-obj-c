@@ -34,6 +34,16 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param sessionId The session id
+/// @param teamMemberId The unique id of the member owning the device
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSessionId:(NSString *)sessionId teamMemberId:(NSString *)teamMemberId;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param sessionId The session id
@@ -47,17 +57,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithSessionId:(NSString *)sessionId
                      teamMemberId:(NSString *)teamMemberId
                    deleteOnUnlink:(nullable NSNumber *)deleteOnUnlink;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param sessionId The session id
-/// @param teamMemberId The unique id of the member owning the device
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithSessionId:(NSString *)sessionId teamMemberId:(NSString *)teamMemberId;
 
 @end
 

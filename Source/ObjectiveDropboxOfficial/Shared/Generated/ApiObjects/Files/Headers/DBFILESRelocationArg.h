@@ -38,6 +38,32 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param fromPath Path in the user's Dropbox to be copied or moved.
+/// @param toPath Path in the user's Dropbox that is the destination.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFromPath:(NSString *)fromPath toPath:(NSString *)toPath;
+
+///
+/// Convenience constructor.
+///
+/// @param fromPath Path in the user's Dropbox to be copied or moved.
+/// @param toPath Path in the user's Dropbox that is the destination.
+/// @param allowSharedFolder If true, `dCopy` will copy contents in shared
+/// folder, otherwise `cantCopySharedFolder` in `DBFILESRelocationError` will be
+/// returned if fromPath contains shared folder. This field is always true for
+/// `move`.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFromPath:(NSString *)fromPath
+                          toPath:(NSString *)toPath
+               allowSharedFolder:(nullable NSNumber *)allowSharedFolder;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param fromPath Path in the user's Dropbox to be copied or moved.
@@ -55,17 +81,6 @@ NS_ASSUME_NONNULL_BEGIN
                           toPath:(NSString *)toPath
                allowSharedFolder:(nullable NSNumber *)allowSharedFolder
                       autorename:(nullable NSNumber *)autorename;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param fromPath Path in the user's Dropbox to be copied or moved.
-/// @param toPath Path in the user's Dropbox that is the destination.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithFromPath:(NSString *)fromPath toPath:(NSString *)toPath;
 
 @end
 

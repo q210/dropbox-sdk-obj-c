@@ -214,6 +214,27 @@
 
 - (instancetype)initWithGroupName:(NSString *)groupName
                           groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                 groupExternalId:nil
+                     memberCount:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                  groupExternalId:(NSString *)groupExternalId {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                 groupExternalId:groupExternalId
+                     memberCount:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
               groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
                   groupExternalId:(NSString *)groupExternalId
                       memberCount:(NSNumber *)memberCount {
@@ -227,16 +248,6 @@
     _groupManagementType = groupManagementType;
   }
   return self;
-}
-
-- (instancetype)initWithGroupName:(NSString *)groupName
-                          groupId:(NSString *)groupId
-              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType {
-  return [self initWithGroupName:groupName
-                         groupId:groupId
-             groupManagementType:groupManagementType
-                 groupExternalId:nil
-                     memberCount:nil];
 }
 
 #pragma mark - Serialization methods
@@ -543,6 +554,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithStartTime:nil endTime:nil];
+}
+
+- (instancetype)initWithStartTime:(NSDate *)startTime {
+  return [self initWithStartTime:startTime endTime:nil];
+}
+
 - (instancetype)initWithStartTime:(NSDate *)startTime endTime:(NSDate *)endTime {
 
   self = [super init];
@@ -551,10 +570,6 @@
     _endTime = endTime;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithStartTime:nil endTime:nil];
 }
 
 #pragma mark - Serialization methods

@@ -37,6 +37,16 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param member User which should be added to the Paper doc. Specify only
+/// email or Dropbox account id.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param member User which should be added to the Paper doc. Specify only
@@ -47,17 +57,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 - (instancetype)initWithMember:(DBSHARINGMemberSelector *)member
                permissionLevel:(nullable DBPAPERPaperDocPermissionLevel *)permissionLevel;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param member User which should be added to the Paper doc. Specify only
-/// email or Dropbox account id.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member;
 
 - (instancetype)init NS_UNAVAILABLE;
 

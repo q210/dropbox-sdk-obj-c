@@ -42,6 +42,33 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initDefault;
+
+///
+/// Convenience constructor.
+///
+/// @param audience The type of audience on the link for this file.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAudience:(nullable DBSHARINGLinkAudience *)audience;
+
+///
+/// Convenience constructor.
+///
+/// @param audience The type of audience on the link for this file.
+/// @param expiry An expiry timestamp to set on a link.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAudience:(nullable DBSHARINGLinkAudience *)audience
+                          expiry:(nullable DBSHARINGLinkExpiry *)expiry;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param audience The type of audience on the link for this file.
@@ -53,15 +80,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithAudience:(nullable DBSHARINGLinkAudience *)audience
                           expiry:(nullable DBSHARINGLinkExpiry *)expiry
                         password:(nullable DBSHARINGLinkPassword *)password;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-///
-/// @return An initialized instance.
-///
-- (instancetype)initDefault;
 
 - (instancetype)init NS_UNAVAILABLE;
 

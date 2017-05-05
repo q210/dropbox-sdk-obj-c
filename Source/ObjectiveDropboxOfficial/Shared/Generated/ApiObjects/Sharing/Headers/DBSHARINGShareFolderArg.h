@@ -65,6 +65,137 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+/// @param aclUpdatePolicy Who can add and remove members of this shared folder.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(nullable DBSHARINGAclUpdatePolicy *)aclUpdatePolicy;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+/// @param aclUpdatePolicy Who can add and remove members of this shared folder.
+/// @param sharedLinkPolicy The policy to apply to shared links created for
+/// content inside this shared folder.  The current user must be on a team to
+/// set this policy to `members` in `DBSHARINGSharedLinkPolicy`.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(nullable DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(nullable DBSHARINGSharedLinkPolicy *)sharedLinkPolicy;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+/// @param aclUpdatePolicy Who can add and remove members of this shared folder.
+/// @param sharedLinkPolicy The policy to apply to shared links created for
+/// content inside this shared folder.  The current user must be on a team to
+/// set this policy to `members` in `DBSHARINGSharedLinkPolicy`.
+/// @param forceAsync Whether to force the share to happen asynchronously.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(nullable DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(nullable DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(nullable NSNumber *)forceAsync;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+/// @param aclUpdatePolicy Who can add and remove members of this shared folder.
+/// @param sharedLinkPolicy The policy to apply to shared links created for
+/// content inside this shared folder.  The current user must be on a team to
+/// set this policy to `members` in `DBSHARINGSharedLinkPolicy`.
+/// @param forceAsync Whether to force the share to happen asynchronously.
+/// @param actions This is a list indicating whether each returned folder data
+/// entry will include a boolean field `allow` in `DBSHARINGFolderPermission`
+/// that describes whether the current user can perform the `FolderAction` on
+/// the folder.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(nullable DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(nullable DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(nullable NSNumber *)forceAsync
+                     actions:(nullable NSArray<DBSHARINGFolderAction *> *)actions;
+
+///
+/// Convenience constructor.
+///
+/// @param path The path to the folder to share. If it does not exist, then a
+/// new one is created.
+/// @param memberPolicy Who can be a member of this shared folder. Only
+/// applicable if the current user is on a team.
+/// @param aclUpdatePolicy Who can add and remove members of this shared folder.
+/// @param sharedLinkPolicy The policy to apply to shared links created for
+/// content inside this shared folder.  The current user must be on a team to
+/// set this policy to `members` in `DBSHARINGSharedLinkPolicy`.
+/// @param forceAsync Whether to force the share to happen asynchronously.
+/// @param actions This is a list indicating whether each returned folder data
+/// entry will include a boolean field `allow` in `DBSHARINGFolderPermission`
+/// that describes whether the current user can perform the `FolderAction` on
+/// the folder.
+/// @param linkSettings Settings on the link for this folder.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(nullable DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(nullable DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(nullable DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(nullable NSNumber *)forceAsync
+                     actions:(nullable NSArray<DBSHARINGFolderAction *> *)actions
+                linkSettings:(nullable DBSHARINGLinkSettings *)linkSettings;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param path The path to the folder to share. If it does not exist, then a
@@ -94,17 +225,6 @@ NS_ASSUME_NONNULL_BEGIN
                      actions:(nullable NSArray<DBSHARINGFolderAction *> *)actions
                 linkSettings:(nullable DBSHARINGLinkSettings *)linkSettings
             viewerInfoPolicy:(nullable DBSHARINGViewerInfoPolicy *)viewerInfoPolicy;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param path The path to the folder to share. If it does not exist, then a
-/// new one is created.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithPath:(NSString *)path;
 
 - (instancetype)init NS_UNAVAILABLE;
 

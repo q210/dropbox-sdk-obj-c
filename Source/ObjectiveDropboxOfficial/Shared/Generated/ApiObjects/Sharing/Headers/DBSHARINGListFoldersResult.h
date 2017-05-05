@@ -42,6 +42,16 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param entries List of all shared folders the authenticated user has access
+/// to.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param entries List of all shared folders the authenticated user has access
@@ -54,17 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries cursor:(nullable NSString *)cursor;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param entries List of all shared folders the authenticated user has access
-/// to.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries;
 
 - (instancetype)init NS_UNAVAILABLE;
 

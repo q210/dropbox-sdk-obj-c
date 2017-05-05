@@ -408,6 +408,46 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithFile:(NSString *)file members:(NSArray<DBSHARINGMemberSelector *> *)members {
+  return [self initWithFile:file members:members customMessage:nil quiet:nil accessLevel:nil addMessageAsComment:nil];
+}
+
+- (instancetype)initWithFile:(NSString *)file
+                     members:(NSArray<DBSHARINGMemberSelector *> *)members
+               customMessage:(NSString *)customMessage {
+  return [self initWithFile:file
+                    members:members
+              customMessage:customMessage
+                      quiet:nil
+                accessLevel:nil
+        addMessageAsComment:nil];
+}
+
+- (instancetype)initWithFile:(NSString *)file
+                     members:(NSArray<DBSHARINGMemberSelector *> *)members
+               customMessage:(NSString *)customMessage
+                       quiet:(NSNumber *)quiet {
+  return [self initWithFile:file
+                    members:members
+              customMessage:customMessage
+                      quiet:quiet
+                accessLevel:nil
+        addMessageAsComment:nil];
+}
+
+- (instancetype)initWithFile:(NSString *)file
+                     members:(NSArray<DBSHARINGMemberSelector *> *)members
+               customMessage:(NSString *)customMessage
+                       quiet:(NSNumber *)quiet
+                 accessLevel:(DBSHARINGAccessLevel *)accessLevel {
+  return [self initWithFile:file
+                    members:members
+              customMessage:customMessage
+                      quiet:quiet
+                accessLevel:accessLevel
+        addMessageAsComment:nil];
+}
+
 - (instancetype)initWithFile:(NSString *)file
                      members:(NSArray<DBSHARINGMemberSelector *> *)members
                customMessage:(NSString *)customMessage
@@ -427,10 +467,6 @@
     _addMessageAsComment = addMessageAsComment ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithFile:(NSString *)file members:(NSArray<DBSHARINGMemberSelector *> *)members {
-  return [self initWithFile:file members:members customMessage:nil quiet:nil accessLevel:nil addMessageAsComment:nil];
 }
 
 #pragma mark - Serialization methods
@@ -819,6 +855,16 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId members:(NSArray<DBSHARINGAddMember *> *)members {
+  return [self initWithSharedFolderId:sharedFolderId members:members quiet:nil customMessage:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
+                               members:(NSArray<DBSHARINGAddMember *> *)members
+                                 quiet:(NSNumber *)quiet {
+  return [self initWithSharedFolderId:sharedFolderId members:members quiet:quiet customMessage:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
                                members:(NSArray<DBSHARINGAddMember *> *)members
                                  quiet:(NSNumber *)quiet
@@ -836,10 +882,6 @@
     _customMessage = customMessage;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId members:(NSArray<DBSHARINGAddMember *> *)members {
-  return [self initWithSharedFolderId:sharedFolderId members:members quiet:nil customMessage:nil];
 }
 
 #pragma mark - Serialization methods
@@ -1394,6 +1436,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member {
+  return [self initWithMember:member accessLevel:nil];
+}
+
 - (instancetype)initWithMember:(DBSHARINGMemberSelector *)member accessLevel:(DBSHARINGAccessLevel *)accessLevel {
 
   self = [super init];
@@ -1402,10 +1448,6 @@
     _accessLevel = accessLevel ?: [[DBSHARINGAccessLevel alloc] initWithViewer];
   }
   return self;
-}
-
-- (instancetype)initWithMember:(DBSHARINGMemberSelector *)member {
-  return [self initWithMember:member accessLevel:nil];
 }
 
 #pragma mark - Serialization methods
@@ -1926,6 +1968,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility {
+  return [self initWithUrl:url visibility:visibility expires:nil];
+}
+
 - (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility expires:(NSDate *)expires {
 
   self = [super init];
@@ -1935,10 +1981,6 @@
     _expires = expires;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility {
-  return [self initWithUrl:url visibility:visibility expires:nil];
 }
 
 #pragma mark - Serialization methods
@@ -2071,16 +2113,16 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility {
+  return [self initWithUrl:url visibility:visibility expires:nil];
+}
+
 - (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility expires:(NSDate *)expires {
 
   self = [super initWithUrl:url visibility:visibility expires:expires];
   if (self) {
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility {
-  return [self initWithUrl:url visibility:visibility expires:nil];
 }
 
 #pragma mark - Serialization methods
@@ -2193,6 +2235,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithPath:(NSString *)path {
+  return [self initWithPath:path shortUrl:nil pendingUpload:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path shortUrl:(NSNumber *)shortUrl {
+  return [self initWithPath:path shortUrl:shortUrl pendingUpload:nil];
+}
+
 - (instancetype)initWithPath:(NSString *)path
                     shortUrl:(NSNumber *)shortUrl
                pendingUpload:(DBSHARINGPendingUploadMode *)pendingUpload {
@@ -2204,10 +2254,6 @@
     _pendingUpload = pendingUpload;
   }
   return self;
-}
-
-- (instancetype)initWithPath:(NSString *)path {
-  return [self initWithPath:path shortUrl:nil pendingUpload:nil];
 }
 
 #pragma mark - Serialization methods
@@ -2485,6 +2531,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithPath:(NSString *)path {
+  return [self initWithPath:path settings:nil];
+}
+
 - (instancetype)initWithPath:(NSString *)path settings:(DBSHARINGSharedLinkSettings *)settings {
   [DBStoneValidators stringValidator:nil maxLength:nil
                              pattern:@"(/(.|[\\r\\n])*|id:.*)|(rev:[0-9a-f]{9,})|(ns:[0-9]+(/.*)?)"](path);
@@ -2495,10 +2545,6 @@
     _settings = settings;
   }
   return self;
-}
-
-- (instancetype)initWithPath:(NSString *)path {
-  return [self initWithPath:path settings:nil];
 }
 
 #pragma mark - Serialization methods
@@ -3426,6 +3472,81 @@
 
 - (instancetype)initWithUrl:(NSString *)url
                        name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:nil
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_ {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower
+             teamMemberInfo:(DBSHARINGTeamMemberInfo *)teamMemberInfo {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:teamMemberInfo
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
             linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
                         id_:(NSString *)id_
                     expires:(NSDate *)expires
@@ -3446,19 +3567,6 @@
     _contentOwnerTeamInfo = contentOwnerTeamInfo;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url
-                       name:(NSString *)name
-            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions {
-  return [self initWithUrl:url
-                      name:name
-           linkPermissions:linkPermissions
-                       id_:nil
-                   expires:nil
-                 pathLower:nil
-            teamMemberInfo:nil
-      contentOwnerTeamInfo:nil];
 }
 
 #pragma mark - Serialization methods
@@ -3648,6 +3756,121 @@
              clientModified:(NSDate *)clientModified
              serverModified:(NSDate *)serverModified
                         rev:(NSString *)rev
+                       size:(NSNumber *)size {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+            clientModified:clientModified
+            serverModified:serverModified
+                       rev:rev
+                      size:size
+                       id_:nil
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+             clientModified:(NSDate *)clientModified
+             serverModified:(NSDate *)serverModified
+                        rev:(NSString *)rev
+                       size:(NSNumber *)size
+                        id_:(NSString *)id_ {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+            clientModified:clientModified
+            serverModified:serverModified
+                       rev:rev
+                      size:size
+                       id_:id_
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+             clientModified:(NSDate *)clientModified
+             serverModified:(NSDate *)serverModified
+                        rev:(NSString *)rev
+                       size:(NSNumber *)size
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+            clientModified:clientModified
+            serverModified:serverModified
+                       rev:rev
+                      size:size
+                       id_:id_
+                   expires:expires
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+             clientModified:(NSDate *)clientModified
+             serverModified:(NSDate *)serverModified
+                        rev:(NSString *)rev
+                       size:(NSNumber *)size
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+            clientModified:clientModified
+            serverModified:serverModified
+                       rev:rev
+                      size:size
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+             clientModified:(NSDate *)clientModified
+             serverModified:(NSDate *)serverModified
+                        rev:(NSString *)rev
+                       size:(NSNumber *)size
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower
+             teamMemberInfo:(DBSHARINGTeamMemberInfo *)teamMemberInfo {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+            clientModified:clientModified
+            serverModified:serverModified
+                       rev:rev
+                      size:size
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:teamMemberInfo
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+             clientModified:(NSDate *)clientModified
+             serverModified:(NSDate *)serverModified
+                        rev:(NSString *)rev
                        size:(NSNumber *)size
                         id_:(NSString *)id_
                     expires:(NSDate *)expires
@@ -3672,27 +3895,6 @@
     _size = size;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url
-                       name:(NSString *)name
-            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
-             clientModified:(NSDate *)clientModified
-             serverModified:(NSDate *)serverModified
-                        rev:(NSString *)rev
-                       size:(NSNumber *)size {
-  return [self initWithUrl:url
-                      name:name
-           linkPermissions:linkPermissions
-            clientModified:clientModified
-            serverModified:serverModified
-                       rev:rev
-                      size:size
-                       id_:nil
-                   expires:nil
-                 pathLower:nil
-            teamMemberInfo:nil
-      contentOwnerTeamInfo:nil];
 }
 
 #pragma mark - Serialization methods
@@ -4659,6 +4861,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAction:(DBSHARINGFileAction *)action allow:(NSNumber *)allow {
+  return [self initWithAction:action allow:allow reason:nil];
+}
+
 - (instancetype)initWithAction:(DBSHARINGFileAction *)action
                          allow:(NSNumber *)allow
                         reason:(DBSHARINGPermissionDeniedReason *)reason {
@@ -4670,10 +4876,6 @@
     _reason = reason;
   }
   return self;
-}
-
-- (instancetype)initWithAction:(DBSHARINGFileAction *)action allow:(NSNumber *)allow {
-  return [self initWithAction:action allow:allow reason:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5205,6 +5407,81 @@
 
 - (instancetype)initWithUrl:(NSString *)url
                        name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:nil
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_ {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:nil
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:nil
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:nil
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
+            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
+                        id_:(NSString *)id_
+                    expires:(NSDate *)expires
+                  pathLower:(NSString *)pathLower
+             teamMemberInfo:(DBSHARINGTeamMemberInfo *)teamMemberInfo {
+  return [self initWithUrl:url
+                      name:name
+           linkPermissions:linkPermissions
+                       id_:id_
+                   expires:expires
+                 pathLower:pathLower
+            teamMemberInfo:teamMemberInfo
+      contentOwnerTeamInfo:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url
+                       name:(NSString *)name
             linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions
                         id_:(NSString *)id_
                     expires:(NSDate *)expires
@@ -5224,19 +5501,6 @@
   if (self) {
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url
-                       name:(NSString *)name
-            linkPermissions:(DBSHARINGLinkPermissions *)linkPermissions {
-  return [self initWithUrl:url
-                      name:name
-           linkPermissions:linkPermissions
-                       id_:nil
-                   expires:nil
-                 pathLower:nil
-            teamMemberInfo:nil
-      contentOwnerTeamInfo:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5416,6 +5680,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAction:(DBSHARINGFolderAction *)action allow:(NSNumber *)allow {
+  return [self initWithAction:action allow:allow reason:nil];
+}
+
 - (instancetype)initWithAction:(DBSHARINGFolderAction *)action
                          allow:(NSNumber *)allow
                         reason:(DBSHARINGPermissionDeniedReason *)reason {
@@ -5427,10 +5695,6 @@
     _reason = reason;
   }
   return self;
-}
-
-- (instancetype)initWithAction:(DBSHARINGFolderAction *)action allow:(NSNumber *)allow {
-  return [self initWithAction:action allow:allow reason:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5546,6 +5810,36 @@
 #pragma mark - Constructors
 
 - (instancetype)initWithAclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+                       sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy {
+  return [self initWithAclUpdatePolicy:aclUpdatePolicy
+                      sharedLinkPolicy:sharedLinkPolicy
+                          memberPolicy:nil
+                  resolvedMemberPolicy:nil
+                      viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithAclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+                       sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                           memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy {
+  return [self initWithAclUpdatePolicy:aclUpdatePolicy
+                      sharedLinkPolicy:sharedLinkPolicy
+                          memberPolicy:memberPolicy
+                  resolvedMemberPolicy:nil
+                      viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithAclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+                       sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                           memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+                   resolvedMemberPolicy:(DBSHARINGMemberPolicy *)resolvedMemberPolicy {
+  return [self initWithAclUpdatePolicy:aclUpdatePolicy
+                      sharedLinkPolicy:sharedLinkPolicy
+                          memberPolicy:memberPolicy
+                  resolvedMemberPolicy:resolvedMemberPolicy
+                      viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithAclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
                        sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
                            memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
                    resolvedMemberPolicy:(DBSHARINGMemberPolicy *)resolvedMemberPolicy
@@ -5560,15 +5854,6 @@
     _viewerInfoPolicy = viewerInfoPolicy;
   }
   return self;
-}
-
-- (instancetype)initWithAclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
-                       sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy {
-  return [self initWithAclUpdatePolicy:aclUpdatePolicy
-                      sharedLinkPolicy:sharedLinkPolicy
-                          memberPolicy:nil
-                  resolvedMemberPolicy:nil
-                      viewerInfoPolicy:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5716,6 +6001,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithFile:(NSString *)file {
+  return [self initWithFile:file actions:nil];
+}
+
 - (instancetype)initWithFile:(NSString *)file actions:(NSArray<DBSHARINGFileAction *> *)actions {
   [DBStoneValidators stringValidator:@(1) maxLength:nil pattern:@"((/|id:).*|nspath:[0-9]+:.*)|ns:[0-9]+(/.*)?"](file);
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](actions);
@@ -5726,10 +6015,6 @@
     _actions = actions;
   }
   return self;
-}
-
-- (instancetype)initWithFile:(NSString *)file {
-  return [self initWithFile:file actions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -5842,6 +6127,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithFiles:(NSArray<NSString *> *)files {
+  return [self initWithFiles:files actions:nil];
+}
+
 - (instancetype)initWithFiles:(NSArray<NSString *> *)files actions:(NSArray<DBSHARINGFileAction *> *)actions {
   [DBStoneValidators arrayValidator:nil maxItems:@(100)
                       itemValidator:[DBStoneValidators
@@ -5856,10 +6145,6 @@
     _actions = actions;
   }
   return self;
-}
-
-- (instancetype)initWithFiles:(NSArray<NSString *> *)files {
-  return [self initWithFiles:files actions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -6493,6 +6778,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
+  return [self initWithSharedFolderId:sharedFolderId actions:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId actions:(NSArray<DBSHARINGFolderAction *> *)actions {
   [DBStoneValidators stringValidator:nil maxLength:nil pattern:@"[-_0-9a-zA-Z:]+"](sharedFolderId);
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](actions);
@@ -6503,10 +6792,6 @@
     _actions = actions;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
-  return [self initWithSharedFolderId:sharedFolderId actions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7031,6 +7316,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUrl:(NSString *)url {
+  return [self initWithUrl:url path:nil linkPassword:nil];
+}
+
+- (instancetype)initWithUrl:(NSString *)url path:(NSString *)path {
+  return [self initWithUrl:url path:path linkPassword:nil];
+}
+
 - (instancetype)initWithUrl:(NSString *)url path:(NSString *)path linkPassword:(NSString *)linkPassword {
   [DBStoneValidators
    nullableValidator:[DBStoneValidators stringValidator:nil maxLength:nil pattern:@"/(.|[\\r\\n])*"]](path);
@@ -7042,10 +7335,6 @@
     _linkPassword = linkPassword;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url {
-  return [self initWithUrl:url path:nil linkPassword:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7161,6 +7450,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithPath:nil];
+}
+
 - (instancetype)initWithPath:(NSString *)path {
 
   self = [super init];
@@ -7168,10 +7461,6 @@
     _path = path;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithPath:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7555,6 +7844,43 @@
                         groupType:(DBTEAMCOMMONGroupType *)groupType
                          isMember:(NSNumber *)isMember
                           isOwner:(NSNumber *)isOwner
+                         sameTeam:(NSNumber *)sameTeam {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                       groupType:groupType
+                        isMember:isMember
+                         isOwner:isOwner
+                        sameTeam:sameTeam
+                 groupExternalId:nil
+                     memberCount:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                        groupType:(DBTEAMCOMMONGroupType *)groupType
+                         isMember:(NSNumber *)isMember
+                          isOwner:(NSNumber *)isOwner
+                         sameTeam:(NSNumber *)sameTeam
+                  groupExternalId:(NSString *)groupExternalId {
+  return [self initWithGroupName:groupName
+                         groupId:groupId
+             groupManagementType:groupManagementType
+                       groupType:groupType
+                        isMember:isMember
+                         isOwner:isOwner
+                        sameTeam:sameTeam
+                 groupExternalId:groupExternalId
+                     memberCount:nil];
+}
+
+- (instancetype)initWithGroupName:(NSString *)groupName
+                          groupId:(NSString *)groupId
+              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
+                        groupType:(DBTEAMCOMMONGroupType *)groupType
+                         isMember:(NSNumber *)isMember
+                          isOwner:(NSNumber *)isOwner
                          sameTeam:(NSNumber *)sameTeam
                   groupExternalId:(NSString *)groupExternalId
                       memberCount:(NSNumber *)memberCount {
@@ -7571,24 +7897,6 @@
     _sameTeam = sameTeam;
   }
   return self;
-}
-
-- (instancetype)initWithGroupName:(NSString *)groupName
-                          groupId:(NSString *)groupId
-              groupManagementType:(DBTEAMCOMMONGroupManagementType *)groupManagementType
-                        groupType:(DBTEAMCOMMONGroupType *)groupType
-                         isMember:(NSNumber *)isMember
-                          isOwner:(NSNumber *)isOwner
-                         sameTeam:(NSNumber *)sameTeam {
-  return [self initWithGroupName:groupName
-                         groupId:groupId
-             groupManagementType:groupManagementType
-                       groupType:groupType
-                        isMember:isMember
-                         isOwner:isOwner
-                        sameTeam:sameTeam
-                 groupExternalId:nil
-                     memberCount:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7752,6 +8060,21 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType {
+  return [self initWithAccessType:accessType permissions:nil initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions {
+  return [self initWithAccessType:accessType permissions:permissions initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(NSString *)initials {
+  return [self initWithAccessType:accessType permissions:permissions initials:initials isInherited:nil];
+}
+
 - (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
                        permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
                           initials:(NSString *)initials
@@ -7767,10 +8090,6 @@
     _isInherited = isInherited ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType {
-  return [self initWithAccessType:accessType permissions:nil initials:nil isInherited:nil];
 }
 
 #pragma mark - Serialization methods
@@ -7907,6 +8226,23 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType group:(DBSHARINGGroupInfo *)group {
+  return [self initWithAccessType:accessType group:group permissions:nil initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                             group:(DBSHARINGGroupInfo *)group
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions {
+  return [self initWithAccessType:accessType group:group permissions:permissions initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                             group:(DBSHARINGGroupInfo *)group
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(NSString *)initials {
+  return [self initWithAccessType:accessType group:group permissions:permissions initials:initials isInherited:nil];
+}
+
 - (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
                              group:(DBSHARINGGroupInfo *)group
                        permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
@@ -7920,10 +8256,6 @@
     _group = group;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType group:(DBSHARINGGroupInfo *)group {
-  return [self initWithAccessType:accessType group:group permissions:nil initials:nil isInherited:nil];
 }
 
 #pragma mark - Serialization methods
@@ -8348,6 +8680,46 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType invitee:(DBSHARINGInviteeInfo *)invitee {
+  return [self initWithAccessType:accessType invitee:invitee permissions:nil initials:nil isInherited:nil user:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                           invitee:(DBSHARINGInviteeInfo *)invitee
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions {
+  return [self initWithAccessType:accessType
+                          invitee:invitee
+                      permissions:permissions
+                         initials:nil
+                      isInherited:nil
+                             user:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                           invitee:(DBSHARINGInviteeInfo *)invitee
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(NSString *)initials {
+  return [self initWithAccessType:accessType
+                          invitee:invitee
+                      permissions:permissions
+                         initials:initials
+                      isInherited:nil
+                             user:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                           invitee:(DBSHARINGInviteeInfo *)invitee
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(NSString *)initials
+                       isInherited:(NSNumber *)isInherited {
+  return [self initWithAccessType:accessType
+                          invitee:invitee
+                      permissions:permissions
+                         initials:initials
+                      isInherited:isInherited
+                             user:nil];
+}
+
 - (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
                            invitee:(DBSHARINGInviteeInfo *)invitee
                        permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
@@ -8363,10 +8735,6 @@
     _user = user;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType invitee:(DBSHARINGInviteeInfo *)invitee {
-  return [self initWithAccessType:accessType invitee:invitee permissions:nil initials:nil isInherited:nil user:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9764,6 +10132,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAction:(DBSHARINGLinkAction *)action allow:(NSNumber *)allow {
+  return [self initWithAction:action allow:allow reason:nil];
+}
+
 - (instancetype)initWithAction:(DBSHARINGLinkAction *)action
                          allow:(NSNumber *)allow
                         reason:(DBSHARINGPermissionDeniedReason *)reason {
@@ -9775,10 +10147,6 @@
     _reason = reason;
   }
   return self;
-}
-
-- (instancetype)initWithAction:(DBSHARINGLinkAction *)action allow:(NSNumber *)allow {
-  return [self initWithAction:action allow:allow reason:nil];
 }
 
 #pragma mark - Serialization methods
@@ -9892,6 +10260,27 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithCanRevoke:(NSNumber *)canRevoke {
+  return [self initWithCanRevoke:canRevoke resolvedVisibility:nil requestedVisibility:nil revokeFailureReason:nil];
+}
+
+- (instancetype)initWithCanRevoke:(NSNumber *)canRevoke
+               resolvedVisibility:(DBSHARINGResolvedVisibility *)resolvedVisibility {
+  return [self initWithCanRevoke:canRevoke
+              resolvedVisibility:resolvedVisibility
+             requestedVisibility:nil
+             revokeFailureReason:nil];
+}
+
+- (instancetype)initWithCanRevoke:(NSNumber *)canRevoke
+               resolvedVisibility:(DBSHARINGResolvedVisibility *)resolvedVisibility
+              requestedVisibility:(DBSHARINGRequestedVisibility *)requestedVisibility {
+  return [self initWithCanRevoke:canRevoke
+              resolvedVisibility:resolvedVisibility
+             requestedVisibility:requestedVisibility
+             revokeFailureReason:nil];
+}
+
 - (instancetype)initWithCanRevoke:(NSNumber *)canRevoke
                resolvedVisibility:(DBSHARINGResolvedVisibility *)resolvedVisibility
               requestedVisibility:(DBSHARINGRequestedVisibility *)requestedVisibility
@@ -9905,10 +10294,6 @@
     _revokeFailureReason = revokeFailureReason;
   }
   return self;
-}
-
-- (instancetype)initWithCanRevoke:(NSNumber *)canRevoke {
-  return [self initWithCanRevoke:canRevoke resolvedVisibility:nil requestedVisibility:nil revokeFailureReason:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10052,6 +10437,18 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithAudience:nil expiry:nil password:nil];
+}
+
+- (instancetype)initWithAudience:(DBSHARINGLinkAudience *)audience {
+  return [self initWithAudience:audience expiry:nil password:nil];
+}
+
+- (instancetype)initWithAudience:(DBSHARINGLinkAudience *)audience expiry:(DBSHARINGLinkExpiry *)expiry {
+  return [self initWithAudience:audience expiry:expiry password:nil];
+}
+
 - (instancetype)initWithAudience:(DBSHARINGLinkAudience *)audience
                           expiry:(DBSHARINGLinkExpiry *)expiry
                         password:(DBSHARINGLinkPassword *)password {
@@ -10063,10 +10460,6 @@
     _password = password;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithAudience:nil expiry:nil password:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10192,6 +10585,20 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithFile:(NSString *)file {
+  return [self initWithFile:file actions:nil includeInherited:nil limit:nil];
+}
+
+- (instancetype)initWithFile:(NSString *)file actions:(NSArray<DBSHARINGMemberAction *> *)actions {
+  return [self initWithFile:file actions:actions includeInherited:nil limit:nil];
+}
+
+- (instancetype)initWithFile:(NSString *)file
+                     actions:(NSArray<DBSHARINGMemberAction *> *)actions
+            includeInherited:(NSNumber *)includeInherited {
+  return [self initWithFile:file actions:actions includeInherited:includeInherited limit:nil];
+}
+
 - (instancetype)initWithFile:(NSString *)file
                      actions:(NSArray<DBSHARINGMemberAction *> *)actions
             includeInherited:(NSNumber *)includeInherited
@@ -10208,10 +10615,6 @@
     _limit = limit ?: @(100);
   }
   return self;
-}
-
-- (instancetype)initWithFile:(NSString *)file {
-  return [self initWithFile:file actions:nil includeInherited:nil limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -10338,6 +10741,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithFiles:(NSArray<NSString *> *)files {
+  return [self initWithFiles:files limit:nil];
+}
+
 - (instancetype)initWithFiles:(NSArray<NSString *> *)files limit:(NSNumber *)limit {
   [DBStoneValidators arrayValidator:nil maxItems:@(100)
                       itemValidator:[DBStoneValidators
@@ -10352,10 +10759,6 @@
     _limit = limit ?: @(10);
   }
   return self;
-}
-
-- (instancetype)initWithFiles:(NSArray<NSString *> *)files {
-  return [self initWithFiles:files limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11405,6 +11808,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithLimit:nil actions:nil];
+}
+
+- (instancetype)initWithLimit:(NSNumber *)limit {
+  return [self initWithLimit:limit actions:nil];
+}
+
 - (instancetype)initWithLimit:(NSNumber *)limit actions:(NSArray<DBSHARINGFileAction *> *)actions {
   [DBStoneValidators numericValidator:@(1) maxValue:@(300)](limit ?: @(100));
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](actions);
@@ -11415,10 +11826,6 @@
     _actions = actions;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithLimit:nil actions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11816,6 +12223,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFileMetadata *> *)entries {
+  return [self initWithEntries:entries cursor:nil];
+}
+
 - (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFileMetadata *> *)entries cursor:(NSString *)cursor {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](entries);
 
@@ -11825,10 +12236,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFileMetadata *> *)entries {
-  return [self initWithEntries:entries cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -11940,6 +12347,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithActions:nil limit:nil];
+}
+
+- (instancetype)initWithActions:(NSArray<DBSHARINGMemberAction *> *)actions {
+  return [self initWithActions:actions limit:nil];
+}
+
 - (instancetype)initWithActions:(NSArray<DBSHARINGMemberAction *> *)actions limit:(NSNumber *)limit {
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](actions);
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
@@ -11950,10 +12365,6 @@
     _limit = limit ?: @(1000);
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithActions:nil limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12067,6 +12478,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
+  return [self initWithSharedFolderId:sharedFolderId actions:nil limit:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId actions:(NSArray<DBSHARINGMemberAction *> *)actions {
+  return [self initWithSharedFolderId:sharedFolderId actions:actions limit:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
                                actions:(NSArray<DBSHARINGMemberAction *> *)actions
                                  limit:(NSNumber *)limit {
@@ -12079,10 +12498,6 @@
     _sharedFolderId = sharedFolderId;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
-  return [self initWithSharedFolderId:sharedFolderId actions:nil limit:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12490,6 +12905,14 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithLimit:nil actions:nil];
+}
+
+- (instancetype)initWithLimit:(NSNumber *)limit {
+  return [self initWithLimit:limit actions:nil];
+}
+
 - (instancetype)initWithLimit:(NSNumber *)limit actions:(NSArray<DBSHARINGFolderAction *> *)actions {
   [DBStoneValidators numericValidator:@(1) maxValue:@(1000)](limit ?: @(1000));
   [DBStoneValidators nullableValidator:[DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil]](actions);
@@ -12500,10 +12923,6 @@
     _actions = actions;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithLimit:nil actions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12865,6 +13284,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries {
+  return [self initWithEntries:entries cursor:nil];
+}
+
 - (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries cursor:(NSString *)cursor {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](entries);
 
@@ -12874,10 +13297,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithEntries:(NSArray<DBSHARINGSharedFolderMetadata *> *)entries {
-  return [self initWithEntries:entries cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -12988,6 +13407,18 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithPath:nil cursor:nil directOnly:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path {
+  return [self initWithPath:path cursor:nil directOnly:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path cursor:(NSString *)cursor {
+  return [self initWithPath:path cursor:cursor directOnly:nil];
+}
+
 - (instancetype)initWithPath:(NSString *)path cursor:(NSString *)cursor directOnly:(NSNumber *)directOnly {
   [DBStoneValidators
    nullableValidator:[DBStoneValidators
@@ -13002,10 +13433,6 @@
     _directOnly = directOnly;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithPath:nil cursor:nil directOnly:nil];
 }
 
 #pragma mark - Serialization methods
@@ -13315,6 +13742,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithLinks:(NSArray<DBSHARINGSharedLinkMetadata *> *)links hasMore:(NSNumber *)hasMore {
+  return [self initWithLinks:links hasMore:hasMore cursor:nil];
+}
+
 - (instancetype)initWithLinks:(NSArray<DBSHARINGSharedLinkMetadata *> *)links
                       hasMore:(NSNumber *)hasMore
                        cursor:(NSString *)cursor {
@@ -13327,10 +13758,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithLinks:(NSArray<DBSHARINGSharedLinkMetadata *> *)links hasMore:(NSNumber *)hasMore {
-  return [self initWithLinks:links hasMore:hasMore cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -13449,6 +13876,18 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithAccessLevel:nil warning:nil accessDetails:nil];
+}
+
+- (instancetype)initWithAccessLevel:(DBSHARINGAccessLevel *)accessLevel {
+  return [self initWithAccessLevel:accessLevel warning:nil accessDetails:nil];
+}
+
+- (instancetype)initWithAccessLevel:(DBSHARINGAccessLevel *)accessLevel warning:(NSString *)warning {
+  return [self initWithAccessLevel:accessLevel warning:warning accessDetails:nil];
+}
+
 - (instancetype)initWithAccessLevel:(DBSHARINGAccessLevel *)accessLevel
                             warning:(NSString *)warning
                       accessDetails:(NSArray<DBSHARINGParentFolderAccessInfo *> *)accessDetails {
@@ -13462,10 +13901,6 @@
     _accessDetails = accessDetails;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithAccessLevel:nil warning:nil accessDetails:nil];
 }
 
 #pragma mark - Serialization methods
@@ -13863,6 +14298,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAction:(DBSHARINGMemberAction *)action allow:(NSNumber *)allow {
+  return [self initWithAction:action allow:allow reason:nil];
+}
+
 - (instancetype)initWithAction:(DBSHARINGMemberAction *)action
                          allow:(NSNumber *)allow
                         reason:(DBSHARINGPermissionDeniedReason *)reason {
@@ -13874,10 +14313,6 @@
     _reason = reason;
   }
   return self;
-}
-
-- (instancetype)initWithAction:(DBSHARINGMemberAction *)action allow:(NSNumber *)allow {
-  return [self initWithAction:action allow:allow reason:nil];
 }
 
 #pragma mark - Serialization methods
@@ -14360,6 +14795,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUrl:(NSString *)url settings:(DBSHARINGSharedLinkSettings *)settings {
+  return [self initWithUrl:url settings:settings removeExpiration:nil];
+}
+
 - (instancetype)initWithUrl:(NSString *)url
                    settings:(DBSHARINGSharedLinkSettings *)settings
            removeExpiration:(NSNumber *)removeExpiration {
@@ -14371,10 +14810,6 @@
     _removeExpiration = removeExpiration ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url settings:(DBSHARINGSharedLinkSettings *)settings {
-  return [self initWithUrl:url settings:settings removeExpiration:nil];
 }
 
 #pragma mark - Serialization methods
@@ -15258,6 +15693,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility path:(NSString *)path {
+  return [self initWithUrl:url visibility:visibility path:path expires:nil];
+}
+
 - (instancetype)initWithUrl:(NSString *)url
                  visibility:(DBSHARINGVisibility *)visibility
                        path:(NSString *)path
@@ -15268,10 +15707,6 @@
     _path = path;
   }
   return self;
-}
-
-- (instancetype)initWithUrl:(NSString *)url visibility:(DBSHARINGVisibility *)visibility path:(NSString *)path {
-  return [self initWithUrl:url visibility:visibility path:path expires:nil];
 }
 
 #pragma mark - Serialization methods
@@ -16272,6 +16707,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
+  return [self initWithSharedFolderId:sharedFolderId leaveACopy:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId leaveACopy:(NSNumber *)leaveACopy {
   [DBStoneValidators stringValidator:nil maxLength:nil pattern:@"[-_0-9a-zA-Z:]+"](sharedFolderId);
 
@@ -16281,10 +16720,6 @@
     _leaveACopy = leaveACopy ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
-  return [self initWithSharedFolderId:sharedFolderId leaveACopy:nil];
 }
 
 #pragma mark - Serialization methods
@@ -18390,6 +18825,103 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithPath:(NSString *)path {
+  return [self initWithPath:path
+               memberPolicy:nil
+            aclUpdatePolicy:nil
+           sharedLinkPolicy:nil
+                 forceAsync:nil
+                    actions:nil
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:nil
+           sharedLinkPolicy:nil
+                 forceAsync:nil
+                    actions:nil
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:aclUpdatePolicy
+           sharedLinkPolicy:nil
+                 forceAsync:nil
+                    actions:nil
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:aclUpdatePolicy
+           sharedLinkPolicy:sharedLinkPolicy
+                 forceAsync:nil
+                    actions:nil
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(NSNumber *)forceAsync {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:aclUpdatePolicy
+           sharedLinkPolicy:sharedLinkPolicy
+                 forceAsync:forceAsync
+                    actions:nil
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(NSNumber *)forceAsync
+                     actions:(NSArray<DBSHARINGFolderAction *> *)actions {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:aclUpdatePolicy
+           sharedLinkPolicy:sharedLinkPolicy
+                 forceAsync:forceAsync
+                    actions:actions
+               linkSettings:nil
+           viewerInfoPolicy:nil];
+}
+
+- (instancetype)initWithPath:(NSString *)path
+                memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+             aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+            sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy
+                  forceAsync:(NSNumber *)forceAsync
+                     actions:(NSArray<DBSHARINGFolderAction *> *)actions
+                linkSettings:(DBSHARINGLinkSettings *)linkSettings {
+  return [self initWithPath:path
+               memberPolicy:memberPolicy
+            aclUpdatePolicy:aclUpdatePolicy
+           sharedLinkPolicy:sharedLinkPolicy
+                 forceAsync:forceAsync
+                    actions:actions
+               linkSettings:linkSettings
+           viewerInfoPolicy:nil];
+}
+
 - (instancetype)initWithPath:(NSString *)path
                 memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
              aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
@@ -18413,17 +18945,6 @@
     _viewerInfoPolicy = viewerInfoPolicy;
   }
   return self;
-}
-
-- (instancetype)initWithPath:(NSString *)path {
-  return [self initWithPath:path
-               memberPolicy:nil
-            aclUpdatePolicy:nil
-           sharedLinkPolicy:nil
-                 forceAsync:nil
-                    actions:nil
-               linkSettings:nil
-           viewerInfoPolicy:nil];
 }
 
 #pragma mark - Serialization methods
@@ -19962,6 +20483,17 @@
 - (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
                         currentAudience:(DBSHARINGLinkAudience *)currentAudience
                         linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
+                      passwordProtected:(NSNumber *)passwordProtected {
+  return [self initWithAudienceOptions:audienceOptions
+                       currentAudience:currentAudience
+                       linkPermissions:linkPermissions
+                     passwordProtected:passwordProtected
+                                expiry:nil];
+}
+
+- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
+                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
+                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
                       passwordProtected:(NSNumber *)passwordProtected
                                  expiry:(NSDate *)expiry {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](audienceOptions);
@@ -19976,17 +20508,6 @@
     _passwordProtected = passwordProtected;
   }
   return self;
-}
-
-- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
-                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
-                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
-                      passwordProtected:(NSNumber *)passwordProtected {
-  return [self initWithAudienceOptions:audienceOptions
-                       currentAudience:currentAudience
-                       linkPermissions:linkPermissions
-                     passwordProtected:passwordProtected
-                                expiry:nil];
 }
 
 #pragma mark - Serialization methods
@@ -20136,6 +20657,19 @@
                         currentAudience:(DBSHARINGLinkAudience *)currentAudience
                         linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
                       passwordProtected:(NSNumber *)passwordProtected
+                                    url:(NSString *)url {
+  return [self initWithAudienceOptions:audienceOptions
+                       currentAudience:currentAudience
+                       linkPermissions:linkPermissions
+                     passwordProtected:passwordProtected
+                                   url:url
+                                expiry:nil];
+}
+
+- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
+                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
+                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
+                      passwordProtected:(NSNumber *)passwordProtected
                                     url:(NSString *)url
                                  expiry:(NSDate *)expiry {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](audienceOptions);
@@ -20150,19 +20684,6 @@
     _url = url;
   }
   return self;
-}
-
-- (instancetype)initWithAudienceOptions:(NSArray<DBSHARINGLinkAudience *> *)audienceOptions
-                        currentAudience:(DBSHARINGLinkAudience *)currentAudience
-                        linkPermissions:(NSArray<DBSHARINGLinkPermission *> *)linkPermissions
-                      passwordProtected:(NSNumber *)passwordProtected
-                                    url:(NSString *)url {
-  return [self initWithAudienceOptions:audienceOptions
-                       currentAudience:currentAudience
-                       linkPermissions:linkPermissions
-                     passwordProtected:passwordProtected
-                                   url:url
-                                expiry:nil];
 }
 
 #pragma mark - Serialization methods
@@ -20316,6 +20837,12 @@
 
 - (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
                        groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
+                     invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees {
+  return [self initWithUsers:users groups:groups invitees:invitees cursor:nil];
+}
+
+- (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
+                       groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
                      invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees
                        cursor:(NSString *)cursor {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](users);
@@ -20330,12 +20857,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
-                       groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
-                     invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees {
-  return [self initWithUsers:users groups:groups invitees:invitees cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -20479,6 +21000,146 @@
 - (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
                     previewUrl:(NSString *)previewUrl
                           name:(NSString *)name
+                           id_:(NSString *)id_ {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:nil
+                  permissions:nil
+                    ownerTeam:nil
+         parentSharedFolderId:nil
+                    pathLower:nil
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:nil
+                    ownerTeam:nil
+         parentSharedFolderId:nil
+                    pathLower:nil
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(NSArray<DBSHARINGFilePermission *> *)permissions {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:permissions
+                    ownerTeam:nil
+         parentSharedFolderId:nil
+                    pathLower:nil
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(DBUSERSTeam *)ownerTeam {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:permissions
+                    ownerTeam:ownerTeam
+         parentSharedFolderId:nil
+                    pathLower:nil
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(NSString *)parentSharedFolderId {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:permissions
+                    ownerTeam:ownerTeam
+         parentSharedFolderId:parentSharedFolderId
+                    pathLower:nil
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(NSString *)parentSharedFolderId
+                     pathLower:(NSString *)pathLower {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:permissions
+                    ownerTeam:ownerTeam
+         parentSharedFolderId:parentSharedFolderId
+                    pathLower:pathLower
+                  pathDisplay:nil
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
+                           id_:(NSString *)id_
+                  linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
+                   permissions:(NSArray<DBSHARINGFilePermission *> *)permissions
+                     ownerTeam:(DBUSERSTeam *)ownerTeam
+          parentSharedFolderId:(NSString *)parentSharedFolderId
+                     pathLower:(NSString *)pathLower
+                   pathDisplay:(NSString *)pathDisplay {
+  return [self initWithPolicy:policy
+                   previewUrl:previewUrl
+                         name:name
+                          id_:id_
+                 linkMetadata:linkMetadata
+                  permissions:permissions
+                    ownerTeam:ownerTeam
+         parentSharedFolderId:parentSharedFolderId
+                    pathLower:pathLower
+                  pathDisplay:pathDisplay
+                  timeInvited:nil];
+}
+
+- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
+                    previewUrl:(NSString *)previewUrl
+                          name:(NSString *)name
                            id_:(NSString *)id_
                   linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata
                    permissions:(NSArray<DBSHARINGFilePermission *> *)permissions
@@ -20509,23 +21170,6 @@
     _timeInvited = timeInvited;
   }
   return self;
-}
-
-- (instancetype)initWithPolicy:(DBSHARINGFolderPolicy *)policy
-                    previewUrl:(NSString *)previewUrl
-                          name:(NSString *)name
-                           id_:(NSString *)id_ {
-  return [self initWithPolicy:policy
-                   previewUrl:previewUrl
-                         name:name
-                          id_:id_
-                 linkMetadata:nil
-                  permissions:nil
-                    ownerTeam:nil
-         parentSharedFolderId:nil
-                    pathLower:nil
-                  pathDisplay:nil
-                  timeInvited:nil];
 }
 
 #pragma mark - Serialization methods
@@ -21177,6 +21821,12 @@
 
 - (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
                        groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
+                     invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees {
+  return [self initWithUsers:users groups:groups invitees:invitees cursor:nil];
+}
+
+- (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
+                       groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
                      invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees
                        cursor:(NSString *)cursor {
   [DBStoneValidators arrayValidator:nil maxItems:nil itemValidator:nil](users);
@@ -21191,12 +21841,6 @@
     _cursor = cursor;
   }
   return self;
-}
-
-- (instancetype)initWithUsers:(NSArray<DBSHARINGUserMembershipInfo *> *)users
-                       groups:(NSArray<DBSHARINGGroupMembershipInfo *> *)groups
-                     invitees:(NSArray<DBSHARINGInviteeMembershipInfo *> *)invitees {
-  return [self initWithUsers:users groups:groups invitees:invitees cursor:nil];
 }
 
 #pragma mark - Serialization methods
@@ -21337,6 +21981,42 @@
 
 - (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
                 isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                        ownerTeam:nil
+             parentSharedFolderId:nil
+                        pathLower:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                         ownerTeam:(DBUSERSTeam *)ownerTeam {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:nil
+                        pathLower:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                         ownerTeam:(DBUSERSTeam *)ownerTeam
+              parentSharedFolderId:(NSString *)parentSharedFolderId {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:parentSharedFolderId
+                        pathLower:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
                       isTeamFolder:(NSNumber *)isTeamFolder
                          ownerTeam:(DBUSERSTeam *)ownerTeam
               parentSharedFolderId:(NSString *)parentSharedFolderId
@@ -21355,17 +22035,6 @@
     _pathLower = pathLower;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
-                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
-                      isTeamFolder:(NSNumber *)isTeamFolder {
-  return [self initWithAccessType:accessType
-               isInsideTeamFolder:isInsideTeamFolder
-                     isTeamFolder:isTeamFolder
-                        ownerTeam:nil
-             parentSharedFolderId:nil
-                        pathLower:nil];
 }
 
 #pragma mark - Serialization methods
@@ -21524,6 +22193,131 @@
                             policy:(DBSHARINGFolderPolicy *)policy
                         previewUrl:(NSString *)previewUrl
                     sharedFolderId:(NSString *)sharedFolderId
+                       timeInvited:(NSDate *)timeInvited {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                             name:name
+                           policy:policy
+                       previewUrl:previewUrl
+                   sharedFolderId:sharedFolderId
+                      timeInvited:timeInvited
+                        ownerTeam:nil
+             parentSharedFolderId:nil
+                        pathLower:nil
+                     linkMetadata:nil
+                      permissions:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                              name:(NSString *)name
+                            policy:(DBSHARINGFolderPolicy *)policy
+                        previewUrl:(NSString *)previewUrl
+                    sharedFolderId:(NSString *)sharedFolderId
+                       timeInvited:(NSDate *)timeInvited
+                         ownerTeam:(DBUSERSTeam *)ownerTeam {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                             name:name
+                           policy:policy
+                       previewUrl:previewUrl
+                   sharedFolderId:sharedFolderId
+                      timeInvited:timeInvited
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:nil
+                        pathLower:nil
+                     linkMetadata:nil
+                      permissions:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                              name:(NSString *)name
+                            policy:(DBSHARINGFolderPolicy *)policy
+                        previewUrl:(NSString *)previewUrl
+                    sharedFolderId:(NSString *)sharedFolderId
+                       timeInvited:(NSDate *)timeInvited
+                         ownerTeam:(DBUSERSTeam *)ownerTeam
+              parentSharedFolderId:(NSString *)parentSharedFolderId {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                             name:name
+                           policy:policy
+                       previewUrl:previewUrl
+                   sharedFolderId:sharedFolderId
+                      timeInvited:timeInvited
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:parentSharedFolderId
+                        pathLower:nil
+                     linkMetadata:nil
+                      permissions:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                              name:(NSString *)name
+                            policy:(DBSHARINGFolderPolicy *)policy
+                        previewUrl:(NSString *)previewUrl
+                    sharedFolderId:(NSString *)sharedFolderId
+                       timeInvited:(NSDate *)timeInvited
+                         ownerTeam:(DBUSERSTeam *)ownerTeam
+              parentSharedFolderId:(NSString *)parentSharedFolderId
+                         pathLower:(NSString *)pathLower {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                             name:name
+                           policy:policy
+                       previewUrl:previewUrl
+                   sharedFolderId:sharedFolderId
+                      timeInvited:timeInvited
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:parentSharedFolderId
+                        pathLower:pathLower
+                     linkMetadata:nil
+                      permissions:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                              name:(NSString *)name
+                            policy:(DBSHARINGFolderPolicy *)policy
+                        previewUrl:(NSString *)previewUrl
+                    sharedFolderId:(NSString *)sharedFolderId
+                       timeInvited:(NSDate *)timeInvited
+                         ownerTeam:(DBUSERSTeam *)ownerTeam
+              parentSharedFolderId:(NSString *)parentSharedFolderId
+                         pathLower:(NSString *)pathLower
+                      linkMetadata:(DBSHARINGSharedContentLinkMetadata *)linkMetadata {
+  return [self initWithAccessType:accessType
+               isInsideTeamFolder:isInsideTeamFolder
+                     isTeamFolder:isTeamFolder
+                             name:name
+                           policy:policy
+                       previewUrl:previewUrl
+                   sharedFolderId:sharedFolderId
+                      timeInvited:timeInvited
+                        ownerTeam:ownerTeam
+             parentSharedFolderId:parentSharedFolderId
+                        pathLower:pathLower
+                     linkMetadata:linkMetadata
+                      permissions:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
+                      isTeamFolder:(NSNumber *)isTeamFolder
+                              name:(NSString *)name
+                            policy:(DBSHARINGFolderPolicy *)policy
+                        previewUrl:(NSString *)previewUrl
+                    sharedFolderId:(NSString *)sharedFolderId
                        timeInvited:(NSDate *)timeInvited
                          ownerTeam:(DBUSERSTeam *)ownerTeam
               parentSharedFolderId:(NSString *)parentSharedFolderId
@@ -21553,29 +22347,6 @@
     _timeInvited = timeInvited;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
-                isInsideTeamFolder:(NSNumber *)isInsideTeamFolder
-                      isTeamFolder:(NSNumber *)isTeamFolder
-                              name:(NSString *)name
-                            policy:(DBSHARINGFolderPolicy *)policy
-                        previewUrl:(NSString *)previewUrl
-                    sharedFolderId:(NSString *)sharedFolderId
-                       timeInvited:(NSDate *)timeInvited {
-  return [self initWithAccessType:accessType
-               isInsideTeamFolder:isInsideTeamFolder
-                     isTeamFolder:isTeamFolder
-                             name:name
-                           policy:policy
-                       previewUrl:previewUrl
-                   sharedFolderId:sharedFolderId
-                      timeInvited:timeInvited
-                        ownerTeam:nil
-             parentSharedFolderId:nil
-                        pathLower:nil
-                     linkMetadata:nil
-                      permissions:nil];
 }
 
 #pragma mark - Serialization methods
@@ -22229,6 +23000,19 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initDefault {
+  return [self initWithRequestedVisibility:nil linkPassword:nil expires:nil];
+}
+
+- (instancetype)initWithRequestedVisibility:(DBSHARINGRequestedVisibility *)requestedVisibility {
+  return [self initWithRequestedVisibility:requestedVisibility linkPassword:nil expires:nil];
+}
+
+- (instancetype)initWithRequestedVisibility:(DBSHARINGRequestedVisibility *)requestedVisibility
+                               linkPassword:(NSString *)linkPassword {
+  return [self initWithRequestedVisibility:requestedVisibility linkPassword:linkPassword expires:nil];
+}
+
 - (instancetype)initWithRequestedVisibility:(DBSHARINGRequestedVisibility *)requestedVisibility
                                linkPassword:(NSString *)linkPassword
                                     expires:(NSDate *)expires {
@@ -22240,10 +23024,6 @@
     _expires = expires;
   }
   return self;
-}
-
-- (instancetype)initDefault {
-  return [self initWithRequestedVisibility:nil linkPassword:nil expires:nil];
 }
 
 #pragma mark - Serialization methods
@@ -22919,6 +23699,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithTeamInfo:(DBUSERSTeam *)teamInfo displayName:(NSString *)displayName {
+  return [self initWithTeamInfo:teamInfo displayName:displayName memberId:nil];
+}
+
 - (instancetype)initWithTeamInfo:(DBUSERSTeam *)teamInfo
                      displayName:(NSString *)displayName
                         memberId:(NSString *)memberId {
@@ -22930,10 +23714,6 @@
     _memberId = memberId;
   }
   return self;
-}
-
-- (instancetype)initWithTeamInfo:(DBUSERSTeam *)teamInfo displayName:(NSString *)displayName {
-  return [self initWithTeamInfo:teamInfo displayName:displayName memberId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -24060,6 +24840,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
+  return [self initWithSharedFolderId:sharedFolderId leaveACopy:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId leaveACopy:(NSNumber *)leaveACopy {
   [DBStoneValidators stringValidator:nil maxLength:nil pattern:@"[-_0-9a-zA-Z:]+"](sharedFolderId);
 
@@ -24069,10 +24853,6 @@
     _leaveACopy = leaveACopy ?: @NO;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
-  return [self initWithSharedFolderId:sharedFolderId leaveACopy:nil];
 }
 
 #pragma mark - Serialization methods
@@ -24930,6 +25710,60 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
+  return [self initWithSharedFolderId:sharedFolderId
+                         memberPolicy:nil
+                      aclUpdatePolicy:nil
+                     viewerInfoPolicy:nil
+                     sharedLinkPolicy:nil
+                         linkSettings:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy {
+  return [self initWithSharedFolderId:sharedFolderId
+                         memberPolicy:memberPolicy
+                      aclUpdatePolicy:nil
+                     viewerInfoPolicy:nil
+                     sharedLinkPolicy:nil
+                         linkSettings:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
+                          memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+                       aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy {
+  return [self initWithSharedFolderId:sharedFolderId
+                         memberPolicy:memberPolicy
+                      aclUpdatePolicy:aclUpdatePolicy
+                     viewerInfoPolicy:nil
+                     sharedLinkPolicy:nil
+                         linkSettings:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
+                          memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+                       aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+                      viewerInfoPolicy:(DBSHARINGViewerInfoPolicy *)viewerInfoPolicy {
+  return [self initWithSharedFolderId:sharedFolderId
+                         memberPolicy:memberPolicy
+                      aclUpdatePolicy:aclUpdatePolicy
+                     viewerInfoPolicy:viewerInfoPolicy
+                     sharedLinkPolicy:nil
+                         linkSettings:nil];
+}
+
+- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
+                          memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
+                       aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
+                      viewerInfoPolicy:(DBSHARINGViewerInfoPolicy *)viewerInfoPolicy
+                      sharedLinkPolicy:(DBSHARINGSharedLinkPolicy *)sharedLinkPolicy {
+  return [self initWithSharedFolderId:sharedFolderId
+                         memberPolicy:memberPolicy
+                      aclUpdatePolicy:aclUpdatePolicy
+                     viewerInfoPolicy:viewerInfoPolicy
+                     sharedLinkPolicy:sharedLinkPolicy
+                         linkSettings:nil];
+}
+
 - (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId
                           memberPolicy:(DBSHARINGMemberPolicy *)memberPolicy
                        aclUpdatePolicy:(DBSHARINGAclUpdatePolicy *)aclUpdatePolicy
@@ -24948,15 +25782,6 @@
     _linkSettings = linkSettings;
   }
   return self;
-}
-
-- (instancetype)initWithSharedFolderId:(NSString *)sharedFolderId {
-  return [self initWithSharedFolderId:sharedFolderId
-                         memberPolicy:nil
-                      aclUpdatePolicy:nil
-                     viewerInfoPolicy:nil
-                     sharedLinkPolicy:nil
-                         linkSettings:nil];
 }
 
 #pragma mark - Serialization methods
@@ -25379,6 +26204,10 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAccountId:(NSString *)accountId sameTeam:(NSNumber *)sameTeam {
+  return [self initWithAccountId:accountId sameTeam:sameTeam teamMemberId:nil];
+}
+
 - (instancetype)initWithAccountId:(NSString *)accountId
                          sameTeam:(NSNumber *)sameTeam
                      teamMemberId:(NSString *)teamMemberId {
@@ -25391,10 +26220,6 @@
     _teamMemberId = teamMemberId;
   }
   return self;
-}
-
-- (instancetype)initWithAccountId:(NSString *)accountId sameTeam:(NSNumber *)sameTeam {
-  return [self initWithAccountId:accountId sameTeam:sameTeam teamMemberId:nil];
 }
 
 #pragma mark - Serialization methods
@@ -25508,6 +26333,23 @@
 
 #pragma mark - Constructors
 
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType user:(DBSHARINGUserInfo *)user {
+  return [self initWithAccessType:accessType user:user permissions:nil initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                              user:(DBSHARINGUserInfo *)user
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions {
+  return [self initWithAccessType:accessType user:user permissions:permissions initials:nil isInherited:nil];
+}
+
+- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
+                              user:(DBSHARINGUserInfo *)user
+                       permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
+                          initials:(NSString *)initials {
+  return [self initWithAccessType:accessType user:user permissions:permissions initials:initials isInherited:nil];
+}
+
 - (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType
                               user:(DBSHARINGUserInfo *)user
                        permissions:(NSArray<DBSHARINGMemberPermission *> *)permissions
@@ -25521,10 +26363,6 @@
     _user = user;
   }
   return self;
-}
-
-- (instancetype)initWithAccessType:(DBSHARINGAccessLevel *)accessType user:(DBSHARINGUserInfo *)user {
-  return [self initWithAccessType:accessType user:user permissions:nil initials:nil isInherited:nil];
 }
 
 #pragma mark - Serialization methods

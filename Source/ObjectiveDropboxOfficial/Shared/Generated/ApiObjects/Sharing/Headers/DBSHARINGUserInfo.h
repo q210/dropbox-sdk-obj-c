@@ -41,6 +41,16 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param accountId The account ID of the user.
+/// @param sameTeam If the user is in the same team as current user.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountId:(NSString *)accountId sameTeam:(NSNumber *)sameTeam;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param accountId The account ID of the user.
@@ -53,17 +63,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithAccountId:(NSString *)accountId
                          sameTeam:(NSNumber *)sameTeam
                      teamMemberId:(nullable NSString *)teamMemberId;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param accountId The account ID of the user.
-/// @param sameTeam If the user is in the same team as current user.
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithAccountId:(NSString *)accountId sameTeam:(NSNumber *)sameTeam;
 
 - (instancetype)init NS_UNAVAILABLE;
 

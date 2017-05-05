@@ -48,6 +48,49 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Constructors
 
 ///
+/// Convenience constructor.
+///
+/// @param appId The application unique id
+/// @param appName The application name
+/// @param isAppFolder Whether the linked application uses a dedicated folder
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAppId:(NSString *)appId appName:(NSString *)appName isAppFolder:(NSNumber *)isAppFolder;
+
+///
+/// Convenience constructor.
+///
+/// @param appId The application unique id
+/// @param appName The application name
+/// @param isAppFolder Whether the linked application uses a dedicated folder
+/// @param publisher The application publisher name
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAppId:(NSString *)appId
+                      appName:(NSString *)appName
+                  isAppFolder:(NSNumber *)isAppFolder
+                    publisher:(nullable NSString *)publisher;
+
+///
+/// Convenience constructor.
+///
+/// @param appId The application unique id
+/// @param appName The application name
+/// @param isAppFolder Whether the linked application uses a dedicated folder
+/// @param publisher The application publisher name
+/// @param publisherUrl The publisher's URL
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAppId:(NSString *)appId
+                      appName:(NSString *)appName
+                  isAppFolder:(NSNumber *)isAppFolder
+                    publisher:(nullable NSString *)publisher
+                 publisherUrl:(nullable NSString *)publisherUrl;
+
+///
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param appId The application unique id
@@ -65,18 +108,6 @@ NS_ASSUME_NONNULL_BEGIN
                     publisher:(nullable NSString *)publisher
                  publisherUrl:(nullable NSString *)publisherUrl
                        linked:(nullable NSDate *)linked;
-
-///
-/// Convenience constructor (exposes only non-nullable instance variables with
-/// no default value).
-///
-/// @param appId The application unique id
-/// @param appName The application name
-/// @param isAppFolder Whether the linked application uses a dedicated folder
-///
-/// @return An initialized instance.
-///
-- (instancetype)initWithAppId:(NSString *)appId appName:(NSString *)appName isAppFolder:(NSNumber *)isAppFolder;
 
 - (instancetype)init NS_UNAVAILABLE;
 

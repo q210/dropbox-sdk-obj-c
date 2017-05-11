@@ -5,6 +5,23 @@
 #import "DBOAuth.h"
 #import "DBOAuthMobile.h"
 
+@interface CustomNavigationController : UINavigationController
+
+@end
+
+@implementation CustomNavigationController
+
+-(BOOL)shouldAutorotate
+{
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+@end
+
 #pragma mark - Shared application
 
 @interface DBMobileSharedApplication ()
@@ -73,13 +90,15 @@
 - (void)presentWebViewAuth:(NSURL * _Nonnull)authURL
        tryInterceptHandler:(BOOL (^_Nonnull)(NSURL * _Nonnull))tryInterceptHandler
              cancelHandler:(void (^_Nonnull)(void))cancelHandler {
-  DBMobileWebViewController *webViewController = [[DBMobileWebViewController alloc] init:authURL
-                                                                     tryInterceptHandler:tryInterceptHandler
-                                                                           cancelHandler:cancelHandler];
-  UINavigationController *navigationController =
-      [[UINavigationController alloc] initWithRootViewController:webViewController];
-
-  [_controller presentViewController:navigationController animated:YES completion:nil];
+    DBMobileWebViewController *webViewController = [[DBMobileWebViewController alloc] init:authURL
+                                                                       tryInterceptHandler:tryInterceptHandler
+                                                                             cancelHandler:cancelHandler];
+    
+    CustomNavigationController *navigationController = [[CustomNavigationController alloc] initWithRootViewController:webViewController];
+    
+    navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    [_controller presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (void)presentBrowserAuth:(NSURL * _Nonnull)authURL {
@@ -134,36 +153,37 @@
 }
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  self.title = @"Link to Dropbox";
-  _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
-
-  _indicator.center = self.view.center;
-  [_webView addSubview:_indicator];
-  [_indicator startAnimating];
-
-  [self.view addSubview:_webView];
-
-  _webView.navigationDelegate = self;
-
-  self.view.backgroundColor = [UIColor whiteColor];
-
-  _cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
-                                                                target:self
-                                                                action:@selector(cancel:)];
-  self.navigationItem.rightBarButtonItem = _cancelButton;
+    [super viewDidLoad];
+    self.title = @"Link to Dropbox";
+    _webView = [[WKWebView alloc] init];
+    
+    [self.view addSubview:_webView];
+    
+    _webView.navigationDelegate = self;
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    _cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                  target:self
+                                                                  action:@selector(cancel:)];
+    self.navigationItem.rightBarButtonItem = _cancelButton;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-
-  if (![_webView canGoBack]) {
-    if (_startURL != nil) {
-      [self loadURL:_startURL];
-    } else {
-      [_webView loadHTMLString:@"There is no `startURL`" baseURL:nil];
+    [super viewWillAppear:animated];
+    
+    if (![_webView canGoBack]) {
+        if (_startURL != nil) {
+            [self loadURL:_startURL];
+        } else {
+            [_webView loadHTMLString:@"There is no `startURL`" baseURL:nil];
+        }
     }
-  }
+    _indicator.center = self.view.center;
+    [_webView addSubview:_indicator];
+    [_indicator startAnimating];
+    
+    [_webView setFrame:self.view.bounds];
 }
 
 - (void)webView:(WKWebView *)webView
